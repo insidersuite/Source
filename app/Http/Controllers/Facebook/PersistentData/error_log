@@ -1,0 +1,1 @@
+[15-Mar-2019 23:47:04 UTC] PHP Fatal error:  Interface 'Facebook\PersistentData\PersistentDataInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/PersistentData/FacebookMemoryPersistentDataHandler.php on line 31

@@ -1,0 +1,9 @@
+[27-Feb-2019 12:17:04 UTC] PHP Fatal error:  Class 'Facebook\GraphNodes\GraphNode' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/GraphNodes/GraphGroup.php on line 31
+[27-Feb-2019 15:17:27 UTC] PHP Fatal error:  Class 'Facebook\GraphNodes\GraphNode' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/GraphNodes/GraphApplication.php on line 32
+[13-Mar-2019 01:47:14 UTC] PHP Fatal error:  Class 'Facebook\GraphNodes\GraphNode' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/GraphNodes/GraphUser.php on line 31
+[16-Mar-2019 04:57:18 UTC] PHP Fatal error:  Class 'Facebook\GraphNodes\GraphNode' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/GraphNodes/GraphSessionInfo.php on line 31
+[14-Apr-2019 03:07:01 UTC] PHP Fatal error:  Class 'Facebook\GraphNodes\GraphNode' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/GraphNodes/GraphAlbum.php on line 32
+[07-May-2019 18:29:49 UTC] PHP Fatal error:  Class 'Facebook\GraphNodes\Collection' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/GraphNodes/GraphNode.php on line 31
+[09-May-2019 00:56:34 UTC] PHP Fatal error:  Class 'Facebook\GraphNodes\GraphNodeFactory' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/GraphNodes/GraphObjectFactory.php on line 36
+[09-May-2019 00:59:46 UTC] PHP Fatal error:  Class 'Facebook\GraphNodes\Collection' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/GraphNodes/GraphEdge.php on line 35
+[11-May-2019 05:51:26 UTC] PHP Fatal error:  Class 'Facebook\GraphNodes\GraphNode' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/GraphNodes/GraphPage.php on line 31

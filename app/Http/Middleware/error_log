@@ -1,0 +1,4 @@
+[15-Jan-2019 12:42:39 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home4/insidgd5/public_html/app/Http/Middleware/TrimStrings.php on line 7
+[15-Jan-2019 13:33:48 UTC] PHP Fatal error:  Class 'Fideloper\Proxy\TrustProxies' not found in /home4/insidgd5/public_html/app/Http/Middleware/TrustProxies.php on line 8
+[15-Jan-2019 14:55:40 UTC] PHP Fatal error:  Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home4/insidgd5/public_html/app/Http/Middleware/EncryptCookies.php on line 7
+[15-Jan-2019 17:08:42 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home4/insidgd5/public_html/app/Http/Middleware/VerifyCsrfToken.php on line 7

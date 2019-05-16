@@ -1,0 +1,1 @@
+[20-Feb-2019 22:31:52 UTC] PHP Fatal error:  Class 'Facebook\FileUpload\FacebookFile' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/FileUpload/FacebookVideo.php on line 31

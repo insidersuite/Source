@@ -1,0 +1,4 @@
+[11-Mar-2019 13:45:37 UTC] PHP Fatal error:  Class 'Facebook\Helpers\FacebookSignedRequestFromInputHelper' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/Helpers/FacebookCanvasHelper.php on line 31
+[07-May-2019 15:17:38 UTC] PHP Fatal error:  Class 'Facebook\Helpers\FacebookSignedRequestFromInputHelper' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/Helpers/FacebookCanvasHelper.php on line 31
+[10-May-2019 16:48:47 UTC] PHP Fatal error:  Class 'Facebook\Helpers\FacebookCanvasHelper' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/Helpers/FacebookPageTabHelper.php on line 34
+[11-May-2019 19:27:25 UTC] PHP Fatal error:  Class 'Facebook\Helpers\FacebookSignedRequestFromInputHelper' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/Helpers/FacebookJavaScriptHelper.php on line 31

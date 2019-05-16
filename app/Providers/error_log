@@ -1,0 +1,12 @@
+[13-Jan-2019 22:10:37 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/AppServiceProvider.php on line 9
+[14-Jan-2019 11:31:22 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\AuthServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/AuthServiceProvider.php on line 8
+[14-Jan-2019 13:42:40 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\RouteServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/RouteServiceProvider.php on line 8
+[14-Jan-2019 16:27:50 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\EventServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/EventServiceProvider.php on line 8
+[06-Feb-2019 00:51:40 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/AppServiceProvider.php on line 16
+[10-Feb-2019 10:53:57 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\RouteServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/RouteServiceProvider.php on line 8
+[27-Feb-2019 12:16:37 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\AuthServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/AuthServiceProvider.php on line 8
+[27-Feb-2019 12:52:04 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/BroadcastServiceProvider.php on line 8
+[16-Apr-2019 09:11:37 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/AppServiceProvider.php on line 16
+[16-Apr-2019 09:33:08 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/BroadcastServiceProvider.php on line 8
+[17-Apr-2019 05:20:13 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Support\Providers\AuthServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/AuthServiceProvider.php on line 8
+[06-May-2019 10:57:49 UTC] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/BroadcastServiceProvider.php on line 8

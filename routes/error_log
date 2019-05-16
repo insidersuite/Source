@@ -1,0 +1,16 @@
+[19-Jan-2019 18:51:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home4/insidgd5/public_html/routes/api.php:16
+Stack trace:
+#0 {main}
+  thrown in /home4/insidgd5/public_html/routes/api.php on line 16
+[19-Jan-2019 18:59:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home4/insidgd5/public_html/routes/web.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/insidgd5/public_html/routes/web.php on line 3
+[19-Jan-2019 23:11:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Artisan' not found in /home4/insidgd5/public_html/routes/console.php:16
+Stack trace:
+#0 {main}
+  thrown in /home4/insidgd5/public_html/routes/console.php on line 16
+[20-Jan-2019 02:43:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Broadcast' not found in /home4/insidgd5/public_html/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home4/insidgd5/public_html/routes/channels.php on line 14

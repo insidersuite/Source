@@ -1,0 +1,1 @@
+[11-May-2019 19:24:55 UTC] PHP Fatal error:  Interface 'Facebook\Url\UrlDetectionInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/Url/FacebookUrlDetectionHandler.php on line 31

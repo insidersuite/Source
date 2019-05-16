@@ -1,0 +1,5 @@
+[14-Mar-2019 15:33:48 UTC] PHP Fatal error:  Class 'Facebook\Exceptions\FacebookSDKException' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/Exceptions/FacebookAuthorizationException.php on line 31
+[17-Mar-2019 18:55:05 UTC] PHP Fatal error:  Class 'Facebook\Exceptions\FacebookSDKException' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/Exceptions/FacebookServerException.php on line 31
+[08-May-2019 10:56:17 UTC] PHP Fatal error:  Class 'Facebook\Exceptions\FacebookSDKException' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/Exceptions/FacebookResponseException.php on line 33
+[08-May-2019 11:18:52 UTC] PHP Fatal error:  Class 'Facebook\Exceptions\FacebookSDKException' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/Exceptions/FacebookClientException.php on line 31
+[10-May-2019 03:29:10 UTC] PHP Fatal error:  Class 'Facebook\Exceptions\FacebookSDKException' not found in /home4/insidgd5/public_html/app/Http/Controllers/Facebook/Exceptions/FacebookAuthenticationException.php on line 31

@@ -1,0 +1,93 @@
+.site-content{
+  padding-top: 115px;
+}
+.normal-section {
+  padding: 30px;
+  width: 100%;
+}
+h2 {
+  margin: 0;
+}
+.section_sub {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+.btn-subscribe, .btn-subscribe:focus, .btn-subscribe:hover {
+  border-radius: 50px;
+  background: rgb(255, 51, 102);
+  border: 1px solid;
+  padding: 10px 76px;
+  margin-top: 20px;
+  color: #fff;
+}
+._tpbrp {
+  color: inherit !important;
+  font-weight: 500 !important;
+  line-height: inherit !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  Font : 38px/1.2em 'Caslon Becker Graphique', 'Times New Roman', Times, serif;
+  text-align: left;
+}
+@media (max-width: 1000px){
+  ._tpbrp {
+    font-size: 30px;
+  }
+}
+@media (max-width: 830px){
+  ._tpbrp {
+    font-size: 30px;
+  }
+}
+@media (max-width: 750px){
+  ._tpbrp {
+    font-size: 22px;
+  }
+}
+h1 {
+  font-style: italic;
+  font-size: 28px;
+  color: #1d1d1d;
+  line-height: 1;
+}
+@media (max-width: 768px) {
+  #footer {
+    height: 0px !important;
+  }
+}
+@media (max-width: 600px) {
+  #footer {
+    height: 0px !important;
+  }
+}
+@media (max-width: 480px) {
+  #footer {
+    height: 0px !important;
+  }
+}
+@media (max-width: 412px) {
+  #footer {
+    height: 0px !important;
+  }
+}
+@media (max-width: 384px) {
+  #footer {
+    height: 0px !important;
+  }
+}
+@media (max-width: 375px) {
+  #footer {
+    height: 0px !important;
+  }
+}
+@media (max-width: 360px) {
+  #footer {
+    height: 0px !important;
+  }
+}
+@media (max-width: 320px) {
+  #footer {
+    height: 0px !important;
+  }
+}

@@ -1,0 +1,853 @@
+[15-Apr-2018 01:27:50 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[15-Apr-2018 01:27:50 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[18-Apr-2018 01:16:17 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[18-Apr-2018 01:16:17 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[20-Apr-2018 01:17:59 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[20-Apr-2018 01:17:59 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[22-Apr-2018 01:17:32 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[22-Apr-2018 01:17:32 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[24-Apr-2018 01:26:52 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[24-Apr-2018 01:26:52 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[26-Apr-2018 01:21:08 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[26-Apr-2018 01:21:09 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[28-Apr-2018 05:33:51 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[30-Apr-2018 14:23:34 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[01-May-2018 01:28:20 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[01-May-2018 01:28:20 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[04-May-2018 01:26:37 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[04-May-2018 01:26:38 UTC] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home4/insidgd5/public_html/xmlrpc0db0.php on line 1
+[04-May-2018 20:01:42 UTC] PHP Parse error:  syntax error, unexpected end of file in /home4/insidgd5/public_html/index.php on line 184
+[04-May-2018 20:01:46 UTC] PHP Parse error:  syntax error, unexpected end of file in /home4/insidgd5/public_html/index.php on line 184
+[04-May-2018 20:01:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /home4/insidgd5/public_html/index.php on line 184
+[04-May-2018 20:02:06 UTC] PHP Parse error:  syntax error, unexpected end of file in /home4/insidgd5/public_html/index.php on line 184
+[07-May-2018 00:44:29 UTC] PHP Warning:  require_once(Mail.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/meetingtest2.php on line 2
+[07-May-2018 00:44:29 UTC] PHP Fatal error:  require_once(): Failed opening required 'Mail.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/meetingtest2.php on line 2
+[07-May-2018 00:44:31 UTC] PHP Warning:  require_once(Mail.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/meetingtest2.php on line 2
+[07-May-2018 00:44:31 UTC] PHP Fatal error:  require_once(): Failed opening required 'Mail.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/meetingtest2.php on line 2
+[07-May-2018 00:48:29 UTC] PHP Warning:  require_once(Mail.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/meetingtest2.php on line 3
+[07-May-2018 00:48:29 UTC] PHP Fatal error:  require_once(): Failed opening required 'Mail.php' (include_path='/home4/insidgd5/php:.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/meetingtest2.php on line 3
+[07-May-2018 00:48:31 UTC] PHP Warning:  require_once(Mail.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/meetingtest2.php on line 3
+[07-May-2018 00:48:31 UTC] PHP Fatal error:  require_once(): Failed opening required 'Mail.php' (include_path='/home4/insidgd5/php:.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/meetingtest2.php on line 3
+[11-May-2018 08:06:24 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:06:24 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:06:24 UTC] PHP Warning:  include(): Failed opening 'SMTPconfig.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:06:28 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:06:28 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:06:28 UTC] PHP Warning:  include(): Failed opening 'SMTPconfig.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:06:28 UTC] PHP Warning:  Creating default object from empty value in /home4/insidgd5/public_html/index.php on line 127
+[11-May-2018 08:06:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::from() in /home4/insidgd5/public_html/index.php:136
+Stack trace:
+#0 {main}
+  thrown in /home4/insidgd5/public_html/index.php on line 136
+[11-May-2018 08:06:38 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:06:38 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:06:38 UTC] PHP Warning:  include(): Failed opening 'SMTPconfig.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:06:38 UTC] PHP Warning:  Creating default object from empty value in /home4/insidgd5/public_html/index.php on line 127
+[11-May-2018 08:06:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::from() in /home4/insidgd5/public_html/index.php:136
+Stack trace:
+#0 {main}
+  thrown in /home4/insidgd5/public_html/index.php on line 136
+[11-May-2018 08:06:56 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:06:56 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:06:56 UTC] PHP Warning:  include(): Failed opening 'SMTPconfig.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:06:56 UTC] PHP Warning:  Creating default object from empty value in /home4/insidgd5/public_html/index.php on line 127
+[11-May-2018 08:06:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::from() in /home4/insidgd5/public_html/index.php:136
+Stack trace:
+#0 {main}
+  thrown in /home4/insidgd5/public_html/index.php on line 136
+[11-May-2018 08:07:18 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:07:18 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:07:18 UTC] PHP Warning:  include(): Failed opening 'SMTPconfig.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:07:18 UTC] PHP Warning:  Creating default object from empty value in /home4/insidgd5/public_html/index.php on line 127
+[11-May-2018 08:07:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::from() in /home4/insidgd5/public_html/index.php:136
+Stack trace:
+#0 {main}
+  thrown in /home4/insidgd5/public_html/index.php on line 136
+[11-May-2018 08:08:30 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:08:30 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:08:30 UTC] PHP Warning:  include(): Failed opening 'SMTPconfig.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:08:30 UTC] PHP Warning:  Creating default object from empty value in /home4/insidgd5/public_html/index.php on line 127
+[11-May-2018 08:08:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::from() in /home4/insidgd5/public_html/index.php:136
+Stack trace:
+#0 {main}
+  thrown in /home4/insidgd5/public_html/index.php on line 136
+[11-May-2018 08:09:48 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:09:48 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:09:48 UTC] PHP Warning:  include(): Failed opening 'SMTPconfig.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:09:48 UTC] PHP Warning:  Creating default object from empty value in /home4/insidgd5/public_html/index.php on line 127
+[11-May-2018 08:09:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::from() in /home4/insidgd5/public_html/index.php:136
+Stack trace:
+#0 {main}
+  thrown in /home4/insidgd5/public_html/index.php on line 136
+[11-May-2018 08:10:48 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:10:48 UTC] PHP Warning:  include(SMTPconfig.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:10:48 UTC] PHP Warning:  include(): Failed opening 'SMTPconfig.php' for inclusion (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/index.php on line 118
+[11-May-2018 08:10:48 UTC] PHP Warning:  Creating default object from empty value in /home4/insidgd5/public_html/index.php on line 127
+[11-May-2018 08:10:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::from() in /home4/insidgd5/public_html/index.php:136
+Stack trace:
+#0 {main}
+  thrown in /home4/insidgd5/public_html/index.php on line 136
+[11-May-2018 08:15:37 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home4/insidgd5/public_html/index.php on line 139
+[11-May-2018 08:15:49 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home4/insidgd5/public_html/index.php on line 139
+[14-Jan-2019 07:39:19 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:39:21 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:39:23 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:39:25 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:39:27 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:39:31 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:42:04 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:42:23 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:42:27 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:45:12 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:45:26 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:45:48 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:45:50 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 07:49:04 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('view')
+#1 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('view')
+#2 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('view', Array)
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('view', Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('view', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(971): app( in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[14-Jan-2019 08:29:14 UTC] +++2019-01-14T08:29:14+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9elJ3TUNQUGFNUEhnJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTA1%26oauth_nonce%3D498925542%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547454554%26oauth_version%3D1.0
+[14-Jan-2019 08:29:14 UTC] +++2019-01-14T08:29:14+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9elJ3TUNQUGFNUEhnJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTA1&oauth_nonce=498925542&oauth_signature=35ly%2BSWtRpoxj%2F1%2Fh06C%2FYPUaWQ%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547454554&oauth_version=1.0
+[14-Jan-2019 08:29:15 UTC] +++2019-01-14T08:29:15+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 08:29:39 UTC] +++2019-01-14T08:29:39+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9elJ3TUNQUGFNUEhnJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTA1%26oauth_nonce%3D586032558%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547454579%26oauth_version%3D1.0
+[14-Jan-2019 08:29:39 UTC] +++2019-01-14T08:29:39+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9elJ3TUNQUGFNUEhnJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTA1&oauth_nonce=586032558&oauth_signature=Hb3YXad6ds5ETodorsO%2F3TQmPro%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547454579&oauth_version=1.0
+[14-Jan-2019 08:29:39 UTC] +++2019-01-14T08:29:39+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 08:31:47 UTC] +++2019-01-14T08:31:47+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9Z0JIWVdVdlFRZkUxJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTdj%26oauth_nonce%3D221084316%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547454707%26oauth_version%3D1.0
+[14-Jan-2019 08:31:47 UTC] +++2019-01-14T08:31:47+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9Z0JIWVdVdlFRZkUxJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTdj&oauth_nonce=221084316&oauth_signature=vrz03nI8geXbXH47qtQPJ7YtJLI%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547454707&oauth_version=1.0
+[14-Jan-2019 08:31:47 UTC] +++2019-01-14T08:31:47+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 08:32:26 UTC] +++2019-01-14T08:32:26+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9Z0JIWVdVdlFRZkUxJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTdj%26oauth_nonce%3D67405336%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547454746%26oauth_version%3D1.0
+[14-Jan-2019 08:32:26 UTC] +++2019-01-14T08:32:26+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9Z0JIWVdVdlFRZkUxJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTdj&oauth_nonce=67405336&oauth_signature=yu2ng6LNxkilvbbQQoG%2F%2B7IwwIk%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547454746&oauth_version=1.0
+[14-Jan-2019 08:32:26 UTC] +++2019-01-14T08:32:26+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 08:42:57 UTC] +++2019-01-14T08:42:57+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9Z0JIWVdVdlFRZkUxJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTdj%26oauth_nonce%3D1062989533%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547455377%26oauth_version%3D1.0
+[14-Jan-2019 08:42:57 UTC] +++2019-01-14T08:42:57+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9Z0JIWVdVdlFRZkUxJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTdj&oauth_nonce=1062989533&oauth_signature=nF6O5MqqoR%2Frmzgf37Kpx2EnMGE%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547455377&oauth_version=1.0
+[14-Jan-2019 08:42:57 UTC] +++2019-01-14T08:42:57+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 08:44:05 UTC] +++2019-01-14T08:44:05+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%26oauth_consumer_key%3Ddj0yJmk9Z0JIWVdVdlFRZkUxJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTdj%26oauth_nonce%3D540767532%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547455445%26oauth_version%3D1.0
+[14-Jan-2019 08:44:05 UTC] +++2019-01-14T08:44:05+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com&oauth_consumer_key=dj0yJmk9Z0JIWVdVdlFRZkUxJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTdj&oauth_nonce=540767532&oauth_signature=OOLvGqmbv7IlLgEyoX69dLgSFvA%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547455445&oauth_version=1.0
+[14-Jan-2019 08:44:05 UTC] +++2019-01-14T08:44:05+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 08:44:58 UTC] +++2019-01-14T08:44:58+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9Z0JIWVdVdlFRZkUxJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTdj%26oauth_nonce%3D662227220%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547455498%26oauth_version%3D1.0
+[14-Jan-2019 08:44:58 UTC] +++2019-01-14T08:44:58+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9Z0JIWVdVdlFRZkUxJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTdj&oauth_nonce=662227220&oauth_signature=%2B1hBiinOw0MnGaStZdf2ytd8fAg%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547455498&oauth_version=1.0
+[14-Jan-2019 08:44:59 UTC] +++2019-01-14T08:44:59+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 08:46:15 UTC] +++2019-01-14T08:46:15+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1%26oauth_nonce%3D1703729665%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547455575%26oauth_version%3D1.0
+[14-Jan-2019 08:46:15 UTC] +++2019-01-14T08:46:15+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1&oauth_nonce=1703729665&oauth_signature=uAM0kuQ%2FHCDVJn47%2Fqu198XT5II%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547455575&oauth_version=1.0
+[14-Jan-2019 08:46:16 UTC] +++2019-01-14T08:46:16+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 08:55:39 UTC] +++2019-01-14T08:55:39+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1%26oauth_nonce%3D1595119079%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547456139%26oauth_version%3D1.0
+[14-Jan-2019 08:55:39 UTC] +++2019-01-14T08:55:39+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1&oauth_nonce=1595119079&oauth_signature=qbOomi1rTbTVL8OYxZuAyonb3pw%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547456139&oauth_version=1.0
+[14-Jan-2019 08:55:39 UTC] +++2019-01-14T08:55:39+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 08:55:41 UTC] +++2019-01-14T08:55:41+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1%26oauth_nonce%3D1048563963%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547456141%26oauth_version%3D1.0
+[14-Jan-2019 08:55:41 UTC] +++2019-01-14T08:55:41+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1&oauth_nonce=1048563963&oauth_signature=M2ThgxT2oX3fcgAfjz50IelwRg8%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547456141&oauth_version=1.0
+[14-Jan-2019 08:55:42 UTC] +++2019-01-14T08:55:42+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 08:56:17 UTC] +++2019-01-14T08:56:17+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1%26oauth_nonce%3D1447916011%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547456177%26oauth_version%3D1.0
+[14-Jan-2019 08:56:17 UTC] +++2019-01-14T08:56:17+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1&oauth_nonce=1447916011&oauth_signature=bVDfRkSf6SXbOZZkIa9RaW%2FOycQ%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547456177&oauth_version=1.0
+[14-Jan-2019 08:56:18 UTC] +++2019-01-14T08:56:18+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 08:59:02 UTC] PHP Fatal error:  Cannot redeclare oauth_http_build_query() (previously declared in /home4/insidgd5/public_html/app/Http/Controllers/globals.php:453) in /home4/insidgd5/public_html/app/Http/Controllers/oauth_helper.php on line 56
+[14-Jan-2019 08:59:46 UTC] PHP Fatal error:  Cannot redeclare oauth_http_build_query() (previously declared in /home4/insidgd5/public_html/app/Http/Controllers/globals.php:451) in /home4/insidgd5/public_html/app/Http/Controllers/oauth_helper.php on line 56
+[14-Jan-2019 09:01:03 UTC] PHP Fatal error:  Cannot redeclare oauth_http_build_query() (previously declared in /home4/insidgd5/public_html/app/Http/Controllers/globals.php:25) in /home4/insidgd5/public_html/app/Http/Controllers/oauth_helper.php on line 56
+[14-Jan-2019 09:01:14 UTC] PHP Fatal error:  Cannot redeclare oauth_http_build_query() (previously declared in /home4/insidgd5/public_html/app/Http/Controllers/globals.php:25) in /home4/insidgd5/public_html/app/Http/Controllers/oauth_helper.php on line 56
+[14-Jan-2019 09:02:11 UTC] +++2019-01-14T09:02:11+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1%26oauth_nonce%3D1888917102%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547456531%26oauth_version%3D1.0
+[14-Jan-2019 09:02:11 UTC] +++2019-01-14T09:02:11+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1&oauth_nonce=1888917102&oauth_signature=gWZn5X4Xj5GEjTaXhBPvM6YZDYI%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547456531&oauth_version=1.0
+[14-Jan-2019 09:02:11 UTC] +++2019-01-14T09:02:11+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 11:56:08 UTC] +++2019-01-14T11:56:08+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1%26oauth_nonce%3D1014397756%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547466968%26oauth_version%3D1.0
+[14-Jan-2019 11:56:08 UTC] +++2019-01-14T11:56:08+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1&oauth_nonce=1014397756&oauth_signature=K3xi0HLcx8ItxbXeh3K7ZsrxI4E%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547466968&oauth_version=1.0
+[14-Jan-2019 11:56:09 UTC] +++2019-01-14T11:56:09+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 13:43:42 UTC] +++2019-01-14T13:43:42+0000:signature_base_string:INFO:normalized_base_string:GET&https%3A%2F%2Fapi.login.yahoo.com%3A80%2Foauth%2Fv2%2Fget_request_token&oauth_callback%3Dhttps%253A%252F%252Fwww.insidersuite.com%252Fyahoo%26oauth_consumer_key%3Ddj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1%26oauth_nonce%3D1779655836%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1547473422%26oauth_version%3D1.0
+[14-Jan-2019 13:43:42 UTC] +++2019-01-14T13:43:42+0000:getreqtok:INFO:request_url:https://api.login.yahoo.com/oauth/v2/get_request_token?oauth_callback=https%3A%2F%2Fwww.insidersuite.com%2Fyahoo&oauth_consumer_key=dj0yJmk9dXdiYTFwRUR5Qk9DJnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTk1&oauth_nonce=1779655836&oauth_signature=jKmRbq40p%2FBlwYCdKYo1FvivUA0%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1547473422&oauth_version=1.0
+[14-Jan-2019 13:43:42 UTC] +++2019-01-14T13:43:42+0000:getreqtok:INFO:response_body_parsed:
+[14-Jan-2019 18:55:31 UTC] PHP Warning:  Uncaught ErrorException: require_once(Hybridauth\Hybridauth.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:7
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Hy...', '/home4/insidgd5...', 7, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once()
+#2 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/insidgd5...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Contro...' in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:55:31 UTC] PHP Fatal error:  main(): Failed opening required 'Hybridauth\Hybridauth.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:55:48 UTC] PHP Warning:  Uncaught ErrorException: require_once(\Hybridauth\Hybridauth.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:7
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(\\H...', '/home4/insidgd5...', 7, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once()
+#2 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/insidgd5...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Contro.. in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:55:48 UTC] PHP Fatal error:  main(): Failed opening required '\Hybridauth\Hybridauth.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:56:57 UTC] PHP Warning:  Uncaught ErrorException: require_once(.\Hybridauth.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:7
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(.\\...', '/home4/insidgd5...', 7, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once()
+#2 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/insidgd5...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Contro...')
+#7 /ho in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:56:57 UTC] PHP Fatal error:  main(): Failed opening required '.\Hybridauth.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:57:10 UTC] PHP Warning:  Uncaught ErrorException: require_once(\Hybridauth.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:7
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(\\H...', '/home4/insidgd5...', 7, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once()
+#2 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/insidgd5...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Contro...')
+#7 /hom in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:57:10 UTC] PHP Fatal error:  main(): Failed opening required '\Hybridauth.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:57:17 UTC] PHP Warning:  Uncaught ErrorException: require_once(Hybridauth.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:7
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Hy...', '/home4/insidgd5...', 7, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once()
+#2 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/insidgd5...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Contro...')
+#7 /home4 in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:57:17 UTC] PHP Fatal error:  main(): Failed opening required 'Hybridauth.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:59:08 UTC] PHP Warning:  Uncaught ErrorException: require_once(Hybridauth.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:7
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Hy...', '/home4/insidgd5...', 7, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once()
+#2 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/insidgd5...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Contro...')
+#7 /home4 in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:59:08 UTC] PHP Fatal error:  main(): Failed opening required 'Hybridauth.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:59:16 UTC] PHP Warning:  Uncaught ErrorException: require_once(Hybridauth\Hybridauth.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:7
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Hy...', '/home4/insidgd5...', 7, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once()
+#2 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/insidgd5...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Contro...' in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 18:59:16 UTC] PHP Fatal error:  main(): Failed opening required 'Hybridauth\Hybridauth.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 19:00:04 UTC] PHP Warning:  Uncaught ErrorException: require_once(Hybridauth\Hybridauth.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:21
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(21): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Hy...', '/home4/insidgd5...', 21, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(21): require_once()
+#2 [internal function]: App\Http\Controllers\YahooApiController->yahoo()
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\Routing\Controller->callAction('yahoo', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\Routing\ControllerDispatcher->dispatch(Obje in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 21
+[14-Jan-2019 19:00:04 UTC] PHP Fatal error:  App\Http\Controllers\YahooApiController::yahoo(): Failed opening required 'Hybridauth\Hybridauth.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 21
+[14-Jan-2019 19:07:51 UTC] PHP Warning:  Uncaught ErrorException: require_once(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:21
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(21): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once():...', '/home4/insidgd5...', 21, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(21): require_once()
+#2 [internal function]: App\Http\Controllers\YahooApiController->yahoo()
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\Routing\Controller->callAction('yahoo', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\Routing\ControllerDispatcher->dispatc in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 21
+[14-Jan-2019 19:07:51 UTC] PHP Fatal error:  App\Http\Controllers\YahooApiController::yahoo(): Failed opening required 'https://www.insidersuite.com/app/Http/Controllers/Hybridauth/Hybridauth.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 21
+[14-Jan-2019 19:08:30 UTC] PHP Warning:  Uncaught ErrorException: require_once(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:21
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(21): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once():...', '/home4/insidgd5...', 21, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(21): require_once()
+#2 [internal function]: App\Http\Controllers\YahooApiController->yahoo()
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\Routing\Controller->callAction('yahoo', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\Routing\ControllerDispatcher->dispatc in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 21
+[14-Jan-2019 19:08:30 UTC] PHP Fatal error:  App\Http\Controllers\YahooApiController::yahoo(): Failed opening required 'https://www.insidersuite.com/app/Http/Controllers/Hybridauth/Hybridauth.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 21
+[14-Jan-2019 19:10:10 UTC] PHP Warning:  Uncaught ErrorException: require_once(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:22
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(22): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once():...', '/home4/insidgd5...', 22, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(22): require_once()
+#2 [internal function]: App\Http\Controllers\YahooApiController->yahoo()
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\Routing\Controller->callAction('yahoo', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\Routing\ControllerDispatcher->dispatc in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 22
+[14-Jan-2019 19:10:10 UTC] PHP Fatal error:  App\Http\Controllers\YahooApiController::yahoo(): Failed opening required 'https://www.insidersuite.com/app/Http/Controllers/Hybridauth/Hybridauth.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 22
+[14-Jan-2019 19:20:44 UTC] PHP Warning:  Uncaught ErrorException: require_once(_DIR_/Hybridauth/Hybridauth.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:22
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(22): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(_D...', '/home4/insidgd5...', 22, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(22): require_once()
+#2 [internal function]: App\Http\Controllers\YahooApiController->yahoo()
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\Routing\Controller->callAction('yahoo', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\Routing\ControllerDispatcher->dispatc in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 22
+[14-Jan-2019 19:20:44 UTC] PHP Fatal error:  App\Http\Controllers\YahooApiController::yahoo(): Failed opening required '_DIR_/Hybridauth/Hybridauth.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 22
+[14-Jan-2019 19:36:04 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth): failed to open stream: Success in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:7
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 7, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once()
+#2 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/insidgd5...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\ in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 19:36:04 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 19:36:54 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth): failed to open stream: Success in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php:7
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 7, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once()
+#2 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/insidgd5...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\ in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 19:36:54 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php on line 7
+[14-Jan-2019 19:52:17 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth/Logger/Logger.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php:10
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(10): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 10, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(10): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/insidgd5...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#6 [internal function]: spl_ in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php on line 10
+[14-Jan-2019 19:52:17 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth/Logger/Logger.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php on line 10
+[14-Jan-2019 19:52:21 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth/Logger/Logger.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php:10
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(10): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 10, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(10): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/insidgd5...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#6 [internal function]: spl_ in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php on line 10
+[14-Jan-2019 19:52:21 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth/Logger/Logger.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php on line 10
+[14-Jan-2019 19:53:45 UTC] PHP Fatal error:  Interface 'Hybridauth\Logger\LoggerInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 16
+[14-Jan-2019 19:54:37 UTC] PHP Fatal error:  Interface 'Hybridauth\Logger\LoggerInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 16
+[14-Jan-2019 19:55:22 UTC] PHP Fatal error:  Interface 'Hybridauth\Logger\LoggerInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 16
+[14-Jan-2019 19:55:28 UTC] PHP Fatal error:  Interface 'Hybridauth\Logger\LoggerInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 16
+[14-Jan-2019 19:56:21 UTC] PHP Fatal error:  Interface 'Hybridauth\Logger\LoggerInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 16
+[14-Jan-2019 20:02:56 UTC] PHP Fatal error:  Class 'Hybridauth\Exception\RuntimeException' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/InvalidArgumentException.php on line 15
+[14-Jan-2019 20:03:19 UTC] PHP Fatal error:  Class 'Hybridauth\Exception\RuntimeException' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/InvalidArgumentException.php on line 15
+[14-Jan-2019 20:07:27 UTC] PHP Fatal error:  Class 'Hybridauth\Exception\Exception' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/RuntimeException.php on line 15
+[14-Jan-2019 20:08:31 UTC] PHP Fatal error:  Class 'Hybridauth\Exception\Exception' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/RuntimeException.php on line 15
+[14-Jan-2019 20:09:56 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/RuntimeException.php on line 10
+[14-Jan-2019 20:10:21 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/RuntimeException.php on line 10
+[14-Jan-2019 20:10:36 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/Exception/Exception.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/RuntimeException.php:10
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/RuntimeException.php(10): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 10, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/RuntimeException.php(10): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(12): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322) in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/RuntimeException.php on line 10
+[14-Jan-2019 20:10:36 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/Exception/Exception.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/RuntimeException.php on line 10
+[14-Jan-2019 20:12:01 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/Exception/Exception.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/Exception.php:9
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/Exception.php(9): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 9, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/Exception.php(9): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/RuntimeException.php(10): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(12): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/vendor/composer/ClassLoade in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/Exception.php on line 9
+[14-Jan-2019 20:12:01 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/Exception/Exception.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/Exception.php on line 9
+[14-Jan-2019 20:12:21 UTC] PHP Fatal error:  Interface 'Hybridauth\Exception\ExceptionInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Exception/Exception.php on line 14
+[14-Jan-2019 20:54:56 UTC] PHP Fatal error:  Class 'Hybridauth\Adapter\OAuth2' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 18
+[14-Jan-2019 20:56:16 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Provider/Yahoo.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php:10
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(10): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 10, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(10): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(14): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/in in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 10
+[14-Jan-2019 20:56:16 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Provider/Yahoo.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 10
+[14-Jan-2019 20:56:30 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Adapter/OAuth2.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php:11
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 11, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(11): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(14): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/in in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 11
+[14-Jan-2019 20:56:30 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Adapter/OAuth2.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 11
+[14-Jan-2019 20:56:58 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/OAuth2.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php:11
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 11, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(11): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(14): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/insidgd5.. in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 11
+[14-Jan-2019 20:56:58 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/OAuth2.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 11
+[14-Jan-2019 20:58:08 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/ProviderAdapter/OAuth2.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php:11
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 11, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(11): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(14): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/ins in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 11
+[14-Jan-2019 20:58:08 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/ProviderAdapter/OAuth2.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 11
+[14-Jan-2019 20:58:45 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/ProviderAdapter/OAuth2.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php:12
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(12): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 12, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(12): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(14): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/ins in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 12
+[14-Jan-2019 20:58:45 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/ProviderAdapter/OAuth2.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 12
+[14-Jan-2019 20:59:01 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/ProviderAdapter/OAuth2.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php:12
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(12): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 12, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(12): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(14): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/ins in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 12
+[14-Jan-2019 20:59:01 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/ProviderAdapter/OAuth2.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 12
+[14-Jan-2019 23:24:00 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/ProviderAdapter/OAuth2.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php:11
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 11, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(11): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(14): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/ins in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 11
+[14-Jan-2019 23:24:00 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/ProviderAdapter/OAuth2.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 11
+[14-Jan-2019 23:24:41 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/ProviderAdapter/OAuth2.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php:10
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(10): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 10, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(10): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(14): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/ins in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 10
+[14-Jan-2019 23:24:41 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/ProviderAdapter/OAuth2.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php on line 10
+[14-Jan-2019 23:25:10 UTC] PHP Fatal error:  Class 'Hybridauth\Adapter\AbstractAdapter' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/OAuth2.php on line 24
+[14-Jan-2019 23:26:50 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter\AbstractAdapter.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/OAuth2.php:10
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/OAuth2.php(10): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 10, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/OAuth2.php(10): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(10): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Hybridauth.php(14): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.php(7): require_once('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/vendor/composer/ClassLoader.php(444): include('/home4/i in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/OAuth2.php on line 10
+[14-Jan-2019 23:26:50 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter\AbstractAdapter.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/OAuth2.php on line 10
+[14-Jan-2019 23:27:03 UTC] PHP Fatal error:  Trait 'Hybridauth\Adapter\DataStoreTrait' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/AbstractAdapter.php on line 27
+[14-Jan-2019 23:28:15 UTC] PHP Fatal error:  Interface 'Hybridauth\Adapter\AdapterInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/AbstractAdapter.php on line 27
+[15-Jan-2019 00:35:27 UTC] PHP Fatal error:  Interface 'Hybridauth\HttpClient\HttpClientInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/HttpClient/Curl.php on line 13
+[15-Jan-2019 00:36:31 UTC] PHP Fatal error:  Interface 'Hybridauth\Storage\StorageInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Storage/Session.php on line 15
+[15-Jan-2019 01:02:25 UTC] PHP Fatal error:  Interface 'Hybridauth\Logger\LoggerInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 16
+[15-Jan-2019 01:03:16 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/LoggerInterface): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php:10
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php(10): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 10, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php(10): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/AbstractAdapter.php(15): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/OAuth2.php(10): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(10): require_once('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.ph in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 10
+[15-Jan-2019 01:03:16 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/LoggerInterface' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 10
+[15-Jan-2019 01:04:11 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/LoggerInterface): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php:10
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php(10): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 10, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php(10): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/AbstractAdapter.php(15): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/OAuth2.php(10): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(10): require_once('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.ph in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 10
+[15-Jan-2019 01:04:11 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/LoggerInterface' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 10
+[15-Jan-2019 01:04:31 UTC] PHP Fatal error:  Interface 'Hybridauth\Logger\LoggerInterface' not found in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 18
+[15-Jan-2019 01:04:45 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/LoggerInterface): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php:10
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php(10): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 10, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php(10): require_once()
+#2 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/AbstractAdapter.php(15): require_once('/home4/insidgd5...')
+#3 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Adapter/OAuth2.php(10): require_once('/home4/insidgd5...')
+#4 /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Provider/Yahoo.php(10): require_once('/home4/insidgd5...')
+#5 /home4/insidgd5/public_html/app/Http/Controllers/YahooApiController.ph in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 10
+[15-Jan-2019 01:04:45 UTC] PHP Fatal error:  main(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/LoggerInterface' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/Hybridauth/Logger/Logger.php on line 10
+[15-Jan-2019 18:17:56 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/insidgd5/public_html/app/Http/Controllers/Facebook/autodownload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/app/Http/Controllers/HomeController.php:100
+Stack trace:
+#0 /home4/insidgd5/public_html/app/Http/Controllers/HomeController.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/insidgd5...', 100, Array)
+#1 /home4/insidgd5/public_html/app/Http/Controllers/HomeController.php(100): require_once()
+#2 [internal function]: App\Http\Controllers\HomeController->sponsor()
+#3 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#4 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\Routing\Controller->callAction('sponsor', Array)
+#5 /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(212): Illuminate\Ro in /home4/insidgd5/public_html/app/Http/Controllers/HomeController.php on line 100
+[15-Jan-2019 18:17:56 UTC] PHP Fatal error:  App\Http\Controllers\HomeController::sponsor(): Failed opening required '/home4/insidgd5/public_html/app/Http/Controllers/Facebook/autodownload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/app/Http/Controllers/HomeController.php on line 100
+[16-Jan-2019 02:11:39 UTC] PHP Fatal error:  Class 'App\Providers\ServiceProvider' not found in /home4/insidgd5/public_html/app/Providers/AppServiceProvider.php on line 14
+[23-Jan-2019 17:28:43 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 17:29:21 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 17:32:53 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 17:36:28 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 17:37:43 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 17:38:51 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 17:50:13 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 17:53:18 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 17:59:12 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 17:59:33 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 18:00:08 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 18:01:28 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 18:02:38 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 18:36:15 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 21:07:53 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 21:10:40 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 21:12:04 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[23-Jan-2019 21:22:51 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[29-Jan-2019 01:45:40 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:47:20 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:47:39 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:48:43 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:52:17 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:52:25 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:52:30 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:52:31 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:52:34 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:52:35 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:52:36 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:52:38 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:54:00 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:54:49 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:57:17 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 01:57:52 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 02:03:14 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 02:15:01 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 02:16:57 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 02:17:02 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 02:17:14 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1464
+[29-Jan-2019 02:20:30 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1465
+[29-Jan-2019 02:20:51 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1465
+[29-Jan-2019 02:21:16 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1465
+[29-Jan-2019 02:21:17 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1465
+[29-Jan-2019 02:23:17 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1465
+[29-Jan-2019 02:23:32 UTC] PHP Fatal error:  Label 'Review' already defined in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 1465
+[28-Feb-2019 20:16:46 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[28-Feb-2019 20:17:26 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[28-Feb-2019 20:26:46 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[28-Feb-2019 20:27:12 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[28-Feb-2019 20:32:16 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[28-Feb-2019 20:34:26 UTC] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[01-Mar-2019 10:21:57 Australia/Sydney] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 393
+[01-Mar-2019 10:21:57 Australia/Sydney] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /home4/insidgd5/public_html/vendor/symfony/debug/Exception/FatalErrorException.php on line 1
+[14-Mar-2019 12:36:18 Australia/Sydney] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php on line 50
+[15-Mar-2019 15:43:46 Australia/Sydney] PHP Fatal error:  Method Illuminate\Database\Eloquent\Collection::__toString() must not throw an exception, caught InvalidArgumentException: Unexpected data found.
+Unexpected data found. in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 580
+[15-Mar-2019 15:56:50 Australia/Sydney] PHP Fatal error:  Method Illuminate\Database\Eloquent\Collection::__toString() must not throw an exception, caught InvalidArgumentException: Unexpected data found.
+Unexpected data found. in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 580
+[15-Mar-2019 15:56:55 Australia/Sydney] PHP Fatal error:  Method Illuminate\Database\Eloquent\Collection::__toString() must not throw an exception, caught InvalidArgumentException: Unexpected data found.
+Unexpected data found. in /home4/insidgd5/public_html/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 580
+[28-Mar-2019 11:31:31 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:31:31 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:31:31 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:31:48 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:31:48 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:31:48 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:32:20 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:32:20 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:32:20 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:32:21 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:32:21 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:32:21 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:32:33 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:32:33 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:32:33 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:32:42 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:32:42 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:32:42 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:35:10 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:35:10 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:35:10 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:36:51 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:36:51 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:36:51 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:37:00 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:37:00 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:37:00 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:49:15 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:49:15 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:49:15 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:49:58 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:49:58 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:49:58 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:51:36 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:51:36 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:51:36 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:22 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:22 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:22 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:23 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:23 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:23 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:24 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:24 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:24 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:24 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:24 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:24 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:30 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:30 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:30 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:33 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:33 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:33 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:36 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:36 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:52:36 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:25 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:25 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:25 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:31 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:31 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:31 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:46 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:46 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:46 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:50 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:50 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:50 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:57 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:57 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:53:57 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:54:08 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:54:08 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:54:08 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:54:26 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:54:26 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:54:26 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:54:51 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:54:51 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:54:51 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:55:34 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:55:34 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:55:34 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:56:28 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:56:28 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:56:28 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:56:30 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:56:30 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:56:30 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:56:32 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:56:32 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:56:32 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:56:36 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:56:36 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:56:36 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:57:12 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:57:12 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:57:12 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:57:13 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:57:13 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:57:13 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:57:36 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:57:36 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:57:36 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:58:06 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:58:06 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 11:58:06 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:06:19 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:06:19 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:06:19 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:12:28 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:12:28 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:12:28 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:25:16 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:25:16 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:25:16 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:25:22 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:25:22 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:25:22 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:25:26 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:25:26 UTC] PHP Warning:  require(/home4/insidgd5/public_html/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 12:25:26 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 24
+[28-Mar-2019 14:43:47 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/polyfill-mbstring/bootstrap.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 14:43:47 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/polyfill-mbstring/bootstrap.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 14:43:47 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/vendor/composer/../symfony/polyfill-mbstring/bootstrap.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:12:39 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:12:39 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:12:39 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:20 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:20 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:20 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:21 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:21 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:21 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:21 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:21 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:21 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:22 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:22 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:22 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:22 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:22 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:23:22 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:24:58 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:24:58 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:24:58 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:25:12 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:25:12 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:25:12 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:26:48 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:26:48 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:26:48 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:27:16 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:27:16 UTC] PHP Warning:  require(/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:27:16 UTC] PHP Fatal error:  require(): Failed opening required '/home4/insidgd5/public_html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/vendor/composer/autoload_real.php on line 66
+[28-Mar-2019 15:41:33 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 15:41:33 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 16:08:40 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 16:08:40 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 16:36:46 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 16:36:46 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 16:45:41 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 16:45:41 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:23:54 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:23:54 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:23:59 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:23:59 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:24:05 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:24:05 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:33:04 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:33:04 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:33:09 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:33:09 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:33:19 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:33:19 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:33:24 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:33:24 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:33:57 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:33:57 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:42:13 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 17:42:13 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:19:12 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:19:12 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:19:12 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:19:12 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:19:13 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:19:13 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:20:45 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:20:45 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:27:10 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:27:10 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:31:40 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:31:40 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:32:15 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:32:15 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:35:05 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:35:05 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:35:06 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:35:06 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:35:13 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:35:13 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:38:46 UTC] PHP Warning:  require_once(/home4/insidgd5/public_html/public/../bootstrap/app.php): failed to open stream: No such file or directory in /home4/insidgd5/public_html/public/index.php on line 38
+[28-Mar-2019 18:38:46 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/insidgd5/public_html/public/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home4/insidgd5/public_html/public/index.php on line 38
+[15-Apr-2019 18:21:36 Australia/Sydney] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home4/insidgd5/public_html/app/Http/Controllers/FavouritesController.php on line 24
+[19-Apr-2019 18:10:35 Australia/Sydney] PHP Fatal error:  Trait 'App\Http\Controllers\Auth\AuthenticatesUsers' not found in /home4/insidgd5/public_html/app/Http/Controllers/Auth/LoginController.php on line 23
+[19-Apr-2019 18:11:12 Australia/Sydney] PHP Fatal error:  Trait 'App\Http\Controllers\Auth\AuthenticatesUsers' not found in /home4/insidgd5/public_html/app/Http/Controllers/Auth/LoginController.php on line 24
+[19-Apr-2019 18:11:51 Australia/Sydney] PHP Fatal error:  Trait 'App\Http\Controllers\Auth\AuthenticatesUsers' not found in /home4/insidgd5/public_html/app/Http/Controllers/Auth/LoginController.php on line 24
+[19-Apr-2019 18:56:39 Australia/Sydney] PHP Fatal error:  Cannot use Auth as Auth because the name is already in use in /home4/insidgd5/public_html/app/Http/Controllers/Auth/ForgotPasswordController.php on line 17
+[25-Apr-2019 21:34:04 Australia/Sydney] PHP Fatal error:  Cannot redeclare App\Http\Controllers\HomeController::legal_terms() in /home4/insidgd5/public_html/app/Http/Controllers/HomeController.php on line 389
+[25-Apr-2019 21:34:30 Australia/Sydney] PHP Fatal error:  Cannot redeclare App\Http\Controllers\HomeController::subscription() in /home4/insidgd5/public_html/app/Http/Controllers/HomeController.php on line 438
+[25-Apr-2019 21:34:40 Australia/Sydney] PHP Fatal error:  Cannot redeclare App\Http\Controllers\HomeController::subscription() in /home4/insidgd5/public_html/app/Http/Controllers/HomeController.php on line 438
+[25-Apr-2019 21:34:44 Australia/Sydney] PHP Fatal error:  Cannot redeclare App\Http\Controllers\HomeController::subscription() in /home4/insidgd5/public_html/app/Http/Controllers/HomeController.php on line 438
+[13-May-2019 20:07:59 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:09:45 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:09:52 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:09:59 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:11:28 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:11:33 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:13:00 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:13:17 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:13:23 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:13:30 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:14:16 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:14:19 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:14:22 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:14:27 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:14:31 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3
+[13-May-2019 20:14:39 Australia/Sydney] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home4/insidgd5/public_html/app/Http/Controllers/ApiController.php on line 3

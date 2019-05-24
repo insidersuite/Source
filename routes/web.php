@@ -6,7 +6,7 @@ Route::group(['middlewareGroups' => 'web'], function () {
 	Route::get('giving_review/{exp_id}', 'HomeController@giving_feedback');
 	Route::get('confirm_review/{id?}', 'HomeController@confirm_review');
 	Route::post('save_review', 'ApiController@save_review');
-	
+
 	Route::group(['middleware' => 'UnAuthenticated'], function() {
 		Route::get('/signup','HomeController@home');
 		Route::get('our_story','HomeController@our_story');
@@ -25,7 +25,7 @@ Route::group(['middlewareGroups' => 'web'], function () {
 		Route::get('/blog-detail/{id?}', 'HomeController@blog_detail');
 		Route::get('/career-detail/{id?}', 'HomeController@career_detail');
 		Route::get('/career-detail_info/{id?}', 'HomeController@career_detail_info');
-		
+
 		Route::post('message-img', 'ApiController@message_img');
 		Route::post('authenticateUser','Auth\LoginController@authenticateUser');
 		Route::post('registration','Auth\RegisterController@registration');

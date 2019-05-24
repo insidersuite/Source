@@ -356,10 +356,12 @@
             ];
             return response()->json($data);
         }
+
         public function get_notification() {
             $count = Favourite::where('user_id', Auth::User()->user_id)->count();
             return response()->json($count);
         }
+
         public function save_accommodation(Request $request) {
             //        $destinationPath=public_path()."\assets\uploads\accom_content";
             //        if (!is_dir($destinationPath)) {  mkdir($destinationPath,0777,true);  }

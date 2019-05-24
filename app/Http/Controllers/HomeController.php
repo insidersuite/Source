@@ -188,73 +188,140 @@
             $reviews = Review::get();
             return view('create_experience', compact('experience', 'offer', 'accoms', 'accom_images', 'prices_accom', 'prices_accom_na', 'exp_accom', 'accom_practical', 'act_practical', 'activities', 'act_images' ,'prices_act', 'accoms_sel', 'acts_sel', 'type', 'count_c', 'count_a', '_flags', 'f_count', 'exp_link_imgs', 'exp_link_imgs_categories', 'reviews'));
         }
-        public function create_exp_accoms(Request $request) {
+
+        public function create_exp_accoms(Request $request)
+        {
+            /*
+            * Arival Date
+            */
             $dates = explode("/" , $request->arrival_date);
+            /*
+            * Start Date
+            */
             $start_date = Carbon::create($dates[2], $dates[1], $dates[0])->subDays(7);
+            /*
+            * End Date
+            */
             $end_date = Carbon::create($dates[2], $dates[1], $dates[0])->addDays(30);
-            
-            $experience = Experience::where('user_id', Auth::User()->user_id)->where('city_id', $request->id)->where('id', $request->exp_id)->where('status', 'false')->first();
-            $experience_count = Experience::where('user_id', Auth::User()->user_id)->where('city_id', $request->id)->where('id', $request->exp_id)->where('status', 'false')->count();
+            /*
+            * Get Experience
+            */
+            $getExperience = Experience::where('user_id', Auth::User()->user_id)
+                ->where('city_id', $request->id)
+                ->where('id', $request->exp_id)
+                ->where('status', 'false');
+            $experience = $getExperience->first();
+            /*
+            * Get Count Experience
+            */
+            $experience_count = $getExperience->count();
+            /*
+            * Get Offer
+            */
             $offer = Offer::where('id', $request->id)->first();
+
             if ($experience_count > 0) {
-                $guests_nb = (int)$request->get_guests_num;
+
+                $guests_nb = intval($request->get_guests_num);
+
                 if ($guests_nb % 2 == 0) {
                     $guest_nb_min = $guests_nb / 2;
-                    $query = Accomodation::where('city_id', $request->id)->where('status', 'true')->where('room_nb', '>=', $guest_nb_min)->where('room_nb', '<=', $guests_nb);
                 } else {
                     $guest_nb_min = ($guests_nb + 1) / 2;
-                    $query = Accomodation::where('city_id', $request->id)->where('status', 'true')->where('room_nb', '>=', $guest_nb_min)->where('room_nb', '<=', $guests_nb);
                 }
-                // $query = Accomodation::where('city_id', $request->id)->where('status', 'true')->where('max_capacity', '>=', $guests_nb);
-                $accoms = $query->orderBy('timestamp', 'ASC')->get();
+
+                $accoms = Accomodation::where('city_id', $request->id)
+                    ->where('status', 'true')
+                    ->where('room_nb', '>=', $guest_nb_min)
+                    ->where('room_nb', '<=', $guests_nb)
+                    ->orderBy('timestamp','ASC')
+                    ->get();
+
             } else {
-                $accoms = Accomodation::where('city_id', $request->id)->where('status', 'true')->orderBy('timestamp', 'ASC')->get();
+                $accoms = Accomodation::where('city_id', $request->id)
+                    ->where('status', 'true')
+                    ->orderBy('timestamp', 'ASC')
+                    ->get();
             }
+
             $accom_images = Accommodation_Image::where('offer_id', $offer->id)->get();
-            $prices_accom = Calendar_Accommodation::where('price_a_discount', '!=', 'NA')->where('price_b_discount', '!=', 'NA')->where('check_in_date', '>=', $start_date)->where('check_out_date', '<=', $end_date)->get();
-            $prices_accom_na = Calendar_Accommodation::where('price_a_discount', '=', 'NA')->where('price_b_discount', '=', 'NA')->where('check_in_date', '>=', $start_date)->where('check_out_date', '<=', $end_date)->get();
+
+            $prices_accom = Calendar_Accommodation::where('price_a_discount', '!=', 'NA')
+                ->where('price_b_discount', '!=', 'NA')
+                ->where('check_in_date', '>=', $start_date)
+                ->where('check_out_date', '<=', $end_date)
+                ->get();
+
+            $prices_accom_na = Calendar_Accommodation::where('price_a_discount','=','NA')
+                ->where('price_b_discount', '=', 'NA')
+                ->where('check_in_date', '>=', $start_date)
+                ->where('check_out_date', '<=', $end_date)
+                ->get();
+
             $accom_ids = [];
             foreach($prices_accom as $price) {
                 if (in_array($price['accomodation_id'], $accom_ids) == false) {
                     array_push($accom_ids, $price->accomodation_id);
                 }
             }
+
             foreach($accoms as $key => $accom) {
                 if (in_array($accom['id'], $accom_ids) == false) {
                     unset($accoms[$key]);
                 }
-                $destinationPath=public_path()."/assets/uploads/accom_content";
+                $destinationPath = public_path()."/assets/uploads/accom_content";
                 if (file_exists($destinationPath."/accom_".$accom['id'].".txt")) {
                     $accom_content = File::get($destinationPath . "/accom_" . $accom['id'] . ".txt");
                     $accom["content"] = $accom_content;
-                }else{
+                } else {
                     $accom["content"] = "";
                 }
             }
+
             $exp_accom = Accom_Exp::get();
             $accom_practical = AccommodationPractical::where('offer_id', $request->id)->get();
-            $activities = Activity::where('city_id', $request->id)->where('status', 'true')->orderBy('timestamp', 'ASC')->get();
-            $act_images = Activity_Image::where('offer_id', $offer->id)->get();
-            $prices_act = Calendar_Activity::where('price_a_discount', '!=', 'NA')->where('price_b_discount', '!=', 'NA')->where('check_in_date', '>=', $start_date)->get();
+
+            if($request->tab != 'accommodation') {
+                $activities = Activity::where('city_id', $request->id)
+                    ->where('status', 'true')
+                    ->orderBy('timestamp', 'ASC')
+                    ->get();
+                $act_images = Activity_Image::where('offer_id', $offer->id)->get();
+            }
+
+            $getPriceAct = Calendar_Activity::select('*');
+            $prices_act = $getPriceAct->where('price_a_discount', '!=', 'NA')
+                ->where('price_b_discount', '!=', 'NA')
+                ->where('check_in_date', '>=', $start_date)
+                ->get();
+
+            $prices_act = $getPriceAct->where('price_a_discount', '!=', 'NA')
+                ->where('price_b_discount', '!=', 'NA')
+                ->where('check_in_date', '>=', $start_date)
+                ->get();
+
             $act_ids = [];
             foreach($prices_act as $price) {
                 if (array_search($price['activity_id'], $act_ids) == false) {
                     array_push($act_ids, $price->activity_id);
                 }
             }
-            foreach($activities as $key => $act) {
-                if (in_array($act['id'], $act_ids) == false) {
-                    unset($activities[$key]);
+
+            if($request->tab != 'accommodation') {
+                foreach($activities as $key => $act) {
+                    if (in_array($act['id'], $act_ids) == false) {
+                        unset($activities[$key]);
+                    }
+                    $destinationPath=public_path()."/assets/uploads/act_content";
+                    if (file_exists($destinationPath."/act_".$act['id'].".txt")) {
+                        $act_content = File::get($destinationPath."/act_".$act['id'].".txt");
+                        $act["content"] = $act_content;
+                    }else{
+                        $act["content"] = "";
+                    }
                 }
-                $destinationPath=public_path()."/assets/uploads/act_content";
-                if (file_exists($destinationPath."/act_".$act['id'].".txt")) {
-                    $act_content = File::get($destinationPath."/act_".$act['id'].".txt");
-                    $act["content"] = $act_content;
-                }else{
-                    $act["content"] = "";
-                }
-                // var_dump($act["content"]);
             }
+
             $act_practical = ActivityPractical::where('offer_id', $request->id)->get();
             $type = "new";
             $_flags = [];
@@ -263,34 +330,70 @@
             $exp_link_imgs_categories = ExpDetailImage::selectRaw('id, category')->groupBy("category")->orderBy('id', 'ASC')->get();
             // end
             if ($experience != null) {
-                $accoms_sel = ExperienceDetail::where('experience_id', intval($experience->id))->where('type', 'accommodation')->get();
-                $acts_sel = ExperienceDetail::where('experience_id', $experience->id)->where('type', 'activity')->get();
-                $count_a = ExperienceDetail::where('experience_id', intval($experience->id))->where('type', 'accommodation')->count();
-                $count_c = ExperienceDetail::where('experience_id', $experience->id)->where('type', 'activity')->count();
+
+                $accomSel = ExperienceDetail::where('experience_id', intval($experience->id))->where('type', 'accommodation');
+                $actsSel = ExperienceDetail::where('experience_id', $experience->id)->where('type', 'activity');
+
+                $accoms_sel = $accomSel->get();
+                $count_a = $accomSel->count();
+
+                $acts_sel = $actsSel->get();
+                $count_c = $actsSel->count();
+
                 for ($i =0; $i < count($accoms_sel); $i ++ ) {
                     if ($accoms_sel[$i]->check_in == $accoms_sel[$i]->check_out) {
                         $_flag = [
-                        'price' => $accoms_sel[$i]->d_a_price,
-                        'start_day' => $accoms_sel[$i]->check_in,
-                        'end_day' => $accoms_sel[$i]->check_out
+                            'price' => $accoms_sel[$i]->d_a_price,
+                            'start_day' => $accoms_sel[$i]->check_in,
+                            'end_day' => $accoms_sel[$i]->check_out
                         ];
                         $_flag = implode("k".$i, $_flag);
                         array_push($_flags, $_flag);
                     }
                 }
+
                 $type = "edit";
+
             } else {
-                $accoms_sel = ExperienceDetail::where('experience_id', "0")->get();
-                $acts_sel = ExperienceDetail::where('experience_id', "0")->get();
-                $count_c = ExperienceDetail::where('experience_id', "0")->count();
+
+                $getExperienceDetails = ExperienceDetail::where('experience_id', "0"); 
+                $accoms_sel = $getExperienceDetails->get();
+                $acts_sel = $accoms_sel;
+                $count_c = $getExperienceDetails->count();
                 $count_a = $count_c;
+
             }
+
             $f_count = count($_flags);
             $_flags = implode("A",$_flags);
             $reviews = Review::get();
-            // var_dump($activities);
-            return view('create_exp_accoms', compact('experience', 'offer', 'accoms', 'accom_images', 'prices_accom', 'prices_accom_na', 'exp_accom', 'accom_practical', 'act_practical', 'activities', 'act_images' ,'prices_act', 'accoms_sel', 'acts_sel', 'type', 'count_c', 'count_a', '_flags', 'f_count', 'exp_link_imgs', 'exp_link_imgs_categories', 'reviews'));
+
+            return view('create_exp_accoms', compact(
+                'experience',
+                'offer',
+                'accoms',
+                'accom_images',
+                'prices_accom',
+                'prices_accom_na',
+                'exp_accom',
+                'accom_practical',
+                'act_practical',
+                'activities',
+                'act_images',
+                'prices_act',
+                'accoms_sel',
+                'acts_sel',
+                'type',
+                'count_c',
+                'count_a',
+                '_flags',
+                'f_count',
+                'exp_link_imgs',
+                'exp_link_imgs_categories',
+                'reviews'
+            ));
         }
+
         public function experience_invite() {
             $user = Auth::User();
             if (!isset($_GET['id'])) {

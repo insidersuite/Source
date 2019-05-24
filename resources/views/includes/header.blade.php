@@ -23,7 +23,18 @@
                     <ul class="nav-lists">
                         <li><a href="/offers"><img src="../imgs/location_black.png" class="header_icon nav_trip"><p class="header_text">Design your trip</p></a></li>
                         <li><a href="{{ url('gift-card') }}"><img src="../imgs/black_gift.png" class="header_icon nav_gift"><p class="header_text">Gift card</p></a></li>
-                        <li><a href="{{ url('favourites_list') }}"><img src="../imgs/black_heart.png" class="header_icon nav_heart" ><p class="header_text">Favourites<span class="notification_short" style="display:none;"></span></p></a></li>
+
+                        <li>
+                            <a href="{{ url('favourites_list') }}">
+                                <img src="../imgs/black_heart.png" class="header_icon nav_heart" >
+                                <p class="header_text">
+                                    Favourites
+                                    <span class="notification_short" style="display:none;">
+                                    </span>
+                                </p>
+                            </a>
+                        </li>
+
                         <li><a href="{{ url('write-to-us') }}"><img src="../imgs/black_help.png" class="nav_help header_icon" ><p class="header_text header_text_help">Help</p></a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="../imgs/black_user.png" class="nav_user header_icon" ><p class="header_text header_text_account">Account</p></a>
@@ -164,7 +175,16 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="/offers"><img src="../imgs/location_black.png" class="design_header_icon nav_trip"><p class="header_text">Design your trip</p></a></li>
                             <li><a href="{{ url('gift-card') }}"><img src="../imgs/black_gift.png" class="header_icon"><p class="header_text">Gift card</p></a></li>
-                            <li><a href="{{ url('favourites_list') }}"><img src="../imgs/black_heart.png" class="header_icon" ><p class="header_text">Favourites<span class="notification" style="display:none;"></span></p></a></li>
+
+                            <li>
+                                <a href="{{ url('favourites_list') }}"><img src="../imgs/black_heart.png" class="header_icon" >
+                                    <p class="header_text">
+                                        Favourites
+                                        <span class="notification" style="display:none;"></span>
+                                    </p>
+                                </a>
+                            </li>
+
                             <li><a href="{{ url('write-to-us') }}"><img src="../imgs/black_help.png" class="header_icon" ><p class="header_text header_text_help">Help</p></a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="../imgs/black_user.png" class="header_icon" ><p class="header_text header_text_account">Account</p></a>

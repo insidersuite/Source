@@ -192,32 +192,6 @@ $("#accomodation").click(function () {
     }
 });
 
-$("#experience").click(function () {
-    $(".progress_bar").attr('style', 'width: 30%');
-    $(".submit_count").html('4');
-    $("#experience_info").attr('style', 'display: block');
-    $("#general_info").attr('style', 'display: none');
-    $("#accommodation_info").attr('style', 'display: none');
-    $("#invite_info").attr('style', 'display: none');
-    $("#review_info").attr('style', 'display: none');
-    $("#payment_info").attr('style', 'display: none');
-    $("#general").removeClass('active');
-    $("#accomodation").removeClass('active');
-    $("#invite").removeClass('active');
-    $("#review").removeClass('active');
-    $("#payment").removeClass('active');
-    $(this).addClass('active');
-
-    is_clicked_invite = false;
-
-    if ($(window).width() <= 767) {
-        $(".sidebar").attr('style', 'display: none;');
-        $("._66jk8g").attr('style', 'display: block;');
-        $(".experience-content").attr('style', 'display: block; margin-left: 0px;padding-left: 15px; padding-right: 15px; margin-bottom: 0px;');
-    }
-    console.log('count_c'+ count_c);
-});
-
 $("#review").click(function () {
     $(".progress_bar").attr('style', 'width: 50%');
     $(".submit_count").html('2');
@@ -651,8 +625,79 @@ $("#guest_apply").click(function () {
 
 });
 
+function getCreateAccomm(param,id,clickFrom) {
 
-$("#save_general").click(function () {
+    var str = $("#guests").val(),
+        guests_nb = str.split(" guest"),
+        loading = new Loading({discription: 'Waiting...'});
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    $.get('create_exp_accoms', { 
+        id : custom_city_id, 
+        get_guests_num : guests_nb[0], 
+        arrival_date: $("#arrival_date").val(),
+        exp_id : id,
+        tab : param
+    }, function(result_data) {
+        loadingOut(loading);
+        /* $('#form_accommodation').empty().html(result_data); */
+        $('#experience_content').empty().html(result_data);
+        // console.log(result_data)
+
+        if(param == 'accommodation') {
+            $("#accomodation").removeClass('disabled');
+            $("#experience").removeClass('disabled');
+            $("#accomodation img:last-child").remove();
+            $("#experience img:last-child").remove();
+
+            if(clickFrom == 'saveButton') {
+                $("#general").removeAttr('class');
+                $("#accomodation").attr('class','active');
+                $("#general_info").attr("style",'display:none;');
+            }
+
+            $("#accommodation_info").attr('style', 'display: block;');
+
+            $("input#accom_guests").val(str);
+            $("input#act_guests").val(str);
+            $("input#exp_id").val(e.id);
+            $(".review_nb_guests").text(str);
+            $(".progress_bar").attr('style', 'width: 10%');
+            $(".submit_count").html('5');
+            exp_id = id;
+        } else {
+            $("#experience_info").attr('style', 'display: block;');
+        }
+
+        //if (type == "new") {
+        if(param == 'accommodation') {
+            $.ajax({
+                type: 'post',
+                dataType: 'json',
+                url: 'save_favourite',
+                data: { 'exp_id': exp_id },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: function (e) {
+                    /* loadingOut(loading);*/
+                    $(".notification").attr('style', 'display:block;');
+                    $(".notification").html(e);
+                    $(".notification_short").attr('style', 'display:block;');
+                    $(".notification_short").html(e);
+                }
+            });
+        }
+        //}
+    });
+}
+
+function saveGeneralInformation(param) {
     if ($("#arrival_date").val() != "" && $("#experience_title").val() != "" && $("#guests").val() != "") {
         var str = $("#guests").val(),
             guests_nb = str.split(" guest"),
@@ -662,7 +707,7 @@ $("#save_general").click(function () {
                 "guests_nb": guests_nb[0],
                 "exp_name": $("#experience_title").val()
             };
-        var loading = new Loading({discription: 'Waiting...'});
+        // var loading = new Loading({discription: 'Waiting...'});
         // alert("InsiderSuite wants to show you funny accommodations and activities. Please wait some seconds");
         $.ajax({
             type: 'post',
@@ -673,69 +718,54 @@ $("#save_general").click(function () {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
             success: function (e) {
-                console.log(e);
-
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
-
-
-                $.get('create_exp_accoms', { id: custom_city_id, get_guests_num: guests_nb[0], arrival_date: $("#arrival_date").val(), exp_id: e.id }, function(result_data){
-                    loadingOut(loading);
-                    /* $('#form_accommodation').empty().html(result_data); */
-                    $('#experience_content').empty().html(result_data);
-                    // console.log(result_data)
-                    
-                    /*loadingOut(loading_custom);
-                    console.log('loadingout')*/
-
-              
-                    $("#accomodation").removeClass('disabled');
-                    $("#experience").removeClass('disabled');
-                    $("#accomodation img:last-child").remove();
-                    $("#experience img:last-child").remove();
-                    $("#accomodation").trigger("click");
-                    $("input#accom_guests").val(str);
-                    $("input#act_guests").val(str);
-                    $("input#exp_id").val(e.id);
-                    $(".review_nb_guests").text(str);
-                    $(".progress_bar").attr('style', 'width: 10%');
-                    $(".submit_count").html('5');
-                    exp_id = e.id;
-                    //if (type == "new") {
-                    $.ajax({
-                        type: 'post',
-                        dataType: 'json',
-                        url: 'save_favourite',
-                        data: {'exp_id': e.id},
-                        headers: {
-                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                        },
-                        success: function (e) {
-                            /* loadingOut(loading);*/
-                            $(".notification").attr('style', 'display:block;');
-                            $(".notification").html(e);
-                            $(".notification_short").attr('style', 'display:block;');
-                            $(".notification_short").html(e);
-                        }
-                    });
-                    //}
-                });
+                $('#experience').attr('data-expid', e.id);
+                getCreateAccomm(param,e.id,'saveButton');
             }
         });
     } else {
         alert("please input all the information.");
     }
+}
+
+$("#experience").click(function () {
+   var eid = $('#experience').attr('data-expid');
+    $(".progress_bar").attr('style', 'width: 30%');
+    $(".submit_count").html('4');
+    $("#general_info").attr('style', 'display: none');
+    $("#accommodation_info").attr('style', 'display: none');
+    $("#invite_info").attr('style', 'display: none');
+    $("#review_info").attr('style', 'display: none');
+    $("#payment_info").attr('style', 'display: none');
+    $("#general").removeClass('active');
+    $("#accomodation").removeClass('active');
+    $("#invite").removeClass('active');
+    $("#review").removeClass('active');
+    $("#payment").removeClass('active');
+    $(this).addClass('active');
+
+    is_clicked_invite = false;
+
+    if ($(window).width() <= 767) {
+        $(".sidebar").attr('style', 'display: none;');
+        $("._66jk8g").attr('style', 'display: block;');
+        $(".experience-content").attr('style', 'display: block; margin-left: 0px;padding-left: 15px; padding-right: 15px; margin-bottom: 0px;');
+    }
+    getCreateAccomm('activity',eid);
+});
+
+$("#save_general").click(function () {
+    saveGeneralInformation('accommodation');
+});
+
+jQuery(document.body).on('click','._accommodation', function () {
+    var eid = $('#experience').attr('data-expid');
+    getCreateAccomm('accommodation',eid,'clickByTab');
 });
 
 $("#back_general").click(function () {
     $("#general_info").hide();
     $('.sidebar').show();
 });
-
-
 
 //---------------------------Invite Section----------------------
 var ms = $('#invite_email').magicSuggest({

@@ -209,6 +209,10 @@ Route::group(['middlewareGroups' => 'web'], function () {
 		Route::get('admin/get_messages', 'ApiController@get_messages');
 		Route::get('admin/set_messages_status', 'ApiController@set_messages_status');
 		// Logout from Backend
-		Route::get('admin/logout', 'Auth\LoginController@logout');		
+		Route::get('admin/logout', 'Auth\LoginController@logout');
+		//404 redirect
+		Route::get('404', function () {
+			return back();
+		});		
 	});
 });

@@ -138,7 +138,7 @@
         <div class="form-content submit-mobile">
             <button type="button" class="_d4g44p2" aria-busy="false" id="save_act"><span class="_cgr7tc7">Save my selection</span></button>
             <input type="button" class="backbutton" aria-busy="false" id="back_act" value="Back">
-            <button type="button" class="_ky1ga6g undobutton" aria-busy="false" id="remove_act"><span class="_cgr7tc7">Undo</span></button>
+            <button type="button" class="_ky1ga6g undobutton" aria-busy="false" id="remove_act"><span class="_cgr7tc7">Back</span></button>
         </div>
     </div>
 </div>

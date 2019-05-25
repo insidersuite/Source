@@ -640,7 +640,7 @@ $("#infants_decrease").click(function () {
 });
 
 $("#guest_apply").click(function () {
-    var guests = parseInt($("#adults").val()) + parseInt($("#children").val()) + parseInt($("#infants").val());
+    var guests = parseInt($("#adults").val());
     if(guests > 1) {
         $("#guests").val(guests + " guests");
     } else {

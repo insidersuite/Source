@@ -224,7 +224,7 @@ $(".accomodation").click(function (event) {
     });
 
     $("#accom_guest_apply").click(function() {
-        var guests = parseInt($("#accom_adults").val()) + parseInt($("#accom_children").val()) + parseInt($("#accom_infants").val());
+        var guests = parseInt($("#accom_adults").val());
 
         if(guests > accom.max_capacity ){
             alert('great than max control');

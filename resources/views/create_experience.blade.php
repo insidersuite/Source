@@ -195,34 +195,6 @@
 
 										</div>
 
-										<div class="TPxij">
-
-											<label class="ijjuLW">Children</label>
-
-											<span class="egudlU select_option" min="1" max="15">
-
-										<button type="button" class="fndzHx" id="children_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
-
-										<label for="children"><input id="children" name="children" readonly="" tabindex="-1" value="0"></label>
-
-										<button type="button" class="active fndzHx" id="children_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
-
-										</div>
-
-										<div class="TPxij">
-
-											<label class="ijjuLW">Infants<span style="color: #8c8888;font-size: 10px;">(under 2)</span></label>
-
-											<span class="egudlU select_option" min="1" max="15">
-
-										<button type="button" class="fndzHx" id="infants_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
-
-										<label for="infants"><input id="infants" name="infants" readonly="" tabindex="-1" value="0"></label>
-
-										<button type="button" class="active fndzHx" id="infants_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
-
-										</div>
-
 										<button type="button" class="iCflgr" id="guest_apply">Apply</button>
 
 									</div>

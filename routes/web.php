@@ -211,7 +211,7 @@ Route::group(['middlewareGroups' => 'web'], function () {
 		// Logout from Backend
 		Route::get('admin/logout', 'Auth\LoginController@logout');
 		//test
-		Route::get('500', function () {
+		Route::get('404', function () {
 			return back();
 		});	
 		Route::get('test_mail','test_mail@test');	

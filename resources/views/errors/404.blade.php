@@ -1,20 +1,60 @@
-<head>
-	<link rel="stylesheet" type="text/css" href="{{ url('css/customize/profile.css') }}">
-</head>
-<style>
-    body {
-        background: url("images/Background/background7.jpg");
-        background-size : 100%
-    }
-    
-</style>
-<body background="">    
-    <img src="images/Logo.png" style="max-height:50%;max-width:50%; margin-left:25%;">
-    <p style="font-size:100px;color:white;margin-left:30%">404 Not Found</p>
-    <p style="font-size:25px;color:white;margin-left:24%">Oops.. Like you got lost, Please check your URL or Click the "Home" Button</p>
-    <form action="/">
-        <div class="col-md-12">
-            <input type="submit" id="login_update_button" style="background-color: transparent;margin-left:47%" class="btn btn-default pull-left" value="Home">
-        </div>
-    </form>
-</body>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		@include('includes.head')
+		<title>404 Page Not Found</title>
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+			}
+
+			.button{
+				background-color: #fc3769;
+				border: none;
+				color: white;
+				padding: 15px 80px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				border-radius: 30px;
+			} 
+
+			#berita{
+				width: 30%;
+				float: left;
+				padding-left: 15%;
+			}
+
+			#gambar{
+					width: 55%;
+				float: right;
+			}
+
+			#gambar img{
+				width: 70%;
+			}
+
+			.aa{
+				margin-top: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		@include('includes.header')
+		<div class="aa" id="berita">
+			<img src='images/sefwe.jpg'/>
+			<br><br>
+			<form action="/404">
+				<input type="submit" class="button" value="Now Refresh">
+			</form>
+		</div>
+		<div class="aa" id="gambar">
+			<center>
+			<img src='images/6cc5c746022423.584595b7d9050.jpg'/>
+			</center>
+		</div>
+	</body>
+</html>

@@ -32,7 +32,7 @@ Your way...</h1>
                     <div class="_36rlri" style="margin-bottom:8px;margin-right:8px">
                         <a href=" href=" #"="" data-toggle="modal" data-target="#authentication" "="" class="_fcgkkz8">Access the offers</a>
                     </div>
-                    <a href="#how-are-exp-different" class="_1tesales" aria-busy="false"><span class="_cgr7tc7">Our Story</span></a>
+                    <a href="https://www.insidersuite.com/our_story" class="_1tesales" aria-busy="false"><span class="_cgr7tc7">Our Story</span></a>
                 </div>
             </div>
         </div>

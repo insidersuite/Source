@@ -25,7 +25,7 @@
 			#berita{
 				width: 30%;
 				float: left;
-				padding-left: 15%;
+				padding-left: 10%;
 			}
 
 			#gambar{
@@ -43,17 +43,17 @@
 		</style>
 	</head>
 	<body>
-		@include('includes.header')
 		<div class="aa" id="berita">
-			<img src='images/sefwe.jpg'/>
+			<font size="7" style="font-family: sans-serif;"><i><b>Oops</b></i></font><br>
+			<font size="5" style="font-family: sans-serif;"><i>it seems that someone<br> has run our way</i></font>
 			<br><br>
-			<form action="/404">
+			<form action="/">
 				<input type="submit" class="button" value="Now Refresh">
 			</form>
 		</div>
 		<div class="aa" id="gambar">
 			<center>
-			<img src='images/6cc5c746022423.584595b7d9050.jpg'/>
+				<img src='images/6cc5c746022423.584595b7d9050.jpg'/>
 			</center>
 		</div>
 	</body>

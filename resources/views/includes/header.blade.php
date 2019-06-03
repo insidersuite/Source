@@ -227,8 +227,6 @@
             <div class="col-md-9 col-xs-9 col-lg-9">
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right homepage_collapse">
-                        <li><a href="#" data-toggle="modal" data-target="#authentication" id="home_register">SIGN UP</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#authentication" id="home_login">LOGIN</a></li>
                     </ul>
                     <div class="homepage_button">
                         <a class="btn btn-get-started" data-toggle="modal" data-target="#authentication">Get started</a>

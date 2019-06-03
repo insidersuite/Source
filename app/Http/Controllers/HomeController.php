@@ -110,6 +110,11 @@
         public function experience() {
             return view('host_experience');
         }
+        public function offer(){
+            $user = Auth::User();
+            //dd($user);
+            return view('offer');
+        }
         public function create_experience(Request $request) {
             $expid = $request->expid;
             $experience = Experience::where('user_id', Auth::User()->user_id)->where('id', $expid)->where('city_id', $request->id)->where('status', 'false')->first();

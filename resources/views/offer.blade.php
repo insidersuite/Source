@@ -204,7 +204,7 @@
             <center><h1><b>Get Your Summer Started!</b></h1></center>
             <div class="col">
                 <div class="box item1" style="margin-left:50%;margin-top:10%">
-                    <button style="background-color:white;border:none;" onclick="window.location.href='/create_experience?id=9'">
+                    <button style="background-color:white;border:none;" onclick="window.location.href='/create_experience?id={{$id}}'">
                         <img src="images/box1.jpg" style="margin-top:10pt;width:100px;height:100px">
                         <center><h3 style="color:#fc3769"><b>Build your own trip<b></h3></center>
                         <center><h6>create your own route and we'll take<br>all the stress out of planning it.</h6></center>

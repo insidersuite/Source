@@ -43,7 +43,7 @@ Route::group(['middlewareGroups' => 'web'], function () {
 	});
 
 	Route::group(['middleware' => 'Authenticated'], function() {
-		Route::get('offer','HomeController@offer');
+		Route::get('offer/{id?}','HomeController@offer');
 		Route::get('logout', 'Auth\LoginController@logout');
 		Route::get('home','HomeController@home');
 		Route::get('our-story','HomeController@our_story');

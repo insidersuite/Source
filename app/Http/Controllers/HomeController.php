@@ -110,10 +110,10 @@
         public function experience() {
             return view('host_experience');
         }
-        public function offer(){
+        public function offer(Request $req){
             $user = Auth::User();
-            //dd($user);
-            return view('offer');
+            $id=$req->id;
+            return view('offer',compact('idgi'));
         }
         public function create_experience(Request $request) {
             $expid = $request->expid;

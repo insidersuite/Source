@@ -113,7 +113,7 @@
         public function offer(Request $req){
             $user = Auth::User();
             $id=$req->id;
-            return view('offer',compact('idgi'));
+            return view('offer',compact('id'));
         }
         public function create_experience(Request $request) {
             $expid = $request->expid;

@@ -1,5 +1,6 @@
 <html>
 <head>
+    <title>Insider Suite |  Offers</title>
     <!-- Latest compiled and minified CSS -->
     <meta property="fb:app_id" content="625441737790452" />
     <meta property="og:url" content="https://www.insidersuite.com/sponsor" />
@@ -53,52 +54,35 @@
     <!-- Latest compiled JavaScript -->
     <script src="{{ url('js/bootstrap.min.js') }}"></script>
 
-    <link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('css/style2.css') }}">
 
     <style>
         body{
             background-color : #f5f5f5;
         }
-        .box{
-            width:275px;
-            height:200px;
-            background:white;
-        }
-        .col{
-            display:grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .item1{
-            display:grid;
-            grid-column:1/2;
-        }
-        .item2{
-            display:grid;
-            grid-column:2/3;
-        }
     </style>
 </head>
 <body>
-<nav class="navbar navbar-fixed-top transparent_navbar" style="background-color:white">
+    <nav class="navbar navbar-fixed-top transparent_navbar" style="background-color:white">
         <div class="container-fluid">
             <div class="row">
                 <div class="responsive_short">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle toggle-transparent" data-toggle="collapse" data-target="#navbar-full">
+                        <button type="button"  class="navbar-toggle toggle-transparent" data-toggle="collapse" data-target="#navbar-full">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
                         @if (Auth::User()->role == 0)
+                        <a class="navbar-brand" id="logo_white" href="{{ url('dashboard') }}"><img src="{{ url('imgs/logo_black.png') }}" class="white_logo"></a>
                         <a class="navbar-brand" id="logo_black" href="{{ url('dashboard') }}"><img src="{{ url('imgs/logo_black.png') }}" class="black_logo"></a>
-                        <a class="navbar-brand" id="logo_white" href="{{ url('dashboard') }}"><img src="{{ url('imgs/logo.png') }}" class="white_logo"></a>
                         @else
+                        <a class="navbar-brand" id="logo_white" href="{{ url('offers') }}"><img src="{{ url('imgs/logo_black.png') }}" class="white_logo"></a>
                         <a class="navbar-brand" id="logo_black" href="{{ url('offers') }}"><img src="{{ url('imgs/logo_black.png') }}" class="black_logo"></a>
-                        <a class="navbar-brand" id="logo_white" href="{{ url('offers') }}"><img src="{{ url('imgs/logo.png') }}" class="white_logo"></a>
                         @endif
                     </div>
-                    <div id="navbar-full" class="collapse full_white_icons" >
+                    <div id="navbar-full" class="collapse full_black_icons" >
                         <ul class="nav-lists">
                             <li><a href="/offers"><img src="../imgs/location_black.png" class="header_icon nav_trip"><p class="header_text" style="color:black">Design your trip</p></a></li>
                             <li><a href="{{ url('gift-card') }}"><img src="../imgs/black_gift.png" class="header_icon nav_gift"><p class="header_text" style="color:black">Gift card</p></a></li>
@@ -128,15 +112,15 @@
                 <div class="responsive_long">
                     <div class="col-md-3 col-xs-3 col-lg-3">
                         @if (Auth::User()->role == 0)
+                        <a class="navbar-brand" id="logo_white" href="{{ url('dashboard') }}"><img src="{{ url('imgs/logo_black.png') }}" class="white_logo"></a>
                         <a class="navbar-brand" id="logo_black" href="{{ url('dashboard') }}"><img src="{{ url('imgs/logo_black.png') }}" class="black_logo"></a>
-                        <a class="navbar-brand" id="logo_white" href="{{ url('dashboard') }}"><img src="{{ url('imgs/logo_black.png') }}" class="white_logo"></a>                        
                         @else
+                        <a class="navbar-brand" id="logo_white" href="{{ url('offers') }}"><img src="{{ url('imgs/logo_black.png') }}" class="white_logo"></a>
                         <a class="navbar-brand" id="logo_black" href="{{ url('offers') }}"><img src="{{ url('imgs/logo_black.png') }}" class="black_logo"></a>
-                        <a class="navbar-brand" id="logo_white" href="{{ url('offers') }}"><img src="{{ url('imgs/logo_black.png') }}" class="white_logo"></a>                        
                         @endif
                     </div>
                     <div class="col-md-9 col-xs-9 col-lg-9">
-                        <div id="navbar" class="collapse navbar-collapse white_icons">
+                        <div id="navbar" class="collapse navbar-collapse black_icons">
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="/offers"><img src="../imgs/location_black.png" class="design_header_icon nav_trip"><p class="header_text" style="color:black">Design your trip</p></a></li>
                                 <li><a href="{{ url('gift-card') }}"><img src="../imgs/black_gift.png" class="header_icon"><p class="header_text" style="color:black">Gift card</p></a></li>
@@ -193,25 +177,17 @@
             </div>
         </div>
     </nav>
-    <div style="margin-top: 10%">
+    <div style="margin-top: 100pt">
         <center><h1><b>Get Your Summer Started!</b></h1></center>
-        <div class="col">
-            <div class="box item1" style="margin-left:50%;margin-top:10%">
-                <button style="background-color:white;border:none;" onclick="window.location.href='/create_experience?id={{$id}}'">
-                    <img src="images/box1.jpg" style="margin-top:10pt;width:100px;height:100px">
-                    <center><h3 style="color:#fc3769"><b>Build your own trip<b></h3></center>
-                    <center><h6>create your own route and we'll take<br>all the stress out of planning it.</h6></center>
-                </button>
-            </div>
-            <div class="box item2" style="margin-top:10%;margin-left:10%">
-                <button style="background-color:white;border:none;" onclick="window.location.href='#'">
-                    <img src="images/box2.jpg" style="margin-top:10pt;width:100px;height:100px">
-                    <center><h3 style="color:#fc3769"><b>Join a group<b></h3></center>
-                    <center><h6>authentic travel in small groups with<br>an experienced Euroventure Tour<br>Leader</h6></center>
-                </button>
-            </div>
-        </div>
     </div>
+    <center>
+        <a href="/create_experience?id={{$id}}" style="margin-right:10%">
+            <img src="images/option1.jpg" style="width:225pt;height:175pt">
+        </a>
+        <a href="#" style="margin-top:10%">
+            <img src="images/option2.jpg" style="width:225pt;height:175pt">
+        </a>
+    </center>
 </body>
 </html>
 

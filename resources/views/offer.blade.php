@@ -180,12 +180,13 @@
     <div style="margin-top: 100pt">
         <center><h1><b>Get Your Summer Started!</b></h1></center>
     </div>
+    <br>
     <center>
-        <a href="/create_experience?id={{$id}}" style="margin-right:10%">
-            <img src="images/option1.jpg" style="width:225pt;height:175pt">
+        <a href="/create_experience?id={{$id}}" style="margin-right:10%;">
+            <img id="img_offer" src="images/option1.jpg" style="width:225pt;height:175pt;">
         </a>
-        <a href="#" style="margin-top:10%">
-            <img src="images/option2.jpg" style="width:225pt;height:175pt">
+        <a href="http://www.insidersuite-group.com/" style="margin-top:10%">
+            <img id="img_offer" src="images/option2.jpg" style="width:225pt;height:175pt">
         </a>
     </center>
 </body>

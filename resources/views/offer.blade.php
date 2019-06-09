@@ -60,6 +60,11 @@
         body{
             background-color : #f5f5f5;
         }
+        @media (max-width:390pt){
+            #img_offer{
+                margin-bottom: 10%;
+            }
+        }
     </style>
 </head>
 <body>

@@ -262,7 +262,7 @@
                             <div class="act_calender"></div>
                         </div>
                         <div class="modal-guests" style="margin-top: 20px;">
-                            <h4 class="setting-title">Who's coming?</h4>
+                            <h4 class="setting-title">Who's coming??</h4>
                             <div class="form-control-wrap">
                                 <input type="text" id="act_guests" class="form-control" placeholder="E.g. 3 guests" required>
                                 <svg class="icon" viewBox="0 0 24 24" width="18" height="18" color="#ff2960"><g fill="currentColor" fill-rule="nonzero"><path d="M23.75 22a.75.75 0 1 1-1.5 0v-1.625c0-2.235-2.23-4.204-5.28-4.562a.75.75 0 0 1 .175-1.49c3.742.439 6.605 2.969 6.605 6.052V22zM15.75 22a.75.75 0 1 1-1.5 0v-1.625c0-2.5-2.767-4.625-6.25-4.625s-6.25 2.125-6.25 4.625V22a.75.75 0 1 1-1.5 0v-1.625c0-3.428 3.513-6.125 7.75-6.125s7.75 2.697 7.75 6.125V22zM15.119 11.662a.75.75 0 0 1 .252-1.478c.268.045.453.066.629.066a3.755 3.755 0 0 0 3.75-3.75A3.755 3.755 0 0 0 16 2.75c-.18 0-.369.02-.627.066a.75.75 0 1 1-.258-1.478c.337-.058.605-.088.885-.088a5.255 5.255 0 0 1 5.25 5.25A5.255 5.255 0 0 1 16 11.75a5.03 5.03 0 0 1-.881-.088zM8 11.75a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 0 1 0 10.5zm0-1.5a3.75 3.75 0 1 0 0-7.5 3.75 3.75 0 0 0 0 7.5z"></path></g></svg>
@@ -278,20 +278,6 @@
 												<button type="button" class="fndzHx" id="act_adults_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
 												<label for="adults"><input id="act_adults" name="adults" readonly="" tabindex="-1" value="1"></label>
 												<button type="button" class="active fndzHx" id="act_adults_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
-                                        </div>
-                                        <div class="TPxij">
-                                            <label class="ijjuLW">Children</label>
-                                            <span class="egudlU select_option" min="1" max="15">
-												<button type="button" class="fndzHx" id="act_children_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
-												<label for="children"><input id="act_children" name="children" readonly="" tabindex="-1" value="0"></label>
-												<button type="button" class="active fndzHx" id="act_children_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
-                                        </div>
-                                        <div class="TPxij">
-                                            <label class="ijjuLW">Infants<span style="color: #8c8888;font-size: 10px;">(under 2)</span></label>
-                                            <span class="egudlU select_option" min="1" max="15">
-												<button type="button" class="fndzHx" id="act_infants_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
-												<label for="infants"><input id="act_infants" name="infants" readonly="" tabindex="-1" value="0"></label>
-												<button type="button" class="active fndzHx" id="act_infants_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
                                         </div>
                                         <button type="button" class="iCflgr" id="act_guest_apply">Apply</button>
                                     </div>

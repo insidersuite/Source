@@ -1,4 +1,5 @@
 //---------------------Experience Section ------------------------
+var currency_rate = localStorage.getItem('currency_rate')
 var accom_selected_day1 = "", accom_selected_day2 = "";
 var accom = {};
 var exp_accom = [];
@@ -111,7 +112,6 @@ $(".accomodation").click(function (event) {
     }
 
 //   console.log('accom Min'+min_price);
-
     prices.forEach(price => {
         if (price.accomodation_id == accom.id && price.nb_available != 0) {
         ndate.push(price.check_in_date);
@@ -119,19 +119,19 @@ $(".accomodation").click(function (event) {
     var acc = $('#accom_guests').val();
     acc = +acc.substring(0, acc.indexOf(' '));
     if (parseFloat(price.discount) == max_discount && price.accomodation_id == accom.id) {
-        $("#accom_discounted_price").html("$AUD" + Math.floor(price.price_a_discount/acc));
-        $("#accom_origin_price").html("$AUD" + Math.floor(price.price_b_discount/acc));
+        var price_a = (currency_rate * Math.floor(price.price_a_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+        var price_b = (currency_rate * Math.floor(price.price_b_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+
+        $("#accom_discounted_price").html($('#user-currency').val() + price_a);
+        $("#accom_origin_price").html($('#user-currency').val() + price_b);
         if(max_discount < 0.1) {
-            upto = price.price_a_discount + 'AUD';
+            upto = (currency_rate * price.price_a_discount).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,') + $('#user-currency').val();
             $('#accom_discont_text').html('From');
         }else {
             $('#accom_discont_text').html('Up to');
             upto = '-' + Math.round(max_discount * 100, 2) + "%";
-            
         }
         $("#accom_discont").html(upto);
-        
-        
     }
 });
 
@@ -429,8 +429,10 @@ $(".accomodation").click(function (event) {
                 }
                 var acc = $('#accom_guests').val();
                 acc = +acc.substring(0, acc.indexOf(' '));
-                $("#accom_discounted_price").html("$AUD" + Math.floor(total_a_discount/acc));
-                $("#accom_origin_price").html("$AUD" + Math.floor(total_b_discount/acc));
+                var total_a = (currency_rate * Math.floor(total_a_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                var total_b = (currency_rate * Math.floor(total_b_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                $("#accom_discounted_price").html($('#user-currency').val() + total_a);
+                $("#accom_origin_price").html($('#user-currency').val() + total_b);
                 //   $("#accom_discont").html(Math.round((total_b_discount - total_a_discount) / total_b_discount * 100, 2) + "%");
 
                 // 2019-03-08
@@ -467,8 +469,10 @@ $(".accomodation").click(function (event) {
                     var acc = $('#accom_guests').val();
                     acc = +acc.substring(0, acc.indexOf(' '));
                     if (parseFloat(price.discount) == max_discount && price.accomodation_id == accom.id) {
-                        $("#accom_discounted_price").html("$AUD" + Math.floor(price.price_a_discount/acc));
-                        $("#accom_origin_price").html("$AUD" + Math.floor(price.price_b_discount/acc));
+                        var price_a = (currency_rate * Math.floor(price.price_a_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                        var price_b = (currency_rate * Math.floor(price.price_b_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                        $("#accom_discounted_price").html($('#user-currency').val() + price_a);
+                        $("#accom_origin_price").html($('#user-currency').val() + price_b);
                     }
                 });
 
@@ -540,10 +544,12 @@ $(".accomodation").click(function (event) {
                     flag.price = price.price_a_discount;
                     var acc = $('#accom_guests').val();
                     acc = +acc.substring(0, acc.indexOf(' '));
+                    var price_a = (currency_rate * Math.floor(price.price_a_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                    var price_b = (currency_rate * Math.floor(price.price_b_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
                     $("#participants_adult").html('1');
                     $(".custom_nights").html('night');
-                    $("#accom_discounted_price").html("$AUD" + Math.floor(price.price_a_discount/acc));
-                    $("#accom_origin_price").html("$AUD" + Math.floor(price.price_b_discount/acc));
+                    $("#accom_discounted_price").html($('#user-currency').val() + price_a);
+                    $("#accom_origin_price").html($('#user-currency').val() + price_b);
                     //   $("#accom_discont").html(Math.round(price.discount * 100, 2) + "%");
                 }
             });
@@ -571,10 +577,12 @@ $(".accomodation").click(function (event) {
                     flag.price = price.price_a_discount;
                     var acc = $('#accom_guests').val();
                     acc = +acc.substring(0, acc.indexOf(' '));
+                    var price_a = (currency_rate * Math.floor(price.price_a_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                    var price_b = (currency_rate * Math.floor(price.price_b_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
                     $("#participants_adult").html('1');
                     $(".custom_nights").html('night');
-                    $("#accom_discounted_price").html("$AUD" + Math.floor(price.price_a_discount/acc));
-                    $("#accom_origin_price").html("$AUD" + Math.floor(price.price_b_discount/acc));
+                    $("#accom_discounted_price").html($('#user-currency').val() + price_a);
+                    $("#accom_origin_price").html($('#user-currency').val() + price_b);
                     // $("#accom_discont").html(Math.round(price.discount * 100, 2) + "%");
                 }
             });
@@ -1348,8 +1356,10 @@ $(".experience").click(function () {
     var acc_act = $('#act_guests').val();
     acc_act = +acc_act.substring(0, acc_act.indexOf(' '));
     if (parseFloat(price.discount) == max_discount_act && price.activity_id == act.id) {
-        $("#act_discounted_price").html("$AUD" + Math.floor(price.price_a_discount));
-        $("#act_origin_price").html("$AUD" + Math.floor(price.price_b_discount));
+        var price_a = (currency_rate * Math.floor(price.price_a_discount)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+        var price_b = (currency_rate * Math.floor(price.price_b_discount)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+        $("#act_discounted_price").html($('#user-currency').val() + price_a);
+        $("#act_origin_price").html($('#user-currency').val() + price_b);
         $("#act_discont").html('-' + Math.round(max_discount_act * 100, 2) + "%");
     }
 });
@@ -1740,9 +1750,11 @@ var calendarActEvent = function (first_d, selected_act_id) {
         acc_act = +acc_act.substring(0, acc_act.indexOf(' '));
         _prices.forEach(price => {
             if (price.activity_id == selected_act_id && price.check_in_date == start_d) {
-            $("#act_discounted_price").html("$AUD" + Math.floor(price.price_a_discount));
-            $("#act_origin_price").html("$AUD" + Math.floor(price.price_b_discount));
-            //   $("#act_discont").html(Math.round(price.discount * 100, 2) + "%");
+                var price_a = (currency_rate * Math.floor(price.price_a_discount)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                var price_b = (currency_rate * Math.floor(price.price_b_discount)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                $("#act_discounted_price").html($('#user-currency').val() + price_a);
+                $("#act_origin_price").html($('#user-currency').val() + price_b);
+                //   $("#act_discont").html(Math.round(price.discount * 100, 2) + "%");
         }
     });
     } else {

@@ -303,8 +303,8 @@ $("#review").click(function () {
                             return value;
                         });
                         if (exp.check_in == exact_dates[k]) {
-                            b_price = exp.d_b_price.split("$AUD");
-                            a_price = exp.d_a_price.split("$AUD");
+                            b_price = exp.d_b_price.split($('#user-currency').val());
+                            a_price = exp.d_a_price.split($('#user-currency').val());
                             // // total_acb_price += (parseInt(b_price[1])*exp.guests_num);
                             // total_acb_price += Math.floor(parseInt(b_price[1])*exp.guests_num);
                             // // total_aca_price += (parseInt(a_price[1])*exp.guests_num);
@@ -332,11 +332,11 @@ $("#review").click(function () {
                                 prices_accoms.forEach(price => {
                                     if ((price.check_in_date == exact_dates[k]) && (price.accomodation_id == accom.id)) {
                                         if(exp.guests_num == 1) {
-                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>$AUD" + price.price_a_discount + "</b></p></div>";
-                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>$AUD" + price.price_a_discount + "</b></p></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p class='custom_b'>instead of <del>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
+                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p class='custom_b'>instead of <del>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
                                         } else {
-                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + price.price_a_discount + "</b></p></div>";
-                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + price.price_a_discount + "</b></p></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p class='custom_b'>instead of <del>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
+                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p class='custom_b'>instead of <del>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
                                         }
                                         
                                         total_aca_price += parseInt(price.price_a_discount);
@@ -373,14 +373,12 @@ $("#review").click(function () {
                                 prices_accoms.forEach(price => {   
                                     if ((price.check_in_date == exact_dates[k]) && (price.accomodation_id == accom.id)) {
                                         if(exp.guests_num == 1) {
-                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>$AUD" + price.price_a_discount + "</b></p></div>";
-                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>$AUD" + price.price_a_discount + "</b></p></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p class='custom_b'>instead of <del>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
+                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p class='custom_b'>instead of <del>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
                                         } else {
-                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + price.price_a_discount + "</b></p></div>";
-                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + price.price_a_discount + "</b></p></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p class='custom_b'>instead of <del>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
+                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p class='custom_b'>instead of <del>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
                                         }
-                                        // content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + price.price_a_discount + "</b></p></div>";
-                                        // mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + price.price_a_discount + "</b></p></div>";
                                         total_aca_price += parseInt(price.price_a_discount);
                                         total_acb_price += parseInt(price.price_b_discount);
                                     }
@@ -392,8 +390,8 @@ $("#review").click(function () {
                         }
                     } else if (exp.type == "activity") {
                         if (exp.check_in == exact_dates[k]) {
-                            b_price = exp.d_b_price.split("$AUD");
-                            a_price = exp.d_a_price.split("$AUD");
+                            b_price = exp.d_b_price.split($('#user-currency').val());
+                            a_price = exp.d_a_price.split($('#user-currency').val());
                             // // total_atb_price += parseInt(b_price[1]);
                             // total_atb_price += Math.floor(parseInt(b_price[1])*exp.guests_num);
                             // // total_ata_price += parseInt(a_price[1]);
@@ -433,11 +431,11 @@ $("#review").click(function () {
                                 prices_acts.forEach(price => {
                                     if ((price.check_in_date == exact_dates[k]) && (price.activity_id == act.id)) {
                                         if(exp.guests_num == 1) {
-                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + price.price_a_discount + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + price.price_b_discount + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>$AUD" + Math.floor(price.price_a_discount*exp.guests_num) + "</b></p></div>";
-                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + price.price_a_discount + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + price.price_b_discount + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>$AUD" + Math.floor(price.price_a_discount*exp.guests_num) + "</b></p></div>";
+                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b>/pers</p><p class='custom_b'>instead of <del>" + $('#user-currency').val() + currencyConvert(price.price_b_discount) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount*exp.guests_num)) + "</b></p></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b>/pers</p><p class='custom_b'>instead of <del>" + $('#user-currency').val() + currencyConvert(price.price_b_discount) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount*exp.guests_num)) + "</b></p></div>";
                                         } else {
-                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + price.price_a_discount + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + price.price_b_discount + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + Math.floor(price.price_a_discount*exp.guests_num) + "</b></p></div>";
-                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + price.price_a_discount + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + price.price_b_discount + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + Math.floor(price.price_a_discount*exp.guests_num) + "</b></p></div>";
+                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b>/pers</p><p class='custom_b'>instead of <del>" + $('#user-currency').val() + currencyConvert(price.price_b_discount) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount*exp.guests_num)) + "</b></p></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b>/pers</p><p class='custom_b'>instead of <del>" + $('#user-currency').val() + currencyConvert(price.price_b_discount) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount*exp.guests_num)) + "</b></p></div>";
                                         }
                                         
                                         total_atb_price += Math.floor(price.price_b_discount*exp.guests_num);
@@ -473,20 +471,20 @@ $("#review").click(function () {
                 });
 
                 $(".review_period").html(makeSimpleTitle(exact_dates[0]) + "-" + makeSimpleTitle(exact_dates[exact_dates.length - 1]));
-                $(".review_accom_ap").html("<b>$AUD" + total_aca_price + "</b>");
-                $(".review_accom_bp").html("<del>$AUD" + total_acb_price + "</del>");
-                $(".review_act_ap").html("<b>$AUD" + total_ata_price + "</b>");
-                $(".review_act_bp").html("<del>$AUD" + total_atb_price + "</del>");
+                $(".review_accom_ap").html("<b>" + $('#user-currency').val() + currencyConvert(total_aca_price) + "</b>");
+                $(".review_accom_bp").html("<del>" + $('#user-currency').val() + currencyConvert(total_acb_price) + "</del>");
+                $(".review_act_ap").html("<b>" + $('#user-currency').val() + currencyConvert(total_ata_price) + "</b>");
+                $(".review_act_bp").html("<del>" + $('#user-currency').val() + currencyConvert(total_atb_price) + "</del>");
                 var total_new = total_aca_price + total_ata_price;
                 var total_old = total_acb_price + total_atb_price;
                 var suite_fee = (total_new*0.06).toFixed(2);
                 if(suite_fee > 55){
                     suite_fee = 55;
                 }
-                $(".suite_fee_span").html("$AUD" + suite_fee);
-                $(".new_price").html("<b>$AUD" + (parseFloat(total_new)+parseFloat(suite_fee)) + "</b>");
-                $(".old_price").html("<del>$AUD" + total_old + "</del>");
-                $(".payment_price").html("Total: $AUD" + (parseFloat(total_new)+parseFloat(suite_fee)));
+                $(".suite_fee_span").html($('#user-currency').val() + currencyConvert(suite_fee));
+                $(".new_price").html("<b>" + $('#user-currency').val() + currencyConvert((parseFloat(total_new)+parseFloat(suite_fee))) + "</b>");
+                $(".old_price").html("<del>" + $('#user-currency').val() + currencyConvert(total_old) + "</del>");
+                $(".payment_price").html("Total: " + $('#user-currency').val() + currencyConvert((parseFloat(total_new)+parseFloat(suite_fee))));
             }
         });
     }
@@ -830,26 +828,26 @@ $("#promo_apply").click(function () {
             } else if (e.result == "true"){
                 $('#promo_apply').off('click');
                 var old_price = $(".payment_price").html();
-                var str = old_price.split("Total: $AUD");
+                var str = old_price.split("Total: " + $('#user-currency').val());
                 if (e.type == "dollar") {
                     if (parseFloat(e.value) > parseFloat(str[1])) {
                         alert("Your bill is less than voucher. You can to use it after.");
                     } else {
                         var new_price = (parseFloat(str[1]) - parseFloat(e.value)).toFixed(2);
-                        $(".promotion_discount").html("$AUD" + e.value);
+                        $(".promotion_discount").html($('#user-currency').val() + currencyConvert(e.value));
                         $("#voucher_nb").val($("#promo_code").val());
-                        $(".payment_price").html("Total: $AUD" + new_price);
+                        $(".payment_price").html("Total: " + $('#user-currency').val() + currencyConvert(new_price));
                         $(".voucher_discount").attr('style', 'display:block');
-                        $(".new_price").html("<b>$AUD" + new_price + "</b>");
+                        $(".new_price").html("<b>" + $('#user-currency').val() + currencyConvert(new_price) + "</b>");
                     }
                 } else {
                     var percentage = (100 - parseFloat(e.value)) / 100;
                     var new_price = (parseFloat(str[1]) * percentage).toFixed(2);
                     $(".promotion_discount").html(e.value + "%");
                     $("#voucher_nb").val($("#promo_code").val());
-                    $(".payment_price").html("Total: $AUD" + new_price);
+                    $(".payment_price").html("Total: " + $('#user-currency').val() + currencyConvert(new_price));
                     $(".voucher_discount").attr('style', 'display:block');
-                    $(".new_price").html("<b>$AUD" + new_price + "</b>");
+                    $(".new_price").html("<b>" + $('#user-currency').val() + currencyConvert(new_price) + "</b>");
                 }
             }
         }
@@ -937,6 +935,10 @@ $("#check").click(function (e) {
 });
 
 //----------------Additional functions ---------------------------
+function currencyConvert(price) {
+    var currency_rate = localStorage.getItem('currency_rate')
+    return (currency_rate * price).toFixed().replace(/\d(?=(\d{3}))/g, '$&,')
+}
 
 function makeTitle(str, type) {
     var d = new parseDate(str);

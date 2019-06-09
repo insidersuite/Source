@@ -9,6 +9,7 @@
 @endsection
 
 @section('content')
+	<input type="hidden" value="{{auth()->user()->currency}}" id="currency">
 	<div id="site-content">
 		<div class="container" style="padding-top: 100px;padding-bottom: 100px;">
 			<div class="row">
@@ -62,7 +63,7 @@
 										<div id="serene_kiff" class="jek6oy-0-BorderedInputWrapper-eKTLaI dVdEvt" type="button">
 											<div>
 												<div id="serene_kiff_text" class="GiftCardKiffLevel__KiffDescription-s108u2es-0 cVhRmt" style="font-size: 13px;">Serene Vibe</div>
-												<div style="font-weight:500;margin:0;font-size: 18px;">50$</div>
+												<div id="serene_kiff_amount" style="font-weight:500;margin:0;font-size: 18px;">50$</div>
 											</div>
 											<svg id="card-50-value" viewBox="0 0 24 24" width="16" height="16" class="GiftCardDesignPicker__CheckedColorSelector-s1ald1iv-1 hYlGKC"><g fill="none" fill-rule="evenodd"><circle fill="currentColor" cx="12" cy="12" r="12"></circle><path d="M11.267 17.21L6.62 13.484c-.433-.346-.52-1.002-.196-1.464.324-.46.937-.556 1.37-.209l3.182 2.55 5.275-6.576a.938.938 0 0 1 1.38-.113c.412.375.46 1.036.107 1.474l-6.47 8.062z" fill="#FFF"></path></g></svg>
 										</div>
@@ -71,7 +72,7 @@
 										<div id="serious_kiff" class="jek6oy-0-BorderedInputWrapper-eKTLaI dVdEvt" type="button">
 											<div>
 												<div id="serious_kiff_text" class="GiftCardKiffLevel__KiffDescription-s108u2es-0 cVhRmt" style="font-size: 13px;">Serious Vibe</div>
-												<div style="font-weight:500;margin:0;font-size: 18px;">100$</div>
+												<div id="serious_kiff_amount" style="font-weight:500;margin:0;font-size: 18px;">100$</div>
 											</div>
 											<svg id="card-100-value" viewBox="0 0 24 24" width="16" height="16" class="GiftCardDesignPicker__CheckedColorSelector-s1ald1iv-1 hYlGKC"><g fill="none" fill-rule="evenodd"><circle fill="currentColor" cx="12" cy="12" r="12"></circle><path d="M11.267 17.21L6.62 13.484c-.433-.346-.52-1.002-.196-1.464.324-.46.937-.556 1.37-.209l3.182 2.55 5.275-6.576a.938.938 0 0 1 1.38-.113c.412.375.46 1.036.107 1.474l-6.47 8.062z" fill="#FFF"></path></g></svg>
 										</div>
@@ -80,7 +81,7 @@
 										<div id="solid_kiff" class="jek6oy-0-BorderedInputWrapper-eKTLaI dVdEvt" type="button">
 											<div>
 												<div id="solid_kiff_text" class="GiftCardKiffLevel__KiffDescription-s108u2es-0 cVhRmt" style="font-size: 13px;">Solid Vibe</div>
-												<div style="font-weight:500;margin:0;font-size: 18px;">200$</div>
+												<div id="solid_kiff_amount" style="font-weight:500;margin:0;font-size: 18px;">200$</div>
 											</div>
 											<svg id="card-200-value" viewBox="0 0 24 24" width="16" height="16" class="GiftCardDesignPicker__CheckedColorSelector-s1ald1iv-1 hYlGKC"><g fill="none" fill-rule="evenodd"><circle fill="currentColor" cx="12" cy="12" r="12"></circle><path d="M11.267 17.21L6.62 13.484c-.433-.346-.52-1.002-.196-1.464.324-.46.937-.556 1.37-.209l3.182 2.55 5.275-6.576a.938.938 0 0 1 1.38-.113c.412.375.46 1.036.107 1.474l-6.47 8.062z" fill="#FFF"></path></g></svg>
 										</div>
@@ -89,7 +90,7 @@
 										<div id="kiff_yolo" class="jek6oy-0-BorderedInputWrapper-eKTLaI dVdEvt" type="button">
 											<div>
 												<div id="kiff_yolo_text" class="GiftCardKiffLevel__KiffDescription-s108u2es-0 cVhRmt" style="font-size: 13px;">Yolo Vibe</div>
-												<div style="font-weight:500;margin:0;font-size: 18px;">500$</div>
+												<div id="kiff_yolo_amount" style="font-weight:500;margin:0;font-size: 18px;">500$</div>
 											</div>
 											<svg id="card-500-value" viewBox="0 0 24 24" width="16" height="16" class="GiftCardDesignPicker__CheckedColorSelector-s1ald1iv-1 hYlGKC"><g fill="none" fill-rule="evenodd"><circle fill="currentColor" cx="12" cy="12" r="12"></circle><path d="M11.267 17.21L6.62 13.484c-.433-.346-.52-1.002-.196-1.464.324-.46.937-.556 1.37-.209l3.182 2.55 5.275-6.576a.938.938 0 0 1 1.38-.113c.412.375.46 1.036.107 1.474l-6.47 8.062z" fill="#FFF"></path></g></svg>
 										</div>
@@ -174,6 +175,17 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 	<script src="https://js.stripe.com/v3/"></script>
 	<script>
+		fetch('https://api.exchangeratesapi.io/latest?base=USD')
+		.then((resp) => resp.json())
+		.then((data) => {
+			let rate = data.rates.{{auth()->user()->currency}}
+			let currency = $('#currency').val()
+			localStorage.setItem('currency_rate', rate)
+			$('#serene_kiff_amount').html(`${(50*rate).toFixed().replace(/\d(?=(\d{3}))/g, '$&,')}${currency}`)
+			$('#serious_kiff_amount').html(`${(100*rate).toFixed().replace(/\d(?=(\d{3}))/g, '$&,')}${currency}`)
+			$('#solid_kiff_amount').html(`${(200*rate).toFixed().replace(/\d(?=(\d{3}))/g, '$&,')}${currency}`)
+			$('#kiff_yolo_amount').html(`${(500*rate).toFixed().replace(/\d(?=(\d{3}))/g, '$&,')}${currency}`)
+		})
 		<?php
 			$stripeKeys = \Config::get('services.stripe');
 		?>
@@ -233,7 +245,7 @@
 			var hiddenInput1 = document.createElement('input');
 			hiddenInput1.setAttribute('type', 'hidden');
 			hiddenInput1.setAttribute('name', 'amount');
-			hiddenInput1.setAttribute('value', $("#amount").val());
+			hiddenInput1.setAttribute('value', $("#amount").val().replace(/\D/g, ''));
 			form.appendChild(hiddenInput1);			
 			var hiddenInput2 = document.createElement('input');
 			hiddenInput2.setAttribute('type', 'hidden');

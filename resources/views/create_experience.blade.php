@@ -55,7 +55,7 @@
 
     <?php $min_price = "";?>
 
-
+	<input type="hidden" value="{{auth()->user()->currency}}" id="user-currency">
 
 	<div id="site-content">
 
@@ -676,8 +676,16 @@
 
 	<script type="text/javascript" src="{{ url('js/customize/create_experience_4_19_3.js') }}"></script>
 
-
 	<script src="https://js.stripe.com/v3/"></script>
+
+	<script>
+		fetch('https://api.exchangeratesapi.io/latest?base=AUD')
+		.then((resp) => resp.json())
+		.then((data) => {
+			let rate = data.rates.{{auth()->user()->currency}}
+			localStorage.setItem('currency_rate', rate)
+		})
+	</script>
 
 	<script>
         $('.slide-like').click(function () {var id = $(this).attr('id'); if (id < 100) removeSelection(id, 'accoms'); else removeSelection(id, 'acts');});
@@ -756,8 +764,8 @@
             hiddenInput1.setAttribute('type', 'hidden');
             hiddenInput1.setAttribute('name', 'amount');
             var old_price = $(".payment_price").html();
-            var str = old_price.split("Total: $AUD");
-            hiddenInput1.setAttribute('value', parseFloat(str[1]));
+            // var str = old_price.split("Total: $AUD");
+            hiddenInput1.setAttribute('value', old_price.replace(/\D/g, ''));
             form.appendChild(hiddenInput1);
             var hiddenInput2 = document.createElement('input');
             hiddenInput2.setAttribute('type', 'hidden');

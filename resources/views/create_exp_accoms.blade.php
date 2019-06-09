@@ -57,7 +57,7 @@
                                         @endif
                                     @endforeach
                                     <?php 
-                                        $currency = 'AUD'; 
+                                        $currency = auth()->user()->currency == null ? 'AUD' : auth()->user()->currency; 
                                         $discont10 = false;
                                     ?>
                                     @foreach($prices_accom as $price)
@@ -68,14 +68,22 @@
                                                 $upto =  '-' . $max_accom_discount * 100 . '%';
                                                 if($max_accom_discount < 0.1 ) {
                                                     $discont10 = true;
-                                                    $upto = $price['price_a_discount'] . $currency;
+                                                    $upto = $price['price_a_discount'];
                                                 }
                                             ?>
                                         @endif
                                     @endforeach
                                     <p class="detail-info-address">{{$accom->full_address}}</p>
                                     <p class="detail-info-name">{{$accom->name}}</p>
-                                    <p class="detail-info-discount"><span class="small">@if(!$discont10)Up to @else From @endif</span><span class="big">{{ $upto }}</span></p>
+                                    <p class="detail-info-discount">
+                                        <span class="small">
+                                            @if(!$discont10)
+                                                Up to <span class="big">{{ $upto }}</span> 
+                                            @else 
+                                                From <span class="nominal big">{{ $upto }}</span>
+                                            @endif
+                                        </span>
+                                    </p>
                                 </div>
                                 <div class="detail-info-data origin eUhMAS">
 							<span class="detail-info-capacity">
@@ -222,17 +230,25 @@
                                     @endif
                                 @endforeach
                                 <?php 
-                                    $currency = 'AUD'; 
+                                    $currency = auth()->user()->currency == null ? 'AUD' : auth()->user()->currency;
                                     $discont10 = false;
                                     $upto =  '-' . $max_act_discount * 100 . '%';
                                     if($max_act_discount < 0.1 ) {
                                         $discont10 = true;
-                                        $upto = $price['price_a_discount'] . $currency;
+                                        $upto = $price['price_a_discount'];
                                     }
                                 ?>
                                 <p class="detail-info-address">{{$act->address}}</p>
                                 <p class="detail-info-name">{{$act->name}}</p>
-                                <p class="detail-info-discount"><span class="small">@if(!$discont10) Up to @endif </span><span class="big">{{ $upto }}</span></p>
+                                <p class="detail-info-discount">
+                                    <span class="small">
+                                        @if(!$discont10)
+                                            Up to <span class="big">{{ $upto }}</span> 
+                                        @else 
+                                            From <span class="nominal big">{{ $upto }}</span>
+                                        @endif
+                                    </span>
+                                </p>
                             </div>
                             <div class="detail-info-data origin eUhMAS">
                                 @foreach ($act_practical as $pract)
@@ -708,6 +724,8 @@
 <script type="text/javascript" src="{{ url('js/customize/create_experience_accom.js') }}"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPzXAXjAyEIcluDJSMgRRBffUCrbNq1Bc&callback=initMap"></script>
 <script type="text/javascript">
+    var currency_rate = localStorage.getItem('currency_rate')
+
     $('.gallery-slideshow').slideshow({
         width: 280,
         height: 210,
@@ -718,4 +736,18 @@
         $(".response_add_trip_btn").css("position", "static");
         $(".setting-content").css("margin-bottom", "0px");
     }
+
+    $('#form_accommodation').children('.detail-item').each((index, item) => {
+        var price = $(item).find('.detail-info-discount').find('.nominal.big').text()
+        var currency_convert = price * currency_rate
+        $(item).find('.detail-info-discount').find('.nominal.big')
+            .text(currency_convert.toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '{{auth()->user()->currency}}')
+    })
+
+    $('#form_experience').children('.detail-item').each((index, item) => {
+        var price = $(item).find('.detail-info-discount').find('.nominal.big').text()
+        var currency_convert = price * currency_rate
+        $(item).find('.detail-info-discount').find('.nominal.big')
+            .text(currency_convert.toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '{{auth()->user()->currency}}')
+    })
 </script>

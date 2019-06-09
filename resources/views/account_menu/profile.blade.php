@@ -575,6 +575,26 @@
 									<input type="tel" id="mobile_number" name="mobile_number" class="form-control" value="{{ Auth::User()->mobile_number }}">
 								</div>
 							</div>
+							<br>
+							<div class="row">
+								<div class="col-md-5 col-sm-6 col-xs-6">
+									<label>Currency</label>
+									<select name="currency" class="form-control" required>
+										<option value="" disabled @if(Auth::User()->currency == null) {{ 'selected' }} @endif>Select</option>
+										<option value="AUD" @if(Auth::User()->currency == "AUD") {{ 'selected' }} @endif>AUD</option>
+										<option value="CNY" @if(Auth::User()->currency == "CNY") {{ 'selected' }} @endif>CNY</option>
+										<option value="EUR" @if(Auth::User()->currency == "EUR") {{ 'selected' }} @endif>EUR</option>
+										<option value="GBP" @if(Auth::User()->currency == "GBP") {{ 'selected' }} @endif>GBP</option>
+										<option value="IDR" @if(Auth::User()->currency == "IDR") {{ 'selected' }} @endif>IDR</option>
+										<option value="INR" @if(Auth::User()->currency == "INR") {{ 'selected' }} @endif>INR</option>
+										<option value="KRW" @if(Auth::User()->currency == "KRW") {{ 'selected' }} @endif>KRW</option>
+										<option value="JPY" @if(Auth::User()->currency == "JPY") {{ 'selected' }} @endif>JPY</option>
+										<option value="MYR" @if(Auth::User()->currency == "MYR") {{ 'selected' }} @endif>MYR</option>
+										<option value="SGD" @if(Auth::User()->currency == "SGD") {{ 'selected' }} @endif>SGD</option>
+										<option value="USD" @if(Auth::User()->currency == "USD") {{ 'selected' }} @endif>USD</option>
+									</select>
+								</div>
+							</div>
 							<div class="row">
 								<div class="col-md-5">
 									<input type="submit" class="btn btn-default pull-left" id="profile_update" value="Save my details" style="margin: 50px 0px 0px 0px;">

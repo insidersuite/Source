@@ -128,5 +128,15 @@
 @parent
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
-<script type="text/javascript" src="{{ url('js/customize/offer.js') }}"></script>
+<script>
+	var redirect_path = location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '');;
+
+	$(".offer").click(function () {	
+		var id = $(this).data('source');
+		var status = $(this).data('status');
+		if (status != false) {
+			window.location = redirect_path + "/offer?id="+id
+		}
+	});
+</script>
 @endsection

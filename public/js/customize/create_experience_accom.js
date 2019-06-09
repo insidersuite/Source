@@ -1445,7 +1445,7 @@ $(".experience").click(function () {
     });
 
     $("#act_guest_apply").click(function() {
-        var guests = parseInt($("#act_adults").val()) + parseInt($("#act_children").val()) + parseInt($("#act_infants").val());
+        var guests = parseInt($("#act_adults").val());
         if(guests < act.min_capacity) {
             alert('Min capacity guests ' + act.min_capacity);
             return;

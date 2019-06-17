@@ -128,7 +128,7 @@
                 $accoms = Accomodation::where('city_id', $request->id)->where('status', 'true')->orderBy('timestamp', 'ASC')->get();
             }
             $accom_images = Accommodation_Image::where('offer_id', $offer->id)->get();
-            $prices_accom = Calendar_Accommodation::where('price_a_discount', '!=', 'NA')->where('price_b_discount', '!=', 'NA')->get();
+            $prices_accom = Calendar_Accommodation::select('*')->get();
             $prices_accom_na = Calendar_Accommodation::where('price_a_discount', '=', 'NA')->where('price_b_discount', '=', 'NA')->get();
             $accom_ids = [];
             foreach($prices_accom as $price) {

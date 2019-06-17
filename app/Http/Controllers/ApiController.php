@@ -1302,7 +1302,7 @@
             }
             $charge = \Stripe\Charge::create(array(
                                                    "amount" => $amount,
-                                                   "currency" => "aud",
+                                                   "currency" => strtolower(auth()->user()->currency),
                                                    "customer" => $customer->id
                                                    ));
             $gift_info['customer_id'] = $customer->id;
@@ -1462,7 +1462,7 @@
             
             $charge = \Stripe\Charge::create(array(
                                                    "amount" => $amount_,
-                                                   "currency" => "aud",
+                                                   "currency" => strtolower(auth()->user()->currency),
                                                    "customer" => $customer->id
                                                    ));
             $new_payment = Payment::create($data);

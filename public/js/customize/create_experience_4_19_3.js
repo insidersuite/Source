@@ -295,16 +295,16 @@ $("#review").click(function () {
                 var content = [], mail_content = []; var match_imgs = [];
                 for (var k = 0; k < exact_dates.length; k++) {
                     var title = makeTitle(exact_dates[k], "review");
-                    content[k] = "<div class='single_sel'><h3 class='date_range'>" + title + "</h3>";
-                    mail_content[k] = "<div class='single_sel'><h3 class='date_range'>" + title + "</h3>";
+                    content[k] = "<div style='margin-bottom: 15px;width: 600px;'><h3 style='margin: 22px 0 20px;font-family: Times New Roman, Times, serif;color: black;'>" + title + "</h3>";
+                    mail_content[k] = "<div style='margin-bottom: 15px;width: 600px;'><h3 style='margin: 22px 0 20px;font-family: Times New Roman, Times, serif;color: black;'>" + title + "</h3>";
                     e.forEach(exp => {
                         if (exp.type == "accommodation") {
                         var accoms_arr = $.map(accoms, function(value, index) {
                             return value;
                         });
                         if (exp.check_in == exact_dates[k]) {
-                            b_price = exp.d_b_price.split("$AUD");
-                            a_price = exp.d_a_price.split("$AUD");
+                            b_price = exp.d_b_price.split($('#user-currency').val());
+                            a_price = exp.d_a_price.split($('#user-currency').val());
                             // // total_acb_price += (parseInt(b_price[1])*exp.guests_num);
                             // total_acb_price += Math.floor(parseInt(b_price[1])*exp.guests_num);
                             // // total_aca_price += (parseInt(a_price[1])*exp.guests_num);
@@ -312,7 +312,7 @@ $("#review").click(function () {
                             accoms_arr.forEach(accom => {
                                 if (accom.id == exp.type_id) {
                                 review_accom_count ++;
-                                content[k] += "<p class='card_type'>Accommodation</p><div class='part_sel'><ul class='gallery-selected'>";
+                                content[k] += "<p style='margin: -2px 0 4px;font: 15px!important Times New Roman, Times, serif;letter-spacing: .025em;color: #a7a4a4;'>Accommodation</p><div style='margin-bottom: 7px;display: flex!important;color: black;justify-content: space-between;'><ul style='display: inline-block;' class='gallery-selected'>";
                                 match_imgs = [];
                                 accom_imgs.forEach(img => {
                                     if (img.accom_id == accom.id) {
@@ -321,22 +321,22 @@ $("#review").click(function () {
                                     }
                                 });
                                 content[k] += "</ul>";
-                                mail_content[k] += "<p class='card_type'>Accommodation</p><div class='part_sel'><img src='http://www.insidersuite.com" + match_imgs[0].path + "' style='width: 170px; height: 135px;'/>";
+                                mail_content[k] += "<p style='margin: -2px 0 4px;font: 15px!important Times New Roman, Times, serif;letter-spacing: .025em;color: #a7a4a4;'>Accommodation</p><div style='margin-bottom: 7px;display: flex!important;color: black;justify-content: space-between;'><img src='http://www.insidersuite.com" + match_imgs[0].path + "' style='width: 170px; height: 135px;'/>";
                                 if (exp.guests_num == 1) {
-                                    content[k] += "<div class='gallery-info'>" + "<h4>" + accom.name + "</h4><label>" + accom.full_address + "</label><div class='gallery-info-data'><span class='gallery-info-capacity'>" + exp.guests_num + " Guest coming</span></div></div>";
-                                    mail_content[k] += "<div class='gallery-info'>" + "<h4>" + accom.name + "</h4><label>" + accom.full_address + "</label><div class='gallery-info-data'><span class='gallery-info-capacity'>" + exp.guests_num + " Guest coming</span></div></div>";
+                                    content[k] += "<div style='margin-left: 20px;width: 50%;'>" + "<h4>" + accom.name + "</h4><label style='color: #888888;display: inline-block;max-width: 100%;margin-bottom: 10px;font-weight: 400;'>" + accom.full_address + "</label><div class='gallery-info-data'><span style='width: 18px;height: 18px;top: 1px;left: 1px;background-image: url(https://www.insidersuite.com/imgs/pamela.png);'>" + exp.guests_num + " Guest coming</span></div></div>";
+                                    mail_content[k] += "<div style='margin-left: 20px;width: 50%;'>" + "<h4>" + accom.name + "</h4><label style='color: #888888;display: inline-block;max-width: 100%;margin-bottom: 10px;font-weight: 400;'>" + accom.full_address + "</label><div class='gallery-info-data'><span style='width: 18px;height: 18px;top: 1px;left: 1px;background-image: url(https://www.insidersuite.com/imgs/pamela.png);'>" + exp.guests_num + " Guest coming</span></div></div>";
                                 } else {
-                                    content[k] += "<div class='gallery-info'>" + "<h4>" + accom.name + "</h4><label>" + accom.full_address + "</label><div class='gallery-info-data'><span class='gallery-info-capacity'>" + exp.guests_num + " Guests coming</span></div></div>";
-                                    mail_content[k] += "<div class='gallery-info'>" + "<h4>" + accom.name + "</h4><label>" + accom.full_address + "</label><div class='gallery-info-data'><span class='gallery-info-capacity'>" + exp.guests_num + " Guests coming</span></div></div>";
+                                    content[k] += "<div style='margin-left: 20px;width: 50%;'>" + "<h4>" + accom.name + "</h4><label style='color: #888888;display: inline-block;max-width: 100%;margin-bottom: 10px;font-weight: 400;'>" + accom.full_address + "</label><div class='gallery-info-data'><span style='width: 18px;height: 18px;top: 1px;left: 1px;background-image: url(https://www.insidersuite.com/imgs/pamela.png);'>" + exp.guests_num + " Guests coming</span></div></div>";
+                                    mail_content[k] += "<div style='margin-left: 20px;width: 50%;'>" + "<h4>" + accom.name + "</h4><label style='color: #888888;display: inline-block;max-width: 100%;margin-bottom: 10px;font-weight: 400;'>" + accom.full_address + "</label><div class='gallery-info-data'><span style='width: 18px;height: 18px;top: 1px;left: 1px;background-image: url(https://www.insidersuite.com/imgs/pamela.png);'>" + exp.guests_num + " Guests coming</span></div></div>";
                                 }
                                 prices_accoms.forEach(price => {
                                     if ((price.check_in_date == exact_dates[k]) && (price.accomodation_id == accom.id)) {
                                         if(exp.guests_num == 1) {
-                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>$AUD" + price.price_a_discount + "</b></p></div>";
-                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>$AUD" + price.price_a_discount + "</b></p></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
+                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p class=style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
                                         } else {
-                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + price.price_a_discount + "</b></p></div>";
-                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + price.price_a_discount + "</b></p></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
+                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>$AUD" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
                                         }
                                         
                                         total_aca_price += parseInt(price.price_a_discount);
@@ -351,8 +351,8 @@ $("#review").click(function () {
                             accoms_arr.forEach(accom => {
                                 if (accom.id == exp.type_id) {
                                 review_accom_count ++;
-                                content[k] += "<p class='card_type'>Accommodation</p><div class='part_sel'><ul class='gallery-selected'>";
-                                mail_content[k] += "<p class='card_type'>Accommodation</p><div class='part_sel'>";
+                                content[k] += "<p style='margin: -2px 0 4px;font: 15px!important Times New Roman, Times, serif;letter-spacing: .025em;color: #a7a4a4;'>Accommodation</p><div style='margin-bottom: 7px;display: flex!important;color: black;justify-content: space-between;'><ul style='display: inline-block;' class='gallery-selected'>";
+                                mail_content[k] += "<p style='margin: -2px 0 4px;font: 15px!important Times New Roman, Times, serif;letter-spacing: .025em;color: #a7a4a4;'>Accommodation</p><div style='margin-bottom: 7px;display: flex!important;color: black;justify-content: space-between;'>";
                                 match_imgs = [];
                                 accom_imgs.forEach(img => {
                                     if (img.accom_id == accom.id) {
@@ -363,24 +363,22 @@ $("#review").click(function () {
                                 content[k] += "</ul>";
                                 mail_content[k] += "<img src='http://www.insidersuite.com" + match_imgs[0].path + "' style='width: 170px; height: 135px;'/>";
                                 if (exp.guests_num == 1) {
-                                    content[k] += "<div class='gallery-info'>" + "<h4>" + accom.name + "</h4><label>" + accom.full_address + "</label><div class='gallery-info-data'><span class='gallery-info-capacity'>" + exp.guests_num + " Guest coming</span></div></div>";
-                                    mail_content[k] += "<div class='gallery-info'>" + "<h4>" + accom.name + "</h4><label>" + accom.full_address + "</label><div class='gallery-info-data'><span class='gallery-info-capacity'>" + exp.guests_num + " Guest coming</span></div></div>";
+                                    content[k] += "<div style='margin-left: 20px;width: 50%;'>" + "<h4>" + accom.name + "</h4><label style='color: #888888;display: inline-block;max-width: 100%;margin-bottom: 10px;font-weight: 400;'>" + accom.full_address + "</label><div class='gallery-info-data'><span style='width: 18px;height: 18px;top: 1px;left: 1px;background-image: url(https://www.insidersuite.com/imgs/pamela.png);'>" + exp.guests_num + " Guest coming</span></div></div>";
+                                    mail_content[k] += "<div style='margin-left: 20px;width: 50%;'>" + "<h4>" + accom.name + "</h4><label style='color: #888888;display: inline-block;max-width: 100%;margin-bottom: 10px;font-weight: 400;'>" + accom.full_address + "</label><div class='gallery-info-data'><span style='width: 18px;height: 18px;top: 1px;left: 1px;background-image: url(https://www.insidersuite.com/imgs/pamela.png);'>" + exp.guests_num + " Guest coming</span></div></div>";
                                 } else {
-                                    content[k] += "<div class='gallery-info'>" + "<h4>" + accom.name + "</h4><label>" + accom.full_address + "</label><div class='gallery-info-data'><span class='gallery-info-capacity'>" + exp.guests_num + " Guests coming</span></div></div>";
-                                    mail_content[k] += "<div class='gallery-info'>" + "<h4>" + accom.name + "</h4><label>" + accom.full_address + "</label><div class='gallery-info-data'><span class='gallery-info-capacity'>" + exp.guests_num + " Guests coming</span></div></div>";
+                                    content[k] += "<div style='margin-left: 20px;width: 50%;'>" + "<h4>" + accom.name + "</h4><label style='color: #888888;display: inline-block;max-width: 100%;margin-bottom: 10px;font-weight: 400;'>" + accom.full_address + "</label><div class='gallery-info-data'><span style='width: 18px;height: 18px;top: 1px;left: 1px;background-image: url(https://www.insidersuite.com/imgs/pamela.png);'>" + exp.guests_num + " Guests coming</span></div></div>";
+                                    mail_content[k] += "<div style='margin-left: 20px;width: 50%;'>" + "<h4>" + accom.name + "</h4><label style='color: #888888;display: inline-block;max-width: 100%;margin-bottom: 10px;font-weight: 400;'>" + accom.full_address + "</label><div class='gallery-info-data'><span style='width: 18px;height: 18px;top: 1px;left: 1px;background-image: url(https://www.insidersuite.com/imgs/pamela.png);'>" + exp.guests_num + " Guests coming</span></div></div>";
                                 }
 
                                 prices_accoms.forEach(price => {   
                                     if ((price.check_in_date == exact_dates[k]) && (price.accomodation_id == accom.id)) {
                                         if(exp.guests_num == 1) {
-                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>$AUD" + price.price_a_discount + "</b></p></div>";
-                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>$AUD" + price.price_a_discount + "</b></p></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
+                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
                                         } else {
-                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + price.price_a_discount + "</b></p></div>";
-                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + price.price_a_discount + "</b></p></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
+                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
                                         }
-                                        // content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + price.price_a_discount + "</b></p></div>";
-                                        // mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + Math.floor(price.price_a_discount/exp.guests_num) + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + Math.floor(price.price_b_discount/exp.guests_num) + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + price.price_a_discount + "</b></p></div>";
                                         total_aca_price += parseInt(price.price_a_discount);
                                         total_acb_price += parseInt(price.price_b_discount);
                                     }
@@ -392,8 +390,8 @@ $("#review").click(function () {
                         }
                     } else if (exp.type == "activity") {
                         if (exp.check_in == exact_dates[k]) {
-                            b_price = exp.d_b_price.split("$AUD");
-                            a_price = exp.d_a_price.split("$AUD");
+                            b_price = exp.d_b_price.split($('#user-currency').val());
+                            a_price = exp.d_a_price.split($('#user-currency').val());
                             // // total_atb_price += parseInt(b_price[1]);
                             // total_atb_price += Math.floor(parseInt(b_price[1])*exp.guests_num);
                             // // total_ata_price += parseInt(a_price[1]);
@@ -404,8 +402,8 @@ $("#review").click(function () {
                             acts_arr.forEach(act => {
                                 if (act.id == exp.type_id) {
                                 review_act_count ++;
-                                content[k] += "<div class='single_sel part_act_sel'><p class='card_type'>Activity</p><div class='part_sel'><ul class='gallery-slideshow'>";
-                                mail_content[k] += "<div class='single_sel part_act_sel'><p class='card_type'>Activity</p><div class='part_sel'>";
+                                content[k] += "<div style='margin-bottom: 15px;width: 600px;'><p style='margin: -2px 0 4px;font: 15px!important Times New Roman, Times, serif;letter-spacing: .025em;color: #a7a4a4;'>Activity</p><div style='margin-bottom: 7px;display: flex!important;color: black;justify-content: space-between;'><ul style='display: inline-block;' class='gallery-slideshow'>";
+                                mail_content[k] += "<div style='margin-bottom: 15px;width: 600px;'><p style='margin: -2px 0 4px;font: 15px!important Times New Roman, Times, serif;letter-spacing: .025em;color: #a7a4a4;'>Activity</p><div style='margin-bottom: 7px;display: flex!important;color: black;justify-content: space-between;'>";
                                 match_imgs = [];
                                 act_imgs.forEach(img => {
                                     if (img.act_id == act.id) {
@@ -423,21 +421,21 @@ $("#review").click(function () {
                                 console.log('group:',group);
                                 mail_content[k] += "<img src='http://www.insidersuite.com" + match_imgs[0].path + "' alt='' style='width: 170px; height: 135px;'>";
                                 if (exp.guests_num == 1) {
-                                    content[k] += "<div class='gallery-info'>" + "<h4>" + act.name + "</h4><p>" + act.address + "</p><div class='gallery-info-data'><span class='gallery-info-capacity'>" + exp.guests_num + " Guest coming</span></div></div>";
-                                    mail_content[k] += "<div class='gallery-info'>" + "<h4>" + act.name + "</h4><p>" + act.address + "</p><div class='gallery-info-data'><span class='gallery-info-capacity'>" + exp.guests_num + " Guest coming</span></div></div>";
+                                    content[k] += "<div style='margin-left: 20px;width: 50%;'>" + "<h4>" + act.name + "</h4><p style='font-size: 16px;color: #a7a4a4;'>" + act.address + "</p><div class='gallery-info-data'><span style='width: 18px;height: 18px;top: 1px;left: 1px;background-image: url(https://www.insidersuite.com/imgs/pamela.png);'>" + exp.guests_num + " Guest coming</span></div></div>";
+                                    mail_content[k] += "<div style='margin-left: 20px;width: 50%;'>" + "<h4>" + act.name + "</h4><p style='font-size: 16px;color: #a7a4a4;'>" + act.address + "</p><div class='gallery-info-data'><span  style='width: 18px;height: 18px;top: 1px;left: 1px;background-image: url(https://www.insidersuite.com/imgs/pamela.png);'>" + exp.guests_num + " Guest coming</span></div></div>";
                                 } else {
-                                    content[k] += "<div class='gallery-info'>" + "<h4>" + act.name + "</h4><p>" + act.address + "</p><div class='gallery-info-data'><span class='gallery-info-capacity'>" + exp.guests_num + " Guests coming</span></div></div>";
-                                    mail_content[k] += "<div class='gallery-info'>" + "<h4>" + act.name + "</h4><p>" + act.address + "</p><div class='gallery-info-data'><span class='gallery-info-capacity'>" + exp.guests_num + " Guests coming</span></div></div>";
+                                    content[k] += "<div class='gallery-info'>" + "<h4>" + act.name + "</h4><p style='font-size: 16px;color: #a7a4a4;'>" + act.address + "</p><div class='gallery-info-data'><span style='width: 18px;height: 18px;top: 1px;left: 1px;background-image: url(https://www.insidersuite.com/imgs/pamela.png);'>" + exp.guests_num + " Guests coming</span></div></div>";
+                                    mail_content[k] += "<div class='gallery-info'>" + "<h4>" + act.name + "</h4><p style='font-size: 16px;color: #a7a4a4;'>" + act.address + "</p><div class='gallery-info-data'><span style='width: 18px;height: 18px;top: 1px;left: 1px;background-image: url(https://www.insidersuite.com/imgs/pamela.png);'>" + exp.guests_num + " Guests coming</span></div></div>";
                                 }
 
                                 prices_acts.forEach(price => {
                                     if ((price.check_in_date == exact_dates[k]) && (price.activity_id == act.id)) {
                                         if(exp.guests_num == 1) {
-                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + price.price_a_discount + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + price.price_b_discount + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>$AUD" + Math.floor(price.price_a_discount*exp.guests_num) + "</b></p></div>";
-                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + price.price_a_discount + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + price.price_b_discount + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b>$AUD" + Math.floor(price.price_a_discount*exp.guests_num) + "</b></p></div>";
+                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(price.price_b_discount) + "</del></p><p style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount*exp.guests_num)) + "</b></p></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(price.price_b_discount) + "</del></p><p style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount*exp.guests_num)) + "</b></p></div>";
                                         } else {
-                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + price.price_a_discount + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + price.price_b_discount + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + Math.floor(price.price_a_discount*exp.guests_num) + "</b></p></div>";
-                                            content[k] += "<div class='gallery-price-info'>" + "<p class='custom_a'><b>$AUD" + price.price_a_discount + "</b>/pers</p><p class='custom_b'>instead of <del>$AUD" + price.price_b_discount + "</del></p><p class='total_p'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b>$AUD" + Math.floor(price.price_a_discount*exp.guests_num) + "</b></p></div>";
+                                            mail_content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(price.price_b_discount) + "</del></p><p style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount*exp.guests_num)) + "</b></p></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(price.price_b_discount) + "</del></p><p style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adults): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount*exp.guests_num)) + "</b></p></div>";
                                         }
                                         
                                         total_atb_price += Math.floor(price.price_b_discount*exp.guests_num);
@@ -473,20 +471,20 @@ $("#review").click(function () {
                 });
 
                 $(".review_period").html(makeSimpleTitle(exact_dates[0]) + "-" + makeSimpleTitle(exact_dates[exact_dates.length - 1]));
-                $(".review_accom_ap").html("<b>$AUD" + total_aca_price + "</b>");
-                $(".review_accom_bp").html("<del>$AUD" + total_acb_price + "</del>");
-                $(".review_act_ap").html("<b>$AUD" + total_ata_price + "</b>");
-                $(".review_act_bp").html("<del>$AUD" + total_atb_price + "</del>");
+                $(".review_accom_ap").html("<b>" + $('#user-currency').val() + currencyConvert(total_aca_price) + "</b>");
+                $(".review_accom_bp").html("<del>" + $('#user-currency').val() + currencyConvert(total_acb_price) + "</del>");
+                $(".review_act_ap").html("<b>" + $('#user-currency').val() + currencyConvert(total_ata_price) + "</b>");
+                $(".review_act_bp").html("<del>" + $('#user-currency').val() + currencyConvert(total_atb_price) + "</del>");
                 var total_new = total_aca_price + total_ata_price;
                 var total_old = total_acb_price + total_atb_price;
                 var suite_fee = (total_new*0.06).toFixed(2);
                 if(suite_fee > 55){
                     suite_fee = 55;
                 }
-                $(".suite_fee_span").html("$AUD" + suite_fee);
-                $(".new_price").html("<b>$AUD" + (parseFloat(total_new)+parseFloat(suite_fee)) + "</b>");
-                $(".old_price").html("<del>$AUD" + total_old + "</del>");
-                $(".payment_price").html("Total: $AUD" + (parseFloat(total_new)+parseFloat(suite_fee)));
+                $(".suite_fee_span").html($('#user-currency').val() + currencyConvert(suite_fee));
+                $(".new_price").html("<b>" + $('#user-currency').val() + currencyConvert((parseFloat(total_new)+parseFloat(suite_fee))) + "</b>");
+                $(".old_price").html("<del>" + $('#user-currency').val() + currencyConvert(total_old) + "</del>");
+                $(".payment_price").html("Total: " + $('#user-currency').val() + currencyConvert((parseFloat(total_new)+parseFloat(suite_fee))));
             }
         });
     }
@@ -640,7 +638,7 @@ $("#infants_decrease").click(function () {
 });
 
 $("#guest_apply").click(function () {
-    var guests = parseInt($("#adults").val()) + parseInt($("#children").val()) + parseInt($("#infants").val());
+    var guests = parseInt($("#adults").val());
     if(guests > 1) {
         $("#guests").val(guests + " guests");
     } else {
@@ -830,26 +828,26 @@ $("#promo_apply").click(function () {
             } else if (e.result == "true"){
                 $('#promo_apply').off('click');
                 var old_price = $(".payment_price").html();
-                var str = old_price.split("Total: $AUD");
+                var str = old_price.split("Total: " + $('#user-currency').val());
                 if (e.type == "dollar") {
                     if (parseFloat(e.value) > parseFloat(str[1])) {
                         alert("Your bill is less than voucher. You can to use it after.");
                     } else {
                         var new_price = (parseFloat(str[1]) - parseFloat(e.value)).toFixed(2);
-                        $(".promotion_discount").html("$AUD" + e.value);
+                        $(".promotion_discount").html($('#user-currency').val() + currencyConvert(e.value));
                         $("#voucher_nb").val($("#promo_code").val());
-                        $(".payment_price").html("Total: $AUD" + new_price);
+                        $(".payment_price").html("Total: " + $('#user-currency').val() + currencyConvert(new_price));
                         $(".voucher_discount").attr('style', 'display:block');
-                        $(".new_price").html("<b>$AUD" + new_price + "</b>");
+                        $(".new_price").html("<b>" + $('#user-currency').val() + currencyConvert(new_price) + "</b>");
                     }
                 } else {
                     var percentage = (100 - parseFloat(e.value)) / 100;
                     var new_price = (parseFloat(str[1]) * percentage).toFixed(2);
                     $(".promotion_discount").html(e.value + "%");
                     $("#voucher_nb").val($("#promo_code").val());
-                    $(".payment_price").html("Total: $AUD" + new_price);
+                    $(".payment_price").html("Total: " + $('#user-currency').val() + currencyConvert(new_price));
                     $(".voucher_discount").attr('style', 'display:block');
-                    $(".new_price").html("<b>$AUD" + new_price + "</b>");
+                    $(".new_price").html("<b>" + $('#user-currency').val() + currencyConvert(new_price) + "</b>");
                 }
             }
         }
@@ -937,6 +935,10 @@ $("#check").click(function (e) {
 });
 
 //----------------Additional functions ---------------------------
+function currencyConvert(price) {
+    var currency_rate = localStorage.getItem('currency_rate')
+    return (currency_rate * price).toFixed().replace(/\d(?=(\d{3}))/g, '$&,')
+}
 
 function makeTitle(str, type) {
     var d = new parseDate(str);

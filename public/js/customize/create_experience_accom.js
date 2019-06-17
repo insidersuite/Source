@@ -1,4 +1,5 @@
 //---------------------Experience Section ------------------------
+var currency_rate = localStorage.getItem('currency_rate')
 var accom_selected_day1 = "", accom_selected_day2 = "";
 var accom = {};
 var exp_accom = [];
@@ -111,7 +112,6 @@ $(".accomodation").click(function (event) {
     }
 
 //   console.log('accom Min'+min_price);
-
     prices.forEach(price => {
         if (price.accomodation_id == accom.id && price.nb_available != 0) {
         ndate.push(price.check_in_date);
@@ -119,19 +119,19 @@ $(".accomodation").click(function (event) {
     var acc = $('#accom_guests').val();
     acc = +acc.substring(0, acc.indexOf(' '));
     if (parseFloat(price.discount) == max_discount && price.accomodation_id == accom.id) {
-        $("#accom_discounted_price").html("$AUD" + Math.floor(price.price_a_discount/acc));
-        $("#accom_origin_price").html("$AUD" + Math.floor(price.price_b_discount/acc));
+        var price_a = (currency_rate * Math.floor(price.price_a_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+        var price_b = (currency_rate * Math.floor(price.price_b_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+
+        $("#accom_discounted_price").html($('#user-currency').val() + price_a);
+        $("#accom_origin_price").html($('#user-currency').val() + price_b);
         if(max_discount < 0.1) {
-            upto = price.price_a_discount + 'AUD';
+            upto = (currency_rate * price.price_a_discount).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,') + $('#user-currency').val();
             $('#accom_discont_text').html('From');
         }else {
             $('#accom_discont_text').html('Up to');
             upto = '-' + Math.round(max_discount * 100, 2) + "%";
-            
         }
         $("#accom_discont").html(upto);
-        
-        
     }
 });
 
@@ -224,7 +224,7 @@ $(".accomodation").click(function (event) {
     });
 
     $("#accom_guest_apply").click(function() {
-        var guests = parseInt($("#accom_adults").val()) + parseInt($("#accom_children").val()) + parseInt($("#accom_infants").val());
+        var guests = parseInt($("#accom_adults").val());
 
         if(guests > accom.max_capacity ){
             alert('great than max control');
@@ -429,8 +429,10 @@ $(".accomodation").click(function (event) {
                 }
                 var acc = $('#accom_guests').val();
                 acc = +acc.substring(0, acc.indexOf(' '));
-                $("#accom_discounted_price").html("$AUD" + Math.floor(total_a_discount/acc));
-                $("#accom_origin_price").html("$AUD" + Math.floor(total_b_discount/acc));
+                var total_a = (currency_rate * Math.floor(total_a_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                var total_b = (currency_rate * Math.floor(total_b_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                $("#accom_discounted_price").html($('#user-currency').val() + total_a);
+                $("#accom_origin_price").html($('#user-currency').val() + total_b);
                 //   $("#accom_discont").html(Math.round((total_b_discount - total_a_discount) / total_b_discount * 100, 2) + "%");
 
                 // 2019-03-08
@@ -467,8 +469,10 @@ $(".accomodation").click(function (event) {
                     var acc = $('#accom_guests').val();
                     acc = +acc.substring(0, acc.indexOf(' '));
                     if (parseFloat(price.discount) == max_discount && price.accomodation_id == accom.id) {
-                        $("#accom_discounted_price").html("$AUD" + Math.floor(price.price_a_discount/acc));
-                        $("#accom_origin_price").html("$AUD" + Math.floor(price.price_b_discount/acc));
+                        var price_a = (currency_rate * Math.floor(price.price_a_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                        var price_b = (currency_rate * Math.floor(price.price_b_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                        $("#accom_discounted_price").html($('#user-currency').val() + price_a);
+                        $("#accom_origin_price").html($('#user-currency').val() + price_b);
                     }
                 });
 
@@ -540,10 +544,12 @@ $(".accomodation").click(function (event) {
                     flag.price = price.price_a_discount;
                     var acc = $('#accom_guests').val();
                     acc = +acc.substring(0, acc.indexOf(' '));
+                    var price_a = (currency_rate * Math.floor(price.price_a_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                    var price_b = (currency_rate * Math.floor(price.price_b_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
                     $("#participants_adult").html('1');
                     $(".custom_nights").html('night');
-                    $("#accom_discounted_price").html("$AUD" + Math.floor(price.price_a_discount/acc));
-                    $("#accom_origin_price").html("$AUD" + Math.floor(price.price_b_discount/acc));
+                    $("#accom_discounted_price").html($('#user-currency').val() + price_a);
+                    $("#accom_origin_price").html($('#user-currency').val() + price_b);
                     //   $("#accom_discont").html(Math.round(price.discount * 100, 2) + "%");
                 }
             });
@@ -571,10 +577,12 @@ $(".accomodation").click(function (event) {
                     flag.price = price.price_a_discount;
                     var acc = $('#accom_guests').val();
                     acc = +acc.substring(0, acc.indexOf(' '));
+                    var price_a = (currency_rate * Math.floor(price.price_a_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                    var price_b = (currency_rate * Math.floor(price.price_b_discount/acc)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
                     $("#participants_adult").html('1');
                     $(".custom_nights").html('night');
-                    $("#accom_discounted_price").html("$AUD" + Math.floor(price.price_a_discount/acc));
-                    $("#accom_origin_price").html("$AUD" + Math.floor(price.price_b_discount/acc));
+                    $("#accom_discounted_price").html($('#user-currency').val() + price_a);
+                    $("#accom_origin_price").html($('#user-currency').val() + price_b);
                     // $("#accom_discont").html(Math.round(price.discount * 100, 2) + "%");
                 }
             });
@@ -817,18 +825,40 @@ $("#back_payment").click(function () {
 });
 
 $("#undo_accom").click(function () {
-    $.ajax({
-        type: 'post',
-        dataType: 'json',
-        url: 'undo_accom_info',
-        data: { 'experience_id': exp_id },
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        },
-        success: function (e) {
-            location.reload(true);
-        }
-    });
+    // $.ajax({
+    //     type: 'post',
+    //     dataType: 'json',
+    //     url: 'undo_accom_info',
+    //     data: { 'experience_id': exp_id },
+    //     headers: {
+    //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    //     },
+    //     success: function (e) {
+    //         location.reload(true);
+    //     }
+    // });
+    $("#accommodation_info").attr('style', 'display: none');
+    $("#general_info").attr('style', 'display: block');
+    $("#experience_info").attr('style', 'display: none');
+    $("#invite_info").attr('style', 'display: none');
+    $("#review_info").attr('style', 'display: none');
+    $("#payment_info").attr('style', 'display: none');
+
+    $("#general").addClass('active');
+    $("#accomodation").removeClass('active');
+    $("#experience").removeClass('active');
+    $("#invite").removeClass('active');
+    $("#review").removeClass('active');
+    $("#payment").removeClass('active');
+
+    var height = $(".experience-content").height();
+    $(".sidebar").height(height);
+
+    if ($(window).width() <= 414) {
+      $(".sidebar").attr('style', 'display: none;');
+      $("._66jk8g").attr('style', 'display: block;');
+      $(".experience-content").attr('style', 'display: block; margin-left: 0px;padding-left: 15px; padding-right: 15px; margin-bottom: 0px;');
+    }
 });
 
 $(".add_trip_btn").click(function () {
@@ -1326,8 +1356,10 @@ $(".experience").click(function () {
     var acc_act = $('#act_guests').val();
     acc_act = +acc_act.substring(0, acc_act.indexOf(' '));
     if (parseFloat(price.discount) == max_discount_act && price.activity_id == act.id) {
-        $("#act_discounted_price").html("$AUD" + Math.floor(price.price_a_discount));
-        $("#act_origin_price").html("$AUD" + Math.floor(price.price_b_discount));
+        var price_a = (currency_rate * Math.floor(price.price_a_discount)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+        var price_b = (currency_rate * Math.floor(price.price_b_discount)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+        $("#act_discounted_price").html($('#user-currency').val() + price_a);
+        $("#act_origin_price").html($('#user-currency').val() + price_b);
         $("#act_discont").html('-' + Math.round(max_discount_act * 100, 2) + "%");
     }
 });
@@ -1413,7 +1445,7 @@ $(".experience").click(function () {
     });
 
     $("#act_guest_apply").click(function() {
-        var guests = parseInt($("#act_adults").val()) + parseInt($("#act_children").val()) + parseInt($("#act_infants").val());
+        var guests = parseInt($("#act_adults").val());
         if(guests < act.min_capacity) {
             alert('Min capacity guests ' + act.min_capacity);
             return;
@@ -1675,18 +1707,40 @@ $("#save_act").click(function () {
 });
 
 $("#remove_act").click(function () {
-    $.ajax({
-        type: 'post',
-        dataType: 'json',
-        url: 'undo_act_info',
-        data: { 'experience_id': exp_id },
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        },
-        success: function (e) {
-            location.reload(true);
-        }
-    });
+    // $.ajax({
+    //     type: 'post',
+    //     dataType: 'json',
+    //     url: 'undo_act_info',
+    //     data: { 'experience_id': exp_id },
+    //     headers: {
+    //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    //     },
+    //     success: function (e) {
+    //         location.reload(true);
+    //     }
+    // });
+    $("#accommodation_info").attr('style', 'display: block');
+    $("#general_info").attr('style', 'display: none');
+    $("#experience_info").attr('style', 'display: none');
+    $("#invite_info").attr('style', 'display: none');
+    $("#review_info").attr('style', 'display: none');
+    $("#payment_info").attr('style', 'display: none');
+
+    $("#accomodation").addClass('active');
+    $("#general").removeClass('active');
+    $("#experience").removeClass('active');
+    $("#invite").removeClass('active');
+    $("#review").removeClass('active');
+    $("#payment").removeClass('active');
+
+    var height = $(".experience-content").height();
+    $(".sidebar").height(height);
+
+    if ($(window).width() <= 414) {
+      $(".sidebar").attr('style', 'display: none;');
+      $("._66jk8g").attr('style', 'display: block;');
+      $(".experience-content").attr('style', 'display: block; margin-left: 0px;padding-left: 15px; padding-right: 15px; margin-bottom: 0px;');
+    }
 });
 var calendarActEvent = function (first_d, selected_act_id) {
     if(first_d != null){
@@ -1696,9 +1750,11 @@ var calendarActEvent = function (first_d, selected_act_id) {
         acc_act = +acc_act.substring(0, acc_act.indexOf(' '));
         _prices.forEach(price => {
             if (price.activity_id == selected_act_id && price.check_in_date == start_d) {
-            $("#act_discounted_price").html("$AUD" + Math.floor(price.price_a_discount));
-            $("#act_origin_price").html("$AUD" + Math.floor(price.price_b_discount));
-            //   $("#act_discont").html(Math.round(price.discount * 100, 2) + "%");
+                var price_a = (currency_rate * Math.floor(price.price_a_discount)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                var price_b = (currency_rate * Math.floor(price.price_b_discount)).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+                $("#act_discounted_price").html($('#user-currency').val() + price_a);
+                $("#act_origin_price").html($('#user-currency').val() + price_b);
+                //   $("#act_discont").html(Math.round(price.discount * 100, 2) + "%");
         }
     });
     } else {

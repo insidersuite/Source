@@ -440,6 +440,11 @@ input::placeholder {
     padding: 8px 9px;
   }
 }
+@media (max-width:390pt){
+  #img_offer{
+    margin-bottom: 10%;
+  }
+}
 #register_email {
   background-image: url(/../imgs/icon-email.png);
   background-repeat: no-repeat;

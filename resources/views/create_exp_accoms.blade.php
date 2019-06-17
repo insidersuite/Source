@@ -57,7 +57,7 @@
                                         @endif
                                     @endforeach
                                     <?php 
-                                        $currency = 'AUD'; 
+                                        $currency = auth()->user()->currency == null ? 'AUD' : auth()->user()->currency; 
                                         $discont10 = false;
                                     ?>
                                     @foreach($prices_accom as $price)
@@ -68,14 +68,22 @@
                                                 $upto =  '-' . $max_accom_discount * 100 . '%';
                                                 if($max_accom_discount < 0.1 ) {
                                                     $discont10 = true;
-                                                    $upto = $price['price_a_discount'] . $currency;
+                                                    $upto = $price['price_a_discount'];
                                                 }
                                             ?>
                                         @endif
                                     @endforeach
                                     <p class="detail-info-address">{{$accom->full_address}}</p>
                                     <p class="detail-info-name">{{$accom->name}}</p>
-                                    <p class="detail-info-discount"><span class="small">@if(!$discont10)Up to @else From @endif</span><span class="big">{{ $upto }}</span></p>
+                                    <p class="detail-info-discount">
+                                        <span class="small">
+                                            @if(!$discont10)
+                                                Up to <span class="big">{{ $upto }}</span> 
+                                            @else 
+                                                From <span class="nominal big">{{ $upto }}</span>
+                                            @endif
+                                        </span>
+                                    </p>
                                 </div>
                                 <div class="detail-info-data origin eUhMAS">
 							<span class="detail-info-capacity">
@@ -163,7 +171,7 @@
             <div class="form-content submit-mobile">
                 <button type="button" class="_d4g44p2" aria-busy="false" id="save_accom"><span class="_cgr7tc7">Save my selection</span></button>
                 <input type="button" class="backbutton" aria-busy="false" id="back_accom" value="Back">
-                <button type="button" class="_ky1ga6g undobutton" aria-busy="false" id="undo_accom"><span class="_cgr7tc7">Undo</span></button>
+                <button type="button" class="_ky1ga6g undobutton" aria-busy="false" id="undo_accom"><span class="_cgr7tc7">Back</span></button>
             </div>
         </div>
 </section>
@@ -222,17 +230,25 @@
                                     @endif
                                 @endforeach
                                 <?php 
-                                    $currency = 'AUD'; 
+                                    $currency = auth()->user()->currency == null ? 'AUD' : auth()->user()->currency;
                                     $discont10 = false;
                                     $upto =  '-' . $max_act_discount * 100 . '%';
                                     if($max_act_discount < 0.1 ) {
                                         $discont10 = true;
-                                        $upto = $price['price_a_discount'] . $currency;
+                                        $upto = $price['price_a_discount'];
                                     }
                                 ?>
                                 <p class="detail-info-address">{{$act->address}}</p>
                                 <p class="detail-info-name">{{$act->name}}</p>
-                                <p class="detail-info-discount"><span class="small">@if(!$discont10) Up to @endif </span><span class="big">{{ $upto }}</span></p>
+                                <p class="detail-info-discount">
+                                    <span class="small">
+                                        @if(!$discont10)
+                                            Up to <span class="big">{{ $upto }}</span> 
+                                        @else 
+                                            From <span class="nominal big">{{ $upto }}</span>
+                                        @endif
+                                    </span>
+                                </p>
                             </div>
                             <div class="detail-info-data origin eUhMAS">
                                 @foreach ($act_practical as $pract)
@@ -311,7 +327,7 @@
             <div class="form-content submit-mobile">
                 <button type="button" class="_d4g44p2" aria-busy="false" id="save_act"><span class="_cgr7tc7">Save my selection</span></button>
                 <input type="button" class="backbutton" aria-busy="false" id="back_act" value="Back">
-                <button type="button" class="_ky1ga6g undobutton" aria-busy="false" id="remove_act"><span class="_cgr7tc7">Undo</span></button>
+                <button type="button" class="_ky1ga6g undobutton" aria-busy="false" id="remove_act"><span class="_cgr7tc7">Back</span></button>
             </div>
         </div>
     </div>
@@ -460,20 +476,6 @@
 											<button type="button" class="fndzHx" id="accom_adults_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
 											<label for="adults"><input id="accom_adults" name="adults" readonly="" tabindex="-1" value="1"></label>
 											<button type="button" class="active fndzHx" id="accom_adults_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
-                                        </div>
-                                        <div class="TPxij">
-                                            <label class="ijjuLW">Children</label>
-                                            <span class="egudlU select_option" min="1" max="15">
-											<button type="button" class="fndzHx" id="accom_children_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
-											<label for="children"><input id="accom_children" name="children" readonly="" tabindex="-1" value="0"></label>
-											<button type="button" class="active fndzHx" id="accom_children_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
-                                        </div>
-                                        <div class="TPxij">
-                                            <label class="ijjuLW">Infants<span style="color: #8c8888;font-size: 10px;">(under 2)</span></label>
-                                            <span class="egudlU select_option" min="1" max="15">
-											<button type="button" class="fndzHx" id="accom_infants_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
-											<label for="infants"><input id="accom_infants" name="infants" readonly="" tabindex="-1" value="0"></label>
-											<button type="button" class="active fndzHx" id="accom_infants_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
                                         </div>
                                         <button type="button" class="iCflgr" id="accom_guest_apply">Apply</button>
                                     </div>
@@ -634,20 +636,6 @@
 												<label for="adults"><input id="act_adults" name="adults" readonly="" tabindex="-1" value="1"></label>
 												<button type="button" class="active fndzHx" id="act_adults_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
                                         </div>
-                                        <div class="TPxij">
-                                            <label class="ijjuLW">Children</label>
-                                            <span class="egudlU select_option" min="1" max="15">
-												<button type="button" class="fndzHx" id="act_children_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
-												<label for="children"><input id="act_children" name="children" readonly="" tabindex="-1" value="0"></label>
-												<button type="button" class="active fndzHx" id="act_children_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
-                                        </div>
-                                        <div class="TPxij">
-                                            <label class="ijjuLW">Infants<span style="color: #8c8888;font-size: 10px;">(under 2)</span></label>
-                                            <span class="egudlU select_option" min="1" max="15">
-												<button type="button" class="fndzHx" id="act_infants_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
-												<label for="infants"><input id="act_infants" name="infants" readonly="" tabindex="-1" value="0"></label>
-												<button type="button" class="active fndzHx" id="act_infants_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
-                                        </div>
                                         <button type="button" class="iCflgr" id="act_guest_apply">Apply</button>
                                     </div>
                                 </div>
@@ -722,6 +710,8 @@
 <script type="text/javascript" src="{{ url('js/customize/create_experience_accom.js') }}"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPzXAXjAyEIcluDJSMgRRBffUCrbNq1Bc&callback=initMap"></script>
 <script type="text/javascript">
+    var currency_rate = localStorage.getItem('currency_rate')
+
     $('.gallery-slideshow').slideshow({
         width: 280,
         height: 210,
@@ -732,4 +722,18 @@
         $(".response_add_trip_btn").css("position", "static");
         $(".setting-content").css("margin-bottom", "0px");
     }
+
+    $('#form_accommodation').children('.detail-item').each((index, item) => {
+        var price = $(item).find('.detail-info-discount').find('.nominal.big').text()
+        var currency_convert = price * currency_rate
+        $(item).find('.detail-info-discount').find('.nominal.big')
+            .text(currency_convert.toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '{{auth()->user()->currency}}')
+    })
+
+    $('#form_experience').children('.detail-item').each((index, item) => {
+        var price = $(item).find('.detail-info-discount').find('.nominal.big').text()
+        var currency_convert = price * currency_rate
+        $(item).find('.detail-info-discount').find('.nominal.big')
+            .text(currency_convert.toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '{{auth()->user()->currency}}')
+    })
 </script>

@@ -1,4 +1,5 @@
 var design_id = "blue";
+var currency = localStorage.getItem('currency');
 $("#blue").click(function () {
   var bool = $(this).hasClass('jbHdQk');
   design_id = "blue";
@@ -89,8 +90,8 @@ $("#serene_kiff").click(function () {
     $(this).addClass('gFbcvG');
     $("#serene_kiff_text").addClass('hbWVSK');
     $("#card-50-value").attr('style', 'display: block;');
-    $('#amount').val('50');
-    $('#total_amount').html('Total Amount: $50');
+    $('#amount').val(`${currencyConvert(50)}`);
+    $('#total_amount').html(`Total Amount: ${currencyConvert(50)}${$('#currency').val()}`);
   }
 });
 $("#serious_kiff").click(function () {
@@ -119,8 +120,8 @@ $("#serious_kiff").click(function () {
     $(this).addClass('gFbcvG');
     $("#serious_kiff_text").addClass('hbWVSK');
     $("#card-100-value").attr('style', 'display: block;');
-    $('#amount').val('100');
-    $('#total_amount').html('Total Amount: $100');
+    $('#amount').val(`${currencyConvert(100)}`);
+    $('#total_amount').html(`Total Amount: ${currencyConvert(100)}${$('#currency').val()}`);
   }
 });
 $("#solid_kiff").click(function () {
@@ -149,8 +150,8 @@ $("#solid_kiff").click(function () {
     $(this).addClass('gFbcvG');
     $("#solid_kiff_text").addClass('hbWVSK');
     $("#card-200-value").attr('style', 'display: block;');
-    $('#amount').val('200');
-    $('#total_amount').html('Total Amount: $200');
+    $('#amount').val(`${currencyConvert(200)}`);
+    $('#total_amount').html(`Total Amount: ${currencyConvert(200)}${$('#currency').val()}`);
   }
 });
 $("#kiff_yolo").click(function () {
@@ -179,8 +180,8 @@ $("#kiff_yolo").click(function () {
     $(this).addClass('gFbcvG');
     $("#kiff_yolo_text").addClass('hbWVSK');
     $("#card-500-value").attr('style', 'display: block;');
-    $('#amount').val('500');
-    $('#total_amount').html('Total Amount: $500');
+    $('#amount').val(`${currencyConvert(500)}`);
+    $('#total_amount').html(`Total Amount: ${currencyConvert(500)}${$('#currency').val()}`);
   }
 });
 
@@ -231,3 +232,8 @@ form.addEventListener('submit', function(event) {
     }    
   }
 });
+
+function currencyConvert(price) {
+  var currency_rate = localStorage.getItem('currency_rate')
+  return (currency_rate * price).toFixed().replace(/\d(?=(\d{3}))/g, '$&,')
+}

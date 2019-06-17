@@ -55,7 +55,7 @@
 
     <?php $min_price = "";?>
 
-
+	<input type="hidden" value="{{auth()->user()->currency}}" id="user-currency">
 
 	<div id="site-content">
 
@@ -195,34 +195,6 @@
 
 										</div>
 
-										<div class="TPxij">
-
-											<label class="ijjuLW">Children</label>
-
-											<span class="egudlU select_option" min="1" max="15">
-
-										<button type="button" class="fndzHx" id="children_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
-
-										<label for="children"><input id="children" name="children" readonly="" tabindex="-1" value="0"></label>
-
-										<button type="button" class="active fndzHx" id="children_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
-
-										</div>
-
-										<div class="TPxij">
-
-											<label class="ijjuLW">Infants<span style="color: #8c8888;font-size: 10px;">(under 2)</span></label>
-
-											<span class="egudlU select_option" min="1" max="15">
-
-										<button type="button" class="fndzHx" id="infants_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
-
-										<label for="infants"><input id="infants" name="infants" readonly="" tabindex="-1" value="0"></label>
-
-										<button type="button" class="active fndzHx" id="infants_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
-
-										</div>
-
 										<button type="button" class="iCflgr" id="guest_apply">Apply</button>
 
 									</div>
@@ -344,12 +316,13 @@
 						<div class="form_border">
 
 							<div class="header_form">
+								<script type="text/javascript" src="{{ url('js/customize/create_experience_4_19_3.js') }}"></script>
 
-								<h3>{{$offer->location_place}}&nbsp;-&nbsp;<span class="review_exp">Name of trip</span></h3>
+								<h3>{{$offer->location_place}}&nbsp;-&nbsp;<span class="review_exp"></span></h3>
 
 								<p class="review_nb_guests">@if($experience['guests_nb'] == 1) {{$experience['guests_nb']}} &nbsp;guest @else {{$experience['guests_nb']}} &nbsp;guests @endif</p>
 
-								<p class="review_period">Sun. 30 september, 16th - Mon. 1 october, 12th</p>
+								<p class="review_period"></p>
 
 							</div>
 
@@ -359,9 +332,9 @@
 
 								<div class="body_money">
 
-									<p><span class="custom_accoms_num"></span>&nbsp;<span class="custom_accoms_num_text">Accommodation: </span> <span class="review_accom_ap"></span><span class="review_accom_bp"></span></p>
+									<p><span class="custom_accoms_num">0</span>&nbsp;<span class="custom_accoms_num_text">Accommodation: </span> <span class="review_accom_ap">$AUD0</span><span class="review_accom_bp"></span></p>
 
-									<p><span class="custom_acts_num"></span>&nbsp; <span class="custom_acts_num_text">Activity: </span><span class="review_act_ap"></span><span class="review_act_bp"></span></p>
+									<p><span class="custom_acts_num">0</span>&nbsp; <span class="custom_acts_num_text">Activity: </span><span class="review_act_ap">$AUD0</span><span class="review_act_bp"></span></p>
 
 								</div>
 
@@ -369,9 +342,9 @@
 
 							<div class="footer_form">
 
-								<p>Booking fee: <span class="suite_fee_span" style="float: right; color: black;">$AUD3.90</span></p>
+								<p>Booking fee: <span class="suite_fee_span" style="float: right; color: black;">$AUD0.00</span></p>
 
-								<p><span id="title_total" >Total: </span><span class="new_price">200,90€</span><span class="old_price">277,90€</span></p>
+								<p><span id="title_total" >Total: </span><span class="new_price">0.00€</span><span class="old_price">0.00€</span></p>
 
 								<button type="button" class="btn-submit" aria-busy="false" id="submit_trip"><span class="_cgr7tc7">Submit my trip</span></button>
 
@@ -585,11 +558,11 @@
 
 						<div class="header_form">
 
-							<h3>{{$offer->location_place}}-<span class="review_exp">Name of trip</span></h3>
+							<h3>{{$offer->location_place}}-<span class="review_exp"></span></h3>
 
 							<p class="review_nb_guests">{{$experience['guests_nb']}} &nbsp;guests</p>
 
-							<p class="review_period">Sun. 30 september, 16th - Mon. 1 october, 12th</p>
+							<p class="review_period"></p>
 
 						</div>
 
@@ -703,8 +676,16 @@
 
 	<script type="text/javascript" src="{{ url('js/customize/create_experience_4_19_3.js') }}"></script>
 
-
 	<script src="https://js.stripe.com/v3/"></script>
+
+	<script>
+		fetch('https://api.exchangeratesapi.io/latest?base=AUD')
+		.then((resp) => resp.json())
+		.then((data) => {
+			let rate = data.rates.{{auth()->user()->currency}}
+			localStorage.setItem('currency_rate', rate)
+		})
+	</script>
 
 	<script>
         $('.slide-like').click(function () {var id = $(this).attr('id'); if (id < 100) removeSelection(id, 'accoms'); else removeSelection(id, 'acts');});
@@ -783,8 +764,8 @@
             hiddenInput1.setAttribute('type', 'hidden');
             hiddenInput1.setAttribute('name', 'amount');
             var old_price = $(".payment_price").html();
-            var str = old_price.split("Total: $AUD");
-            hiddenInput1.setAttribute('value', parseFloat(str[1]));
+            // var str = old_price.split("Total: $AUD");
+            hiddenInput1.setAttribute('value', old_price.replace(/\D/g, ''));
             form.appendChild(hiddenInput1);
             var hiddenInput2 = document.createElement('input');
             hiddenInput2.setAttribute('type', 'hidden');

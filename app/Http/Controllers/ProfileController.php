@@ -29,7 +29,7 @@ class ProfileController extends Controller
 			default: break;
 		}
 		$user->title			= $request->title;
-		$user->username		= $request->first_name.' '.$request->last_name;
+		$user->username			= $request->first_name.' '.$request->last_name;
 		$user->first_name		= $request->first_name;
 		$user->last_name		= $request->last_name;
 		$user->day				= $request->day;
@@ -42,6 +42,7 @@ class ProfileController extends Controller
 		$user->country			= $request->country;
 		$user->phone_number		= $request->phone_number;
 		$user->mobile_number	= $request->mobile_number;
+		$user->currency			= $request->currency;
 		$user->save();		
 		return redirect('profile');
 	}

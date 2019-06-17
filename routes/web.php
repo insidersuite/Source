@@ -43,6 +43,7 @@ Route::group(['middlewareGroups' => 'web'], function () {
 	});
 
 	Route::group(['middleware' => 'Authenticated'], function() {
+		Route::get('offer/{id?}','HomeController@offer');
 		Route::get('logout', 'Auth\LoginController@logout');
 		Route::get('home','HomeController@home');
 		Route::get('our-story','HomeController@our_story');
@@ -209,6 +210,6 @@ Route::group(['middlewareGroups' => 'web'], function () {
 		Route::get('admin/get_messages', 'ApiController@get_messages');
 		Route::get('admin/set_messages_status', 'ApiController@set_messages_status');
 		// Logout from Backend
-		Route::get('admin/logout', 'Auth\LoginController@logout');		
+		Route::get('admin/logout', 'Auth\LoginController@logout');
 	});
 });

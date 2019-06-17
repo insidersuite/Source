@@ -138,7 +138,7 @@
         <div class="form-content submit-mobile">
             <button type="button" class="_d4g44p2" aria-busy="false" id="save_act"><span class="_cgr7tc7">Save my selection</span></button>
             <input type="button" class="backbutton" aria-busy="false" id="back_act" value="Back">
-            <button type="button" class="_ky1ga6g undobutton" aria-busy="false" id="remove_act"><span class="_cgr7tc7">Undo</span></button>
+            <button type="button" class="_ky1ga6g undobutton" aria-busy="false" id="remove_act"><span class="_cgr7tc7">Back</span></button>
         </div>
     </div>
 </div>
@@ -278,20 +278,6 @@
 												<button type="button" class="fndzHx" id="act_adults_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
 												<label for="adults"><input id="act_adults" name="adults" readonly="" tabindex="-1" value="1"></label>
 												<button type="button" class="active fndzHx" id="act_adults_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
-                                        </div>
-                                        <div class="TPxij">
-                                            <label class="ijjuLW">Children</label>
-                                            <span class="egudlU select_option" min="1" max="15">
-												<button type="button" class="fndzHx" id="act_children_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
-												<label for="children"><input id="act_children" name="children" readonly="" tabindex="-1" value="0"></label>
-												<button type="button" class="active fndzHx" id="act_children_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
-                                        </div>
-                                        <div class="TPxij">
-                                            <label class="ijjuLW">Infants<span style="color: #8c8888;font-size: 10px;">(under 2)</span></label>
-                                            <span class="egudlU select_option" min="1" max="15">
-												<button type="button" class="fndzHx" id="act_infants_decrease"><svg viewBox="0 0 24 24" width="1em" height="1em"><rect fill="currentColor" fill-rule="nonzero" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></svg></button>
-												<label for="infants"><input id="act_infants" name="infants" readonly="" tabindex="-1" value="0"></label>
-												<button type="button" class="active fndzHx" id="act_infants_increase"><svg viewBox="0 0 24 24" width="1em" height="1em"><g fill="currentColor" fill-rule="nonzero"><rect x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect><rect transform="rotate(-90 12 12)" x="7.059" y="11.294" width="9.882" height="1.412" rx="0.706"></rect></g></svg></button></span>
                                         </div>
                                         <button type="button" class="iCflgr" id="act_guest_apply">Apply</button>
                                     </div>

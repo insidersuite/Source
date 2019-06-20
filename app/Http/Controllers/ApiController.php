@@ -272,7 +272,7 @@
                                         ]);
             }
             return response()->json([
-                                    'success' => count($calendars) ? false : true,
+                                    'success' => count($calendars) ? true : false,
                                     'data' => $calendars
                                     ]);
         }

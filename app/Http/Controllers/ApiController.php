@@ -254,7 +254,6 @@
             $count_accomodation = 0;
             foreach($exp as $e) {
                 if($e['type'] === 'accommodation') {
-                    $count_accomodation++;
                     $calendar = Calendar_Accommodation::where('accomodation_id', $e['type_id']);
                     $calendar = $calendar->where('check_in_date', $e['check_in']);
                     $calendar = $calendar->where('price_a_discount', 'NA');
@@ -262,19 +261,22 @@
                     $calendar = $calendar->where('discount', 0);
                     if($calendar->first()) {
                         $calendars[] = $calendar->first();
+                        $count_accomodation++;
                     }
                 }
             }
+            
             if($count_accomodation == 0) {
                 return response()->json([
                                         'success' => true,
                                         'data' => ''
                                         ]);
+            }else{
+                return response()->json([
+                    'success' =>  false,
+                    'data' => $calendars
+                    ]);
             }
-            return response()->json([
-                                    'success' => count($calendars) ? true : false,
-                                    'data' => $calendars
-                                    ]);
         }
         public function validate_calendar_activity(Request $request) {
             $exp = ExperienceDetail::where('experience_id', $request->exp_id)->get();

@@ -65,7 +65,7 @@
 @section('scripts')
     <script>
         var video = document.getElementById('video'); 
-        video.addEventListener('click',function(){ 
+        video.addEventListener('load',function(){ 
             video.play(); 
         },false);
     </script>

@@ -13,6 +13,8 @@ class FavouritesController extends Controller
 {
     public function list_favourites()
     {
+        $expid = Experience::select('id')->get();
+        $fav= Favourite::where('user_id',Auth::User()->user_id)->whereNotIn('exp_id',$expid)->delete();
         $favourites = Favourite::where('user_id', Auth::User()->user_id)->get();
         $count = Favourite::where('user_id', Auth::User()->user_id)->count();
         $experiences = [];

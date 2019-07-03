@@ -975,14 +975,16 @@ var removeSelection = function (id, type) {
             success: function (e) {
                 console.log(e);
                 count_a--;
-                x.parentElement.style.display='none';
+                //x.parentElement.style.display='none';
+                x.parentElement.remove();
+                $('#elm_accom_sel').remove();
+                if (sel_accoms.findIndex(e => { return e == id }) != "-1") {
+                    sel_accoms.splice(sel_accoms.findIndex(e => { return e == id }), 1);
+                    $("#" + id).closest('.detail-item').remove();
+                }
             }
         });
         // }
-        if (sel_accoms.findIndex(e => { return e == id }) != "-1") {
-            sel_accoms.splice(sel_accoms.findIndex(e => { return e == id }), 1);
-            $("#" + id).closest('.detail-item').remove();
-        }
     } else {
         console.log("removeSelection: ", sel_acts);
         // if (sel_acts.length > 0 ) {
@@ -1020,7 +1022,9 @@ var removeSelection = function (id, type) {
             success: function (e) {
                 console.log(e);
                 count_c--;
-                x.parentElement.style.display='none';
+                //x.parentElement.style.display='none';
+                x.parentElement.remove();
+                $('#elm_act_sel').remove();
             }
         });
         // }
@@ -1547,7 +1551,6 @@ $(".experience").click(function () {
 });
 $("#save_act").click(function () {
     console.log("test act:"+ count_c, sel_acts, sel_accoms);
-    
     if(sel_acts.length == 0) {
         elm_act_sel = $('#elm_act_sel').val();
         if(elm_act_sel > 100) {
@@ -1560,7 +1563,6 @@ $("#save_act").click(function () {
     // if (sel_acts.length == 0 && sel_accoms.length == 0) {
     if (sel_acts.length == 0 && sel_accoms.length == 0 && count_c == 0) {
             console.log("test act:"+ count_c, sel_acts, sel_accoms);
-
         $("#review").addClass('disabled').html("<img src='imgs/icon-lock.png'>Review &amp; Submit");
         $("#payment").addClass('disabled');
         count_c = 0;
@@ -1582,7 +1584,6 @@ $("#save_act").click(function () {
         });
     } else if (sel_acts.length == 0 && sel_accoms.length != 0) {
             console.log("test act:"+ count_c, sel_acts, sel_accoms);
-
         count_c = 0;
         var data = {
             'experience_id': exp_id,
@@ -1605,7 +1606,6 @@ $("#save_act").click(function () {
     } else if (sel_acts.length != 0 || count_c != 0) {
         console.log("test act:"+ count_c, sel_acts, sel_accoms);
         console.log(type);
-        
         var trigger_count = 0;
         var data_array = [];
 
@@ -1693,7 +1693,6 @@ $("#save_act").click(function () {
 
     } else if (sel_acts.length != 0 || sel_accoms.length != 0){
             console.log("test act:"+ count_c, sel_acts, sel_accoms);
-
         //  {
         $("#review").removeClass('disabled').trigger("click");
         $('span.custom_accoms_num').text(count_a);

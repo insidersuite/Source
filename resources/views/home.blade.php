@@ -64,7 +64,7 @@
 @endsection
 @section('scripts')
     <script>
-        var video = document.getElementById('video'); 
+        var video = window.getElementById('video'); 
         video.addEventListener('load',function(){ 
             video.play(); 
         },false);

@@ -8,10 +8,10 @@
 <div id="site-content">
     <div class="_5m2ieb" style="background-image:url(../images/Background/InsiderSuite_Home1.jpg)">
 
-        <video loop="" muted="" playsinline="" autoplay="" style="object-fit:cover;width:100%;height:100%">
+        <video id="video" loop="" muted="" playsinline="" autoplay="" style="object-fit:cover;width:100%;height:100%">
           <source src="https://dddwzx8rabh1g.cloudfront.net/home_video.mp4" type="video/mp4">
           <source src="https://dddwzx8rabh1g.cloudfront.net/home_video.mp4" type="video/mp4">
-    </video>
+        </video>
         <div class="_314ao4">
             <div style="margin-bottom:24px">
                 <div>
@@ -61,6 +61,12 @@
     </div>
     
 </div>
+@endsection
+@section('scripts')
+    <script>
+        var vid = document.getElementById("video"); 
+        vid.play();
+    </script>  
 @endsection
 
 

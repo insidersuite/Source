@@ -9,8 +9,8 @@
     <div class="_5m2ieb" style="background-image:url(../images/Background/InsiderSuite_Home1.jpg)">
 
         <video id="video" loop="" muted="" playsinline="" autoplay="" style="object-fit:cover;width:100%;height:100%">
-          <source src="https://dddwzx8rabh1g.cloudfront.net/home_video.mp4" type="video/mp4">
-          <source src="https://dddwzx8rabh1g.cloudfront.net/home_video.mp4" type="video/mp4">
+          <source src="imgs/home_video.mp4" type="video/mp4">
+          <source src="imgs/home_video.mp4" type="video/mp4">
         </video>
         <div class="_314ao4">
             <div style="margin-bottom:24px">
@@ -64,24 +64,12 @@
 @endsection
 @section('scripts')
     <script>
-        checkforVideo();
-
-        function checkforVideo() {
-            //Every 500ms, check if the video element has loaded
-            var b = setInterval(function(){
-                if(VideoElement.readyState >= 4){
-                    //This block of code is triggered when the video is loaded
-
-                    //your code goes here
-
-                    //stop checking every half second
-                    alert("a");
-                    clearInterval(b);
-
-                }else{
-                    alert("gagal");
-                }                   
-            },500);
+        var video = document.getElementById("video");
+        if ( video.readyState === 4 ) {
+            // it's loaded
+            video.pause();
+        }else{
+            alert("video not loaded");
         }
     </script>  
 @endsection

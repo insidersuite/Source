@@ -68,7 +68,7 @@
 
         if ( video.readyState === 4 ) {
             // it's loaded
-            video.play();
+            video.pause();
         }else{
             alert("video not loaded");
         }

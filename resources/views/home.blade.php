@@ -63,15 +63,7 @@
 </div>
 @endsection
 @section('scripts')
-    <script>
-        var video = document.getElementById("video");
-        if ( video.readyState === 4 ) {
-            // it's loaded
-            video.pause();
-        }else{
-            alert("video not loaded");
-        }
-    </script>  
+    
 @endsection
 
 

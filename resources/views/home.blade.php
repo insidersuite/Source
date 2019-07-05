@@ -64,13 +64,23 @@
 @endsection
 @section('scripts')
     <script>
-        var video = document.getElementById("video");
+        checkforVideo();
 
-        if ( video.readyState === 4 ) {
-            // it's loaded
-            video.pause();
-        }else{
-            alert("video not loaded");
+        function checkforVideo() {
+            //Every 500ms, check if the video element has loaded
+            var b = setInterval(function(){
+                if(VideoElement.readyState >= 3){
+                    //This block of code is triggered when the video is loaded
+
+                    //your code goes here
+
+                    //stop checking every half second
+                    clearInterval(b);
+
+                }else{
+                    alert("gagal");
+                }                   
+            },500);
         }
     </script>  
 @endsection

@@ -69,7 +69,7 @@
         function checkforVideo() {
             //Every 500ms, check if the video element has loaded
             var b = setInterval(function(){
-                if(VideoElement.readyState >= 3){
+                if(VideoElement.readyState >= 4){
                     //This block of code is triggered when the video is loaded
 
                     //your code goes here

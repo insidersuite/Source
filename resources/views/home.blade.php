@@ -75,6 +75,7 @@
                     //your code goes here
 
                     //stop checking every half second
+                    alert("a");
                     clearInterval(b);
 
                 }else{

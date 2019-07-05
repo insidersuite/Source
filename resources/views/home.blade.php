@@ -8,7 +8,7 @@
 <div id="site-content">
     <div class="_5m2ieb" style="background-image:url(../images/Background/InsiderSuite_Home1.jpg)">
 
-        <video controls="true" id="video" loop="" muted="" playsinline="" autoplay="" style="object-fit:cover;width:100%;height:100%">
+        <video id="video" loop="" muted="" playsinline="" autoplay="" style="object-fit:cover;width:100%;height:100%">
           <source src="imgs/home_video.mp4" type="video/mp4">
           <source src="imgs/home_video.mp4" type="video/mp4">
         </video>
@@ -63,7 +63,12 @@
 </div>
 @endsection
 @section('scripts')
-    
+    <script>
+        var vid= document.getElementById('video');
+        if(vid.paused){
+            alert("x");
+        }
+    </script>
 @endsection
 
 

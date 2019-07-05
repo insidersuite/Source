@@ -64,8 +64,14 @@
 @endsection
 @section('scripts')
     <script>
-        var vid = document.getElementById("video"); 
-        vid.play();
+        var video = document.getElementById("video");
+
+        if ( video.readyState === 4 ) {
+            // it's loaded
+            video.play();
+        }else{
+            alert("video not loaded");
+        }
     </script>  
 @endsection
 

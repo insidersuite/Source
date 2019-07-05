@@ -66,7 +66,7 @@
     <script>
         var vid= document.getElementById('video');
         if(vid.paused){
-            alert("x");
+            vid.play();
         }
     </script>
 @endsection

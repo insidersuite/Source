@@ -1600,6 +1600,10 @@
                     if ($accom['location'] == "happy") { $location_val = 5; } else if ($accom['location'] == "face") { $location_val = 3.75; } else if ($accom['location'] == "affect") { $location_val = 2.5; } else if ($accom['location'] == "sad") { $location_val = 1.25; }
                     if ($accom['staff'] == "happy") { $staff_val = 5; } else if ($accom['staff'] == "face") { $staff_val = 3.75; } else if ($accom['staff'] == "affect") { $staff_val = 2.5; } else if ($accom['staff'] == "sad") { $staff_val = 1.25; }
                     $user = User::where('username', $review_mail->name)->first();
+                    if(empty($user)){
+                        $experience = Experience::find($review_mail->experience_id);
+                        $user = User::find($experience->user_id);
+                    }
                     $accom_review = [
                     'type' => 'accommodation',
                     'type_id'=> $accom['id'],

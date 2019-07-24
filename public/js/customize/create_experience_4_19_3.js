@@ -138,6 +138,8 @@ if (f_count > 1) {
 // }
 //----------------Sidebar Section ----------------------
 
+
+
 $("#general").click(function () {
     $(".progress_bar").attr('style', 'width: 0%');
     $(".submit_count").html('5');
@@ -284,6 +286,7 @@ $("#review").click(function () {
                         var formated_date = formatDate(date.toDateString('yyyy-mm-dd'));
                     if (jQuery.inArray(formated_date, date_list) == -1) {
                         date_list.push(formated_date);
+                        date_list.push(check_out);
                     }
                 });
                 }
@@ -332,7 +335,7 @@ $("#review").click(function () {
                                 prices_accoms.forEach(price => {
                                     if ((price.check_in_date == exact_dates[k]) && (price.accomodation_id == accom.id)) {
                                         if(price.price_a_discount=="NA" || price.price_b_discount=="NA"){
-                                            content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>Unavailable</b></p><input type='hidden' class='price' value='NA'></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>Unavailable</b></p><input type='hidden' id="+exp.id+" class='price' value='NA'></div>";
                                             mail_content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>Unavailable</b></p></div>";
                                         }else{
                                             if(exp.guests_num == 1) {
@@ -352,7 +355,7 @@ $("#review").click(function () {
                         });
                             content[k] += "</div>";
                             mail_content[k] += "</div>";
-                        } else if ((daysBetween(exact_dates[k], exp.check_in) < 0) && (daysBetween(exact_dates[k], exp.check_out) > 0)) {
+                        } else if ((daysBetween(exact_dates[k], exp.check_in) < 0) || (daysBetween(exact_dates[k], exp.check_out) > 0)) {
                             accoms_arr.forEach(accom => {
                                 if (accom.id == exp.type_id) {
                                 review_accom_count ++;
@@ -378,8 +381,9 @@ $("#review").click(function () {
                                 prices_accoms.forEach(price => {   
                                     if ((price.check_in_date == exact_dates[k]) && (price.accomodation_id == accom.id)) {
                                         if(price.price_a_discount=="NA"||price.price_b_discount=="NA"){
-                                            content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>Unavailable</b></p><input type='hidden' class='price' value='NA'></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>Unavailable</b></p><input id="+exp.id+" type='hidden' class='price' value='NA'></div>";
                                             mail_content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>Unavailable</b></p></div>";
+                                            $("#detail single_content").remove();
                                         }else{
                                             if(exp.guests_num == 1) {
                                                 content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_a_discount/exp.guests_num)) + "</b>/pers</p><p style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;margin-bottom: 10px;'>instead of <del style='color: black;font-size: 16px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;font-weight: bold;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(Math.floor(price.price_b_discount/exp.guests_num)) + "</del></p><p style='color: #a0a0a0;font-size: 12px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;margin-top: 10px;'><img src='https://www.insidersuite.com/imgs/group.png' style='width: 20px; height: 20px;'/>Total (*"+ exp.guests_num +" adult): <b style='color: #a0a0a0;font-size: 14px;font-family: GT Walsheim Pro, Helvetica, Arial, sans-serif;text-align: center;cursor: default;'>" + $('#user-currency').val() + currencyConvert(price.price_a_discount) + "</b></p></div>";
@@ -419,7 +423,7 @@ $("#review").click(function () {
                                 act_imgs.forEach(img => {
                                     if (img.act_id == act.id) {
                                         match_imgs.push(img);
-                                        content[k] += "<li><img src='" + img.path + "' alt=''>" + "</li>";
+                                        content[k] += "<li><img style='width: 100% !important;height: 210px !important;'src='" + img.path + "' alt=''>" + "</li>";
                                     }
                                 });
                                 content[k] += "</ul>";
@@ -442,7 +446,7 @@ $("#review").click(function () {
                                 prices_acts.forEach(price => {
                                     if ((price.check_in_date == exact_dates[k]) && (price.activity_id == act.id)) {
                                         if(price.price_a_discount=="NA"||price.price_b_discount=="NA"){
-                                            content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>Unavailable</b></p><input type='hidden' class='price' value='NA'></div>";
+                                            content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>Unavailable</b></p><input id="+exp.id+" type='hidden' class='price' value='NA'></div>";
                                             mail_content[k] += "<div class='gallery-price-info'>" + "<p style='display: block;font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36 !important;font-size: 12px;text-align: center;margin: 0px;'><b style='font: 12px/28px GT Walsheim Pro, Helvetica, Arial, sans-serif;color: #f36;font-size: 24px;text-align: center;'>Unavailable</b></p></div>";
                                         }else{
                                             if(exp.guests_num == 1) {
@@ -817,7 +821,7 @@ $("#submit_trip").click(function () {
                     var pricena = $(".price").val();
                     if(pricena == 'NA'){
                         $("#payment").addClass('disabled');
-                        alert('We\'re sorry one activity is no longer available please review your selection');
+                        alert('We\'re sorry one activity or accommodation is no longer available please review your selection');
                     }else{
                         $("#payment").removeClass('disabled').trigger("click");
                     }

@@ -314,8 +314,8 @@ $(".accomodation").click(function (event) {
     var reviews = $(this).data('reviews');
     var search_text = $(".part1-accom-reviews").html();
     if (accom.review == 0) {
-        $('.part1-accom-reviews').addClass('blank');
-        $('.part1-accom-reviews').attr('hidden', '');
+        // $('.part1-accom-reviews').addClass('blank');
+        // $('.part1-accom-reviews').attr('hidden', '');
     } else {
         $('.part1-accom-reviews').removeClass('blank');
         $('.part1-accom-reviews').removeAttr('hidden');

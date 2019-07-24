@@ -148,7 +148,7 @@ $(".accomodation").click(function (event) {
         }
     }
 
-    // find the nearest date of arrival date
+    // find the nearest date of arrival date/
     var arrival_date = $("#arrival_date").val();
     console.log("original form arrival date: ", arrival_date);
     var date_str = arrival_date.split("/");
@@ -378,7 +378,7 @@ $(".accomodation").click(function (event) {
                     }
                 } else { // case of next month
                     var date = new Date();
-                    var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+                    var lastDay = new Date(date.getFullYear(), date.getFullMonth() + 1, 0);
                     var str_lastday = $.datepicker.formatDate('yy-mm-dd', lastDay).split("-");
                     var middle_d = "";
                     var length = str_lastday[2] - str_start[2] + 1;
@@ -414,11 +414,11 @@ $(".accomodation").click(function (event) {
                 accom_selected_day1 = period[0];
                 accom_selected_day2 = period[period.length - 1];
                 console.log('date'+accom_selected_day2);
-                var d = parseInt(accom_selected_day2.split("-")[2]) + 1;
+                var d = parseInt(accom_selected_day2.split("-")[2]) + 1;                
                 if (d < 10) {
                     accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + "0" + d;
                 } else {
-                    accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + d;
+                    accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + (d-1);
                 }
 
                 $("#participants_adult").html(period.length);
@@ -478,6 +478,7 @@ $(".accomodation").click(function (event) {
 
                     accom_selected_day1 = "";
                     accom_selected_day2 = "";
+                    
                     enableDates = [];
                     for (var i = 0; i < ndate.length; i++) {
                         var today = convertDate(new Date());
@@ -532,6 +533,7 @@ $(".accomodation").click(function (event) {
                 var _end_d = end_d._i;
                 accom_selected_day1 = _end_d;
                 var d = parseInt(_end_d.split("-")[2]) + 1;
+                
                 if (d < 10) {
                     accom_selected_day2 = _end_d.split("-")[0] + "-" + _end_d.split("-")[1] + "-" + "0" + d;
                 } else {
@@ -564,7 +566,7 @@ $(".accomodation").click(function (event) {
                 };
                 var start_d = first_d._i;
                 accom_selected_day1 = start_d;
-                var day2_date = parseInt(start_d.split("-")[2]) + 1;
+                var day2_date = parseInt(start_d.split("-")[2]);
                 if (day2_date < 10) {
                     accom_selected_day2 = start_d.split("-")[0] + "-" + start_d.split("-")[1] + "-" + "0" + day2_date;
                 } else {
@@ -868,10 +870,11 @@ $(".add_trip_btn").click(function () {
     var date_diff_indays = function(date1, date2) {
         dt1 = new Date(date1);
         dt2 = new Date(date2);
-        return Math.floor((Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate()) ) /(1000 * 60 * 60 * 24));
+        return Math.floor((Date.UTC(dt2.getFullYear(), dt2.getMonth(), (dt2.getDate()+1)) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate()) ) /(1000 * 60 * 60 * 24));
     }
     day_booking = date_diff_indays(accom_selected_day1, accom_selected_day2);
-    if(accom.min_day_booking > 0 && parseInt(day_booking) < parseInt(accom.min_day_booking)) {
+    
+    if(accom.min_day_booking > 0 && parseInt(day_booking) < parseInt(accom.min_day_booking) && accom_selected_day1 == accom_selected_day2) {
         alert('Minimum stay: ' + accom.min_day_booking + ' nights');
         return;
     }
@@ -1646,7 +1649,7 @@ $("#save_act").click(function () {
             'data': data_array
         };
 
-        if (trigger_count == sel_acts.length) {
+        if (trigger_count == sel_acts.length && sel_acts.length!=0) {
             $.ajax({
                 type: 'post',
                 dataType: 'json',

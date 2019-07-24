@@ -414,11 +414,77 @@ $(".accomodation").click(function (event) {
                 accom_selected_day1 = period[0];
                 accom_selected_day2 = period[period.length - 1];
                 console.log('date'+accom_selected_day2);
-                var d = parseInt(accom_selected_day2.split("-")[2]) + 1;                
-                if (d < 10) {
-                    accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + "0" + d;
-                } else {
-                    accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + (d-1);
+                var d = parseInt(accom_selected_day2.split("-")[2]) + 1;
+                var m = parseInt(accom_selected_day2.split("-")[1]);
+                var y = parseInt(accom_selected_day2.split("-")[0]);
+                
+                //date issue update
+                if(m==1 || m==3 || m==5 || m==7 || m==9 || m==11){
+                    if(d==32){
+                        d=1;
+                        m+=1;
+                        if(m < 10){
+                            accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + "0"+ m + "-" + "0" + d;
+                        }else{
+                            accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + m + "-" + "0" + d;
+                        }
+                    }else{
+                        if (d < 10) {
+                            accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + "0" + d;
+                        } else {
+                            accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + d;
+                        }
+                    }
+                }else if(m==4||m==6||m==8||m==10||m==12){
+                    if(d==31){
+                        d=1;
+                        m+=1;
+                        if(m < 10){
+                            accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + "0"+ m + "-" + "0" + d;
+                        }else{
+                            accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + m + "-" + "0" + d;
+                        }
+                    }else{
+                        if (d < 10) {
+                            accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + "0" + d;
+                        } else {
+                            accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + d;
+                        }
+                    }
+                }else{
+                    if((y%400 == 0) || (y%400 !=0 && y%100!=0 && y%4==0)){
+                        if(d==30){
+                            d=1;
+                            m+=1;
+                            if(m < 10){
+                                accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + "0"+ m + "-" + "0" + d;
+                            }else{
+                                accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + m + "-" + "0" + d;
+                            }
+                        }else{
+                            if (d < 10) {
+                                accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + "0" + d;
+                            } else {
+                                accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + d;
+                            }
+                        }
+                    }else{
+                        if(d==29){
+                            d=1;
+                            m+=1;
+                            if(m < 10){
+                                accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + "0"+ m + "-" + "0" + d;
+                            }else{
+                                accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + m + "-" + "0" + d;
+                            }
+                        }else{
+                            if (d < 10) {
+                                accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + "0" + d;
+                            } else {
+                                accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + d;
+                            }
+                        }
+                    }
                 }
 
                 $("#participants_adult").html(period.length);
@@ -478,7 +544,6 @@ $(".accomodation").click(function (event) {
 
                     accom_selected_day1 = "";
                     accom_selected_day2 = "";
-                    
                     enableDates = [];
                     for (var i = 0; i < ndate.length; i++) {
                         var today = convertDate(new Date());
@@ -533,7 +598,6 @@ $(".accomodation").click(function (event) {
                 var _end_d = end_d._i;
                 accom_selected_day1 = _end_d;
                 var d = parseInt(_end_d.split("-")[2]) + 1;
-                
                 if (d < 10) {
                     accom_selected_day2 = _end_d.split("-")[0] + "-" + _end_d.split("-")[1] + "-" + "0" + d;
                 } else {
@@ -566,7 +630,7 @@ $(".accomodation").click(function (event) {
                 };
                 var start_d = first_d._i;
                 accom_selected_day1 = start_d;
-                var day2_date = parseInt(start_d.split("-")[2]);
+                var day2_date = parseInt(start_d.split("-")[2]) + 1;
                 if (day2_date < 10) {
                     accom_selected_day2 = start_d.split("-")[0] + "-" + start_d.split("-")[1] + "-" + "0" + day2_date;
                 } else {
@@ -870,11 +934,10 @@ $(".add_trip_btn").click(function () {
     var date_diff_indays = function(date1, date2) {
         dt1 = new Date(date1);
         dt2 = new Date(date2);
-        return Math.floor((Date.UTC(dt2.getFullYear(), dt2.getMonth(), (dt2.getDate()+1)) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate()) ) /(1000 * 60 * 60 * 24));
+        return Math.floor((Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate()) ) /(1000 * 60 * 60 * 24));
     }
     day_booking = date_diff_indays(accom_selected_day1, accom_selected_day2);
-    
-    if(accom.min_day_booking > 0 && parseInt(day_booking) < parseInt(accom.min_day_booking) && accom_selected_day1 == accom_selected_day2) {
+    if(accom.min_day_booking > 0 && parseInt(day_booking) < parseInt(accom.min_day_booking)) {
         alert('Minimum stay: ' + accom.min_day_booking + ' nights');
         return;
     }

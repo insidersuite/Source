@@ -286,7 +286,6 @@ $("#review").click(function () {
                         var formated_date = formatDate(date.toDateString('yyyy-mm-dd'));
                     if (jQuery.inArray(formated_date, date_list) == -1) {
                         date_list.push(formated_date);
-                        date_list.push(check_out);
                     }
                 });
                 }
@@ -355,7 +354,7 @@ $("#review").click(function () {
                         });
                             content[k] += "</div>";
                             mail_content[k] += "</div>";
-                        } else if ((daysBetween(exact_dates[k], exp.check_in) < 0) || (daysBetween(exact_dates[k], exp.check_out) > 0)) {
+                        } else if ((daysBetween(exact_dates[k], exp.check_in) < 0) && (daysBetween(exact_dates[k], exp.check_out) > 0)) {
                             accoms_arr.forEach(accom => {
                                 if (accom.id == exp.type_id) {
                                 review_accom_count ++;

@@ -61,8 +61,21 @@
             background-color : #f5f5f5;
         }
         @media (max-width:390pt){
-            #img_offer{
-                margin-bottom: 10%;
+            .offer{
+                display:inline;
+            }
+            .offer1{
+                margin-left:0%;
+                background-color:white;
+                width:225pt;
+                height:175pt;
+            }
+            .offer2{
+                margin-top : 10%;
+                margin-right:0%;
+                background-color:white;
+                width:225pt;
+                height:175pt;
             }
         }
     </style>
@@ -186,14 +199,40 @@
         <center><h1><b>Get Your Summer Started!</b></h1></center>
     </div>
     <br>
-    <center>
-        <a href="/create_experience?id={{$id}}" style="margin-right:10%;">
-            <img id="img_offer" src="images/option1.jpg" style="width:225pt;height:175pt;">
-        </a>
-        <a href="http://www.insidersuite-group.com/" style="margin-top:10%">
-            <img id="img_offer" src="images/option2.jpg" style="width:225pt;height:175pt">
-        </a>
+    <center class="offer">
+        <button class="offer1" href="/create_experience?id={{$id}}">
+            <img src="images/box1.jpg" style="margin-left:20%;width:120pt;height:100pt">
+            <font size="6" color="#fc3769"><b>Build your own trip</b></font>
+            <font face="calibri"size="2" color="#9c9c9c"><p>Create your own route and we'll take<br>all the stress out of planning it.</p></font>
+        </button>
+        <button class="offer2" href="http://www.insidersuite-group.com/">
+            <img src="images/box2.jpg" style="width:110pt;height:90pt;margin-left:25%;">
+            <font size="6" color="#fc3769"><b>Join a group</b></font>
+            <font face="calibri"size="2" color="#9c9c9c"><p>Authentic travel in small groups with<br>an experienced Euroventure Tour<br>Leader.</p></font>
+        </button>
     </center>
+    <script>
+        $.ajax({
+            type: 'get',
+            dataType: 'json',
+            url: '/get_notification',
+            data: {},
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            success: function (e) {		
+                if (e != 0) {
+                    $(".notification").attr('style', 'display:block;');
+                    $(".notification").html(e);
+                    $(".notification_short").attr('style', 'display:block;');
+                    $(".notification_short").html(e);
+                } else {
+                    $(".notification").attr('style', 'display:none;');
+                    $(".notification_short").attr('style', 'display:none;');
+                }
+            }
+        });
+    </script>
 </body>
 </html>
 

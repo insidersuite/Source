@@ -3,6 +3,7 @@
     <title>Insider Suite |  Offers</title>
     <!-- Latest compiled and minified CSS -->
     <meta property="fb:app_id" content="625441737790452" />
+    <meta http-equiv="Cache-control" content="no-cache">
     <meta property="og:url" content="https://www.insidersuite.com/sponsor" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Upgrade your holiday... your way..." />
@@ -65,12 +66,13 @@
                 display:inline;
             }
             .offer1{
-                margin-left:0%;
+                margin-left:15%;
                 background-color:white;
                 width:225pt;
                 height:175pt;
             }
             .offer2{
+                margin-left:15%;
                 margin-top : 10%;
                 margin-right:0%;
                 background-color:white;

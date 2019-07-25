@@ -8,7 +8,7 @@
 
 	@parent
 
-
+	<meta http-equiv="Cache-control" content="no-cache">
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
 

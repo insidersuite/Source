@@ -8,6 +8,7 @@
     use App\Models\Career;
     use App\Models\Blog;
     use App\Models\Blog_user;
+    use App\Models\Favourite;
     use App\Models\Offer;
     use App\Models\Partner;
     use App\Models\Book;
@@ -102,6 +103,8 @@
             return view('test');
         }
         public function offers_page() {
+            $expid = Experience::select('id')->get();
+            $fav= Favourite::where('user_id',Auth::User()->user_id)->whereNotIn('exp_id',$expid)->delete();
             $user = Auth::User();
             $offers = Offer::orderBy('updated_at', 'desc')->get();
             $count = Offer::count();
@@ -116,6 +119,13 @@
             return view('offer',compact('id'));
         }
         public function create_experience(Request $request) {
+            //set headers to NOT cache a page
+            header("Cache-Control: no-cache, must-revalidate"); //HTTP 1.1
+            header("Pragma: no-cache"); //HTTP 1.0
+            header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
+
+            //or, if you DO want a file to cache, use:
+            header("Cache-Control: max-age=2592000"); //30days (60sec * 60min * 24hours * 30days)
             $expid = $request->expid;
             $experience = Experience::where('user_id', Auth::User()->user_id)->where('id', $expid)->where('city_id', $request->id)->where('status', 'false')->first();
             $experience_count = Experience::where('user_id', Auth::User()->user_id)->where('id', $expid)->where('city_id', $request->id)->where('status', 'false')->count();

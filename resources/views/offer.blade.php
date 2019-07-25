@@ -202,16 +202,16 @@
     </div>
     <br>
     <center class="offer">
-        <button class="offer1" href="/create_experience?id={{$id}}">
-            <img src="images/box1.jpg" style="margin-left:20%;width:120pt;height:100pt">
+        <a class="offer1" href="/create_experience?id={{$id}}">
+            <img src="images/box1.jpg" style="width:120pt;height:100pt">
             <font size="6" color="#fc3769"><b>Build your own trip</b></font>
             <font face="calibri"size="2" color="#9c9c9c"><p>Create your own route and we'll take<br>all the stress out of planning it.</p></font>
-        </button>
-        <button class="offer2" href="http://www.insidersuite-group.com/">
-            <img src="images/box2.jpg" style="width:110pt;height:90pt;margin-left:25%;">
+        </a>
+        <a class="offer2" href="http://www.insidersuite-group.com/">
+            <img src="images/box2.jpg" style="width:110pt;height:90pt;">
             <font size="6" color="#fc3769"><b>Join a group</b></font>
             <font face="calibri"size="2" color="#9c9c9c"><p>Authentic travel in small groups with<br>an experienced Euroventure Tour<br>Leader.</p></font>
-        </button>
+        </a>
     </center>
     <script>
         $.ajax({

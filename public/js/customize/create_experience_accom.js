@@ -314,8 +314,8 @@ $(".accomodation").click(function (event) {
     var reviews = $(this).data('reviews');
     var search_text = $(".part1-accom-reviews").html();
     if (accom.review == 0) {
-        // $('.part1-accom-reviews').addClass('blank');
-        // $('.part1-accom-reviews').attr('hidden', '');
+        $('.part1-accom-reviews').addClass('blank');
+        $('.part1-accom-reviews').attr('hidden', '');
     } else {
         $('.part1-accom-reviews').removeClass('blank');
         $('.part1-accom-reviews').removeAttr('hidden');
@@ -419,7 +419,7 @@ $(".accomodation").click(function (event) {
                 var y = parseInt(accom_selected_day2.split("-")[0]);
                 
                 //date issue update
-                if(m==1 || m==3 || m==5 || m==7 || m==9 || m==11){
+                if(m==1 || m==3 || m==5 || m==7 || m==8 || m==10 || m==12){
                     if(d==32){
                         d=1;
                         m+=1;
@@ -435,7 +435,7 @@ $(".accomodation").click(function (event) {
                             accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + d;
                         }
                     }
-                }else if(m==4||m==6||m==8||m==10||m==12){
+                }else if(m==4||m==6||m==9||m==10||m==11){
                     if(d==31){
                         d=1;
                         m+=1;
@@ -485,6 +485,12 @@ $(".accomodation").click(function (event) {
                             }
                         }
                     }
+                }
+                
+                if (d < 10) {
+                    accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + "0" + d;
+                } else {
+                    accom_selected_day2 = accom_selected_day2.split("-")[0] + "-" + accom_selected_day2.split("-")[1] + "-" + d;
                 }
 
                 $("#participants_adult").html(period.length);

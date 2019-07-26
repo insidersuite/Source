@@ -1765,15 +1765,10 @@ input[type="text"]:focus, input[type="text"]:active-sidebar-item {
   outline: none;
 }
 
-.offer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 .offer1{
     display: grid;
     grid-column: 1/2;
-    margin-left:25%;
     background-color:white;
     width:225pt;
     height:175pt;
@@ -1782,7 +1777,6 @@ input[type="text"]:focus, input[type="text"]:active-sidebar-item {
 .offer2{
     display: grid;
     grid-column: 2/3;
-    margin-right:40%;
     background-color:white;
     width:225pt;
     height:175pt;

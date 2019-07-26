@@ -61,20 +61,17 @@
         body{
             background-color : #f5f5f5;
         }
-        @media (max-width:390pt){
+        @media (max-width:745pt){
             .offer{
                 display:inline;
             }
             .offer1{
-                margin-left:15%;
                 background-color:white;
                 width:225pt;
                 height:175pt;
             }
             .offer2{
-                margin-left:15%;
                 margin-top : 10%;
-                margin-right:0%;
                 background-color:white;
                 width:225pt;
                 height:175pt;
@@ -197,22 +194,30 @@
             </div>
         </div>
     </nav>
-    <div style="margin-top: 100pt">
-        <center><h1><b>Get Your Summer Started!</b></h1></center>
-    </div>
     <br>
-    <center class="offer">
-        <a class="offer1" href="/create_experience?id={{$id}}">
-            <img src="images/box1.jpg" style="width:120pt;height:100pt">
-            <font size="6" color="#fc3769"><b>Build your own trip</b></font>
-            <font face="calibri"size="2" color="#9c9c9c"><p>Create your own route and we'll take<br>all the stress out of planning it.</p></font>
-        </a>
-        <a class="offer2" href="http://www.insidersuite-group.com/">
-            <img src="images/box2.jpg" style="width:110pt;height:90pt;">
-            <font size="6" color="#fc3769"><b>Join a group</b></font>
-            <font face="calibri"size="2" color="#9c9c9c"><p>Authentic travel in small groups with<br>an experienced Euroventure Tour<br>Leader.</p></font>
-        </a>
-    </center>
+        <div style="margin-top: 100pt">
+            <center>
+                <h1><b>Get Your Summer Started!</b></h1>
+                <div>
+                    <div class="col-md-4 col-md-offset-3" style="width:auto;">
+                        <a style="text-decoration:none" class="offer1" href="/create_experience?id={{$id}}">
+                            <img src="images/box1.jpg" style="width:120pt;height:100pt">
+                            <font size="6" color="#fc3769"><b>Build your own trip</b></font>
+                            <font face="calibri"size="2" color="#9c9c9c"><p>Create your own route and we'll take<br>all the stress out of planning it.</p></font>
+                        </a>
+                    </div>
+                    <div class="col-md-4" style="width:auto">
+                    </div>
+                    <div class="col-md-4" style="width:auto">
+                        <a style="text-decoration:none" class="offer2" href="http://www.insidersuite-group.com/">
+                            <img src="images/box2.jpg" style="width:110pt;height:90pt;">
+                            <font size="6" color="#fc3769"><b>Join a group</b></font>
+                            <font face="calibri"size="2" color="#9c9c9c"><p>Authentic travel in small groups with<br>an experienced Euroventure Tour<br>Leader.</p></font>
+                        </a>
+                    </div>
+                </div>
+            </center>
+        </div>
     <script>
         $.ajax({
             type: 'get',

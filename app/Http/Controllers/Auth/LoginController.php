@@ -82,7 +82,7 @@
             $user = Socialite::driver('facebook')->user();
             $check = User::where('email', $user->email)->first();
             
-            if (count($check) > 0) {
+            if ($check->email != NULL) {
                 if ($check->profile_img == NULL) {
                     $check->profile_img = $user->avatar;
                     $check->save();
@@ -91,7 +91,7 @@
                 return redirect('offers');
             }else{
                 $referal = User::where('referal_code',session('referal_code'))->first();
-                if(count($referal) > 0){
+                if($referal->referal_code != NULL){
                     if ($referal->profile_img == NULL) {
                         $referal->profile_img = $user->avatar;
                         $referal->save();
@@ -146,7 +146,7 @@
                 return redirect('offers');
             }else{
                 $referal = User::where('referal_code',session('referal_code'))->first();
-                if(count($referal) > 0){
+                if($referal->referal_code != NULL){
                     if ($referal->profile_img == NULL) {
                         $referal->profile_img = $user->avatar;
                         $referal->save();
